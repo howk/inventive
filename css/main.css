@@ -4656,7 +4656,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 }
 
 .sort-wrapper {
-
+	white-space: nowrap;
 }
 
 .sort, .sort:hover {
@@ -4667,7 +4667,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 .order {
     width: 8px;
     height: 8px;
-    margin: 0 4px 1px;
+    margin: -2px 0 2px 10px;
     display: inline-block;
     transition: 1s;
     border-color: var(--bs-colorsociallink);
