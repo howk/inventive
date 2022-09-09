@@ -161,7 +161,7 @@ window.onload = function () {
             for (let i = 0; i < postCardSortItems.length; i++) {
                 let postCardSortItem = postCardSortItems[i];
                 let postCardSortItemDataValue = postCardSortItem.getAttribute('data-card-value');
-                if (postCardSortItemDataValue == sortData) {
+                if (!sortData || postCardSortItemDataValue == sortData) {
                     if (!postCardSortItem.classList.contains('visible')) {
                         postCardSortItem.classList.add('visible');
                     }
@@ -368,12 +368,6 @@ window.onload = function () {
             });
         });
     }
-
-    const scrollPlaylist = document.querySelector('.playlist-scroll');
-    if (scrollPlaylist) {
-        OverlayScrollbars(scrollPlaylist, {
-        });
-    }    
 
 }
 
