@@ -369,6 +369,18 @@ window.onload = function () {
         });
     }
 
+    const scrollContentXY = document.querySelectorAll('.scroll-content-xy');
+    if (scrollContentXY.length > 0) {
+        scrollContentXY.forEach((scrollContentItem) => {
+            OverlayScrollbars(scrollContentItem, {
+                overflowBehavior: {
+                    x: "scroll",
+                    y: "scroll"
+                },
+            });
+        });
+    }    
+
 }
 
 

@@ -14,6 +14,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/calendar.css" />
+	<link rel="stylesheet" href="css/OverlayScrollbars.min.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/icomoon.css" />
 	<link rel="stylesheet" href="css/media.css" />
@@ -192,6 +193,9 @@
                                     <a href="" class="panel-main__action"><i class="panel-action-icon icon-document-add"></i>Добавить документ</a>
                                     <a href="" class="panel-main__action panel-main__action-settings"><i class="panel-action-icon icon-settings"></i>Настройка прав доступа</a>
                                 </div>
+																<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#disk-tree">
+																	Launch demo modal
+																</button>
                                 <div class="panel-main__description">
                                     Материалы, размещенные на портале, могут составлять коммерческую тайну компаний ГК Inventive retail group, либо являться объектами авторских прав,
                                     которые не могут быть использованы без согласия автора. Использование материалов портала для предоставления третьим лицам, не являющимся пользователям портала,
@@ -603,6 +607,7 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Modal 3-->
 		<div class="modal modal--container fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel"
 			aria-hidden="true">
@@ -646,22 +651,108 @@
 			</div>
 		</div>
 
-        <div class="modal modal--container fade" id="disk-tree" tabindex="-1"
-             aria-labelledby="initiativesModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h2 class="modal-content__title">Переместить</h2>
-
-                </div>
-            </div>
-        </div>
+		<div class="modal modal--move modal--container modal--container-wide fade" id="disk-tree" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Переместить</h2>
+					<form class="modal-content__form form-modal">
+						<div class="scroll-content-xy file-tree-scroll">
+							<ul class="file-tree">
+								<li class="file-tree__item file-tree__item--folder file-tree__item--root">
+									<span class="file-tree__name">Диск: все</span>
+										<ul class="file-tree">
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Розничная сеть</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder  file-tree__item--active">
+												<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+												<ul class="file-tree">
+													<li class="file-tree__item file-tree__item--folder">
+														<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+														<ul class="file-tree">
+															<li class="file-tree__item file-tree__item--folder">
+																<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+																<ul class="file-tree">
+																	<li class="file-tree__item file-tree__item--folder">
+																		<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+																	</li>
+																</ul>																
+															</li>
+														</ul>														
+													</li>
+												</ul>		
+											</li>
+											<li class="file-tree__item file-tree__item--folder-add">
+												<span class="file-tree__name">Дирекция по информационным технологиям</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция качества и работы с обращениями</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция маркетинга</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция развития и инновационных проектов</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по развитию и эксплуатации</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по управлению персоналом</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по финансам</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по логистике</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Регламентирующие документы</span>
+											</li>										
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция качества и работы с обращениями</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция маркетинга</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция развития и инновационных проектов</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по развитию и эксплуатации</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по управлению персоналом</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по финансам</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Дирекция по логистике</span>
+											</li>
+											<li class="file-tree__item file-tree__item--folder">
+												<span class="file-tree__name">Регламентирующие документы</span>
+											</li>
+										</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Переместить</button>
+							<button type="submit" class="form-modal__submit">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
 	<script src="js/dragscroll.js"></script>
+	<script src="js/OverlayScrollbars.min.js"></script>
 	<script src="js/datepicker.js"></script>
 	<script src="js/common.js"></script>
 	<script src="js/mask.js"></script>
