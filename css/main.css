@@ -182,6 +182,7 @@ p{
 .container{
 	max-width: 954px;
 	padding: 0;
+	width: 100%;
 }
 /*-----------------Header-------------------*/
 .header__container{
@@ -642,13 +643,32 @@ input.search-header__input{
 /* BreadCrumbs */
 
 .breadcrumbs {
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     background-color: var(--bs-graycolor);
     border-radius: 141px;
-    padding:10px 28px;
-    margin-top:26px;
+		/*
+    padding: 10px 28px;
+		*/
+		padding: 10px 0;
+    margin-top: 26px;	
+}
+
+.breadcrumbs__inner {
+	display: flex;
+	width: 100%;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+	mask-image: linear-gradient(90deg, transparent 0, rgba(0, 0, 0, .05) 14px, #000 28px, #000 calc(100% - 28px), rgba(0, 0, 0, .05) calc(100% - 14px), transparent);
+	-webkit-mask-image: linear-gradient(90deg, transparent 0, rgba(0,0,0,.05) 14px, #000 28px, #000 calc(100% - 28px), rgba(0,0,0,.05) calc(100% - 14px), transparent);		
+	padding-right: 28px;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+	cursor: grab;
+}
+
+.breadcrumbs__wrapper {
+	overflow: hidden;
+	height: 22px;
 }
 
 .breadcrumbs__item, .breadcrumbs__item:hover {
@@ -662,7 +682,7 @@ input.search-header__input{
     font-size: 15px;
     line-height: 18px;
     padding: 2px 0 2px 40px;
-
+		white-space: nowrap;
 }
 
 .breadcrumbs__item:before {
@@ -680,8 +700,13 @@ input.search-header__input{
     transform: rotateZ(-45deg);
 }
 
+/*
 .breadcrumbs__item:first-child {
     padding-left: 0;
+}
+*/
+.breadcrumbs__item:first-child {
+	padding-left: 28px;
 }
 
 .breadcrumbs__item:first-child:before{
@@ -730,6 +755,7 @@ input.search-header__input{
 .main__container{
 	display: flex;
 	margin:0 0 35px;
+	width: 100%;
 }
 .sidebar-main{
 	width: 224px;
@@ -746,6 +772,7 @@ input.search-header__input{
 }
 .content-main{
 	flex-grow: 1;
+	width: 100%;
 }
 .main-banner{
 	margin: 0 0 30px;
@@ -1589,6 +1616,10 @@ input.file-sec__text{
 	cursor: pointer;
 }
 /*-----------------panel-main-------------------*/
+.panel-main{
+	width: 100%;
+}
+
 .panel-main__container{
 	display: flex;
 	align-items: center;
