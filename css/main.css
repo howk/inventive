@@ -5058,3 +5058,21 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	align-items: flex-start;
 	justify-content: center;
 }
+
+.modal--share .form-modal__submit-wrap {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.modal--share .form-modal__label {
+	font-size: 15px;
+}
+
+.modal--share .modal-content__title {
+	margin-bottom: 32px;
+}
+
+.modal--share .search-sec {
+	margin-top: 20px;
+}
