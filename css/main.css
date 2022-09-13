@@ -4045,7 +4045,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 
 .btn-fav:after {
     font-family: 'icomoon' !important;
-    content: "\e908";
+    content: "\e90c";
     color:#9D9D9C;
     display:block;
     position: absolute;
@@ -4055,7 +4055,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 }
 
 .btn-fav_active:after {
-    content: "\e909";
+    content: "\e90d";
     color:black;
 }
 
