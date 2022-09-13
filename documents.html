@@ -193,9 +193,6 @@
                                     <a href="" class="panel-main__action"><i class="panel-action-icon icon-document-add"></i>Добавить документ</a>
                                     <a href="" class="panel-main__action panel-main__action-settings"><i class="panel-action-icon icon-settings"></i>Настройка прав доступа</a>
                                 </div>
-																<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-share">
-																	Launch demo modal
-																</button>
                                 <div class="panel-main__description">
                                     Материалы, размещенные на портале, могут составлять коммерческую тайну компаний ГК Inventive retail group, либо являться объектами авторских прав,
                                     которые не могут быть использованы без согласия автора. Использование материалов портала для предоставления третьим лицам, не являющимся пользователям портала,
@@ -879,7 +876,280 @@
 					</form>
 				</div>
 			</div>
-		</div>		
+		</div>	
+		
+		<div class="modal modal--access-settings modal--container modal--container-wide fade" id="modal-access-settings" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Настройка прав доступа</h2>
+					<form class="modal-content__form form-modal">
+					
+						<div class="employee-viewed__items employee-viewed__items--top">
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Имя Фамилия</span>
+										<span class="card-employee-viewed__post">должность</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">редактирование</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>							
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close" aria-label="Удалить"></button>
+									</div>									
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Имя Фамилия</span>
+										<span class="card-employee-viewed__post">должность</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">полный доступ</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>							
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close" aria-label="Удалить"></button>
+									</div>									
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Администраторы</span>
+										<span class="card-employee-viewed__post">группа</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">чтение</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>							
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close" aria-label="Удалить"></button>
+									</div>									
+								</div>
+							</div>			
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Invetivespace: Отдел кадров</span>
+										<span class="card-employee-viewed__post">группа</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">добавление</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>							
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close" aria-label="Удалить"></button>
+									</div>									
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Имя Фамилия</span>
+										<span class="card-employee-viewed__post">должность</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">редактирование</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>							
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close" aria-label="Удалить"></button>
+									</div>									
+								</div>
+							</div>																										
+						</div>
+
+						<div class="form-modal__item">
+							<label class="modal-content__title">Добавить пользователя</label>
+							<div class="search-sec">
+								<input class="search-sec__input" type="text" name="">
+								<button class="search-sec__btn" type="button" name=""></button>
+							</div>							
+						</div>
+						<div class="form-modal__item">
+							<label class="form-modal__label">Последние</label>
+							<div class="form-modal__employee-viewed employee-viewed">
+								<div class="employee-viewed__holder">
+										<div class="employee-viewed__items scroll-content">
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+												<div class="employee-viewed__item">
+														<a href="#" class="employee-viewed__card card-employee-viewed">
+																<span class="card-employee-viewed__img">
+																		<img src="img/avatar.svg" alt="" />
+																</span>
+																<span class="card-employee-viewed__content">
+																		<span class="card-employee-viewed__name">Имя Фамилия</span>
+																		<span class="card-employee-viewed__post">должность</span>
+																</span>
+														</a>
+												</div>
+										</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-modal__item">
+							<label class="modal-content__title">Добавить группу</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Администраторы</span>
+							</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Invetivespace: Сотрудники</span>
+							</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Invetivespace: Отдел кадров</span>
+							</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Invetivespace: Руководство</span>
+							</label>							
+						</div>						
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Применить</button>
+							<button type="submit" class="form-modal__submit">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>			
 
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

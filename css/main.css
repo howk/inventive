@@ -3636,6 +3636,36 @@ a.card-employee-viewed:hover .card-employee-viewed__img{
 a.card-employee-viewed:hover .card-employee-viewed__name{
 	color: var(--bs-greencolor);
 }
+.card-employee-viewed__remove{
+	width: 14px;
+	height: 13px;
+}
+.card-employee-viewed__btn-remove{
+	width: 14px;
+	height: 13px;
+	font-size: 14px;
+	padding: 0;
+	border: none;
+	color: #C4C4C4;
+	background: transparent;
+	cursor: pointer;
+}
+.card-employee-viewed__btn-remove:hover{
+	color: #000;
+}
+.card-employee-viewed__access {
+	width: 130px;
+	padding-right: 10px;
+}
+.card-employee-viewed__access-value {
+	font-size: 15px;
+	color: #00BAC6;
+	cursor: pointer;
+	text-decoration:underline;
+	text-decoration-color: inherit;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 1.5px;
+}
 .scroll-content .os-scrollbar.os-scrollbar-vertical{
 	width: 9px;
 	background-color: #fff;
@@ -5075,4 +5105,61 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 
 .modal--share .search-sec {
 	margin-top: 20px;
+}
+
+.modal--access-settings .card-employee-viewed__img {
+	background-color: var(--bs-graycolor);
+}
+
+.modal--access-settings .employee-viewed__items.employee-viewed__items--top {
+	max-height: 100%;
+	margin-bottom: 30px;
+}
+
+.modal--access-settings .form-modal__label {
+	font-size: 15px;
+}
+
+.modal--access-settings .form-modal__submit-wrap {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.modal--access-settings .custom-checkbox1 {
+	margin-bottom: 4px;
+}
+
+.custom-checkbox1 {
+	position: relative;
+	width: 100%;
+	display: block;
+}
+
+.custom-checkbox1__input {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.custom-checkbox1__visual {
+	min-height: 40px;
+	background-color: #F1F1F1;
+	border-radius: 20px;
+	width: 100%;
+	display: block;
+	padding: 11px 20px;
+	font-size: 15px;
+	line-height: 18px;
+	color: #000;
+	cursor: pointer;
+}
+
+.custom-checkbox1__input:checked + .custom-checkbox1__visual {
+	border: 1px #000 solid;
+	padding: 10px 19px;
+	background-color: #fff;
 }
