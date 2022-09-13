@@ -5035,12 +5035,12 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 
 .file-tree__item--folder::before {
 	font-family: 'icomoon';
-	content: '\e918';
+	content: '\e919';
 }
 
 .file-tree__item--folder-add::before {
 	font-family: 'icomoon';
-	content: '\e919';
+	content: '\e91a';
 }
 
 .file-tree__item::after {

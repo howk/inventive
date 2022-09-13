@@ -135,7 +135,6 @@
 					<div class="main__content content-main">
                         <div class="main__panel panel-main">
                             <div class="panel-main__container panel-main__container_2">
-
                                 <div class="panel-main__search search-sec">
                                     <input class="search-sec__input" type="text" name="">
                                     <button class="search-sec__btn" type="button" name=""></button>
@@ -193,7 +192,19 @@
                                     <a href="" class="panel-main__action"><i class="panel-action-icon icon-document-add"></i>Добавить документ</a>
                                     <a href="" class="panel-main__action panel-main__action-settings"><i class="panel-action-icon icon-settings"></i>Настройка прав доступа</a>
                                 </div>
+
                                 <div class="panel-main__description">
+																	<br><br><br>
+																	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#disk-tree">
+																		Переместить
+																	</button>																			
+																	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-share">
+																		Поделиться
+																	</button>																	
+																	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-access-settings">
+																		Настройка прав доступа
+																	</button>
+																	<br><br><br>																	
                                     Материалы, размещенные на портале, могут составлять коммерческую тайну компаний ГК Inventive retail group, либо являться объектами авторских прав,
                                     которые не могут быть использованы без согласия автора. Использование материалов портала для предоставления третьим лицам, не являющимся пользователям портала,
                                     либо распространение информации любыми средствами связи (включая размещение на интернет-ресурсах), может осуществляться исключительно при согласовании с администратором портала,
@@ -878,7 +889,7 @@
 			</div>
 		</div>	
 		
-		<div class="modal modal--access-settings modal--container modal--container-wide fade" id="modal-access-settings" tabindex="-1" aria-hidden="true">
+		<div class="modal modal--access-settings modal--container modal--container-wide fade" id="modal-access-settings" tabindex="-1" aria-hidden="true" role="dialog">
 			<div class="modal-dialog modal-dialog-centered">
 				<div class="modal-content">
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -1007,7 +1018,6 @@
 								</div>
 							</div>																										
 						</div>
-
 						<div class="form-modal__item">
 							<label class="modal-content__title">Добавить пользователя</label>
 							<div class="search-sec">
