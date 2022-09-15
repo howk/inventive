@@ -615,6 +615,10 @@ input.search-header__input{
     margin-bottom: 15px;
 }
 
+.submenu.submenu-booking {
+	margin-bottom: 35px;
+}
+
 .submenu__link {
     position: relative;
     font-weight: 700;
@@ -1790,7 +1794,7 @@ input.file-sec__text{
 }
 .filter-panel{
 	display: flex;
-	align-items: flex-start;
+	align-items: flex-end;
 	margin: 0 -5px;
 	padding: 0 0 50px;
 }
@@ -1834,7 +1838,7 @@ input.control-filter__input{
 	display: block;
 	font-size: 15px;
 	line-height: 1;
-	padding: 10px 0 0 0;
+	padding: 0 0 10px 0;
 }
 .required-item{
 	color: #FF0000;
@@ -2031,9 +2035,6 @@ input.control-filter__input{
 .line-card__text{
 	font-size: 15px;
 	line-height: 1.2;
-}
-.calend-reservation__heading .control-filter__label{
-	padding: 0 0 10px;
 }
 .calend-reservation__heading .control-filter{
 	max-width: 330px;
@@ -2309,9 +2310,12 @@ input.control-filter__input{
 	background-image: url('../img/sort-icon.svg');
 	border: none;
 	position: relative;
-	top: 7px;
+	top: -7px;
 	flex: 0 0 auto;
 	margin: 0 15px;
+}
+.filter-panel__item--date{
+	min-width: 165px;
 }
 .filter-panel__item--sort{
 	display: flex;
