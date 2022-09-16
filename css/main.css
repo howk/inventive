@@ -314,12 +314,22 @@ p{
 .header__audioplayer{
 	max-width: 240px;
 	margin-right: 10px;
+	transition-property: width;
+	transition-duration: 200ms;
+	transition-timing-function: ease;
 }
 .header__audioplayer.audioplayer-widget {
 	display: none;
 }
 .header__audioplayer.header__audioplayer--active{
 	display: flex;
+}
+@media (min-width: 992px) {
+	.header__audioplayer.header__audioplayer--hidden{
+		width: 0;
+		overflow: hidden;
+		margin-right: 0;
+	}
 }
 .audioplayer-widget{
 	width: 100%;

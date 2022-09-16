@@ -381,6 +381,20 @@ window.onload = function () {
         });
     }    
 
+    const headerSearchFieldElement = document.querySelector('.search-header__input');
+    const headerAudioplayerElement = document.querySelector('.header__audioplayer');
+    if (headerSearchFieldElement && headerAudioplayerElement) {
+        headerSearchFieldElement.addEventListener('focus', () => {
+            if (headerAudioplayerElement.classList.contains('header__audioplayer--active')) {
+                headerAudioplayerElement.classList.add('header__audioplayer--hidden');
+            }
+        });
+        headerSearchFieldElement.addEventListener('blur', () => {
+            if (headerAudioplayerElement.classList.contains('header__audioplayer--active')) {
+                headerAudioplayerElement.classList.remove('header__audioplayer--hidden');
+            }
+        });        
+    }
 }
 
 
