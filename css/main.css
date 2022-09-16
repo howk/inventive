@@ -49,10 +49,12 @@
 	--bs-colornavlink:#c4c4c4;
 	--bs-colororange:#FFB800;
 }
+/*
 html{
 	overflow-y:scroll;
 	overflow-x:hidden
 }
+*/
 html, body{
 	height:100%
 }
