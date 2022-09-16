@@ -1449,6 +1449,12 @@ textarea.form-modal__input{
 	border-radius: 15px;
 	resize: none;
 }
+.form-modal__warning{
+	padding-top: 10px;
+	font-size: 15px;
+	color: #FF0000;
+	display: block;
+}
 .form-modal__item{
 	margin: 0 0 20px;
 }

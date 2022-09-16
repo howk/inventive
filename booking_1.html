@@ -117,7 +117,7 @@
 					<div class="main__content content-main">
 						<div class="main__panel panel-main">
 							<div class="panel-main__container">
-								<h1 class="panel-main__title">Бронь переговорных</h1>
+								<h1 class="panel-main__title" data-bs-toggle="modal" data-bs-target="#reservationModal">Бронь переговорных</h1>
 								<div class="panel-main__link-item"><a href="#" class="back-link">На главную</a></div>
 							</div>
 							<nav class="submenu submenu-booking">
@@ -1272,10 +1272,12 @@
 										</ul>
 									</div>
 								</div>
+								<span class="form-modal__warning">Укажи тип встречи</span>
 							</div>
 							<div class="form-modal__item">
 								<label for="" class="form-modal__label">Название встречи<span class="required-info">*</span></label>
 								<input class="form-modal__input" type="text" name="" required />
+								<span class="form-modal__warning">Укажи название встречи</span>
 							</div>
 							<div class="form-modal__item">
 								<div class="form-modal__check check-form">
