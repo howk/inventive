@@ -46,18 +46,26 @@
     .name-h {width: 140px}
     .day-h,.day-vacation {width: 80px}
 
-    .header__container{ padding: 20px 0 105px; position: relative;}
-    .header__profile{ position: absolute; left: 0; bottom: 53px; z-index: 1; padding: 0;}
+    .header__container{ padding: 20px 0; flex-wrap: wrap; gap: 20px 0;}
+    
     .profile-header__item:first-child{ order: 2;}
     .profile-header__item:not(:last-child){ margin: 0 0 0 10px;}
-    .coin-header{ position: absolute; bottom: 53px; left: 90px; right: 50px;}
-    .coin-header__item{ padding: 0 0 0 10px;}
+    
+    .coin-header__item{ padding: 0;}
+    .coin-header__item:not(:first-child){ padding-left: 10px;}
     .card-coin__label{ justify-content: center;}
     .header__btn{ display: block; bottom: 53px;}
-    .header__audioplayer{position: absolute; bottom: 10px; left: 0; max-width: 100%;}    
+        
 
     .disk-files-list_view-card .disk-files-item {width:calc(25% - 14px);}
     .disk-files-list_view-card_big .disk-files-item {width:calc(33.333% - 14px);}
+    .header__logo {order: 1; flex-grow: 0;}
+    .header__profile{order: 3; padding: 0; margin-right: 10px;}
+    .header__audioplayer{order: 6; flex-grow: 1; width: 100%; margin: 0; max-width: 100%;}
+    .header__search{order: 2; flex-grow: 1; width: calc(100% - 80px)}
+    .header__coin{order: 4; width: calc(100% - 150px)}
+    .header__btn {position: relative; bottom: 0; order: 5; margin-left: 10px;}
+
 }
 @media (max-width: 900px){
     .panel-main__filter {
@@ -75,7 +83,6 @@
     .profile__col--sidebar .card-profile{width: 100%; flex: initial;}
 }
 @media (max-width: 768px) {
-    .header__container{ padding: 20px 0 55px; position: relative;}
     .main-banner__title{ display: block;}
     .sidebar-main, .nav-main__link--new, .home .sidebar-main, .news-home .sidebar-main{ display: none;}
     .sidebar-main{order: 1; width: 100%; margin: 0 0 30px; padding: 30px 15px;}
@@ -286,6 +293,11 @@
     .mobile-block-576 {display: none}
 }
 @media (max-width: 576px) {
+    .header__container{gap: 15px 0;}    
+    .header__profile{order: 3; padding: 0; margin-right: 10px;}
+    .header__search{width: calc(100% - 60px)}
+    .header__coin{width: calc(100% - 102px)}
+    .audioplayer-widget__track {font-size: 13px;}
     .footer__info{ align-items: flex-start;}
     .footer__contacts-info{ flex-direction: column; align-items: flex-start;}
     .footer__contacts{ padding: 0 0 10px;}
@@ -315,10 +327,8 @@
     input.search-header__input, .search-header__submit{ height: 28px;}
     .search-header__submit{ background-size: 16px 25px;}
     .profile-header__link{ width: 24px; height: 24px;}
-    .header__container{ padding: 20px 0 40px;}
     .profile-header__link--wifi svg{ width: 16px;}
     .profile-header__link--user svg{ width: 11px;}
-    .coin-header{ left: 58px; right: 34px;}
     .card-coin--info .card-coin__icon{ display: none;}
     .card-coin--info .card-coin__label{padding: 3px 8px 0;}
     .card-coin__label{ font-size: 12px;}

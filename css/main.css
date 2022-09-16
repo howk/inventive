@@ -315,6 +315,12 @@ p{
 	max-width: 240px;
 	margin-right: 10px;
 }
+.header__audioplayer.audioplayer-widget {
+	display: none;
+}
+.header__audioplayer.header__audioplayer--active{
+	display: flex;
+}
 .audioplayer-widget{
 	width: 100%;
 	display: flex;
