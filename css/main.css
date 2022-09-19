@@ -553,6 +553,9 @@ input.search-header__input{
 	position: relative;
 	padding: 0 0 15px;
 }
+.nav-main__link:last-child{
+	margin: 0;
+}
 
 .nav-main__link:after, .submenu__link:after{
 	content: "";
@@ -644,8 +647,12 @@ input.search-header__input{
     line-height: 24px;
     color:var(--bs-colornavlink);
     text-decoration:none;
-    padding: 0 0 15px;
-    margin: 0 25px 0 0;
+    padding: 0 0 13px;
+    margin: 0 23px 0 0;
+}
+
+.submenu__link:last-child {
+	margin: 0;
 }
 
 .submenu__link:hover, .submenu__link_active {
