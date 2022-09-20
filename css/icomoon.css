@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-folder-minus:before {
+    content: "\e91d";
+  }
   .icon-close:before {
     content: "\e900";
   }
@@ -112,4 +115,5 @@
   .icon-share:before {
     content: "\e91c";
   }
+  
   

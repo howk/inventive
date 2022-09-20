@@ -5099,6 +5099,16 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	padding: 0;
 }
 
+.file-tree .file-tree {
+	display: none;
+	z-index: -1;
+}
+
+.file-tree.file-tree--active {
+	display: block;
+	z-index: auto;
+}
+
 .file-tree__item {
 	position: relative;
 	padding-left: 30px;
@@ -5108,6 +5118,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	margin: 0;
 }
 
+/*
 .file-tree__item::before {
 	content: '';
 	width: auto;
@@ -5118,7 +5129,46 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	top: 8px;
 	pointer-events: none;
 }
+*/
 
+.file-tree__folder-handler {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 0;
+	top: 8px;
+	border: none;
+	background: transparent;
+}
+
+.file-tree__folder-handler:not(:disabled) {
+	cursor: default;
+}
+
+.file-tree__folder-handler::before {
+	font-family: 'icomoon';
+	content: '';
+	width: auto;
+	height: 22px;
+	font-size: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: '\e919';
+}
+
+.file-tree__folder-handler--collapsed::before {
+	content: '\e91a';
+	cursor: pointer;
+}
+
+.file-tree__folder-handler--expanded::before {
+	content: '\e91d';
+	cursor: pointer;
+}
+
+
+/*
 .file-tree__item--folder::before {
 	font-family: 'icomoon';
 	content: '\e919';
@@ -5128,6 +5178,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	font-family: 'icomoon';
 	content: '\e91a';
 }
+*/
 
 .file-tree__item::after {
 	content: '';
@@ -5147,16 +5198,15 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 
 .file-tree__name {
 	display: block;
-	padding: 12px 0 12px 43px;
+	padding: 12px 0 12px 13px;
 	font-size: 15px;
 	line-height: 19px;
-	margin-left: -30px;
 	cursor: pointer;
 	color: #000;
 	white-space: nowrap;
 }
 
-.file-tree__item--active::before {
+.file-tree__item--active > .file-tree__folder-handler::before {
 	color: #00BAC6;
 }
 

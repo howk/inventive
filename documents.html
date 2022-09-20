@@ -698,24 +698,30 @@
 					<h2 class="modal-content__title">Переместить</h2>
 					<form class="modal-content__form form-modal">
 						<div class="scroll-content-xy file-tree-scroll">
-							<ul class="file-tree">
-								<li class="file-tree__item file-tree__item--folder file-tree__item--root">
+							<ul class="file-tree" data-tree="true">
+								<li class="file-tree__item file-tree__item--root">
 									<span class="file-tree__name">Диск: все</span>
+									<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
 									<ul class="file-tree">
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Розничная сеть</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder  file-tree__item--active">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+											<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
 											<ul class="file-tree">
-												<li class="file-tree__item file-tree__item--folder">
+												<li class="file-tree__item">
 													<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+													<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
 													<ul class="file-tree">
-														<li class="file-tree__item file-tree__item--folder">
+														<li class="file-tree__item">
 															<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+															<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
 															<ul class="file-tree">
-																<li class="file-tree__item file-tree__item--folder">
+																<li class="file-tree__item">
 																	<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+																	<button class="file-tree__folder-handler"></button>
 																</li>
 															</ul>
 														</li>
@@ -723,58 +729,79 @@
 												</li>
 											</ul>
 										</li>
-										<li class="file-tree__item file-tree__item--folder-add">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по информационным технологиям</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция качества и работы с обращениями</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция маркетинга</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция развития и инновационных проектов</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по развитию и эксплуатации</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по управлению персоналом</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по финансам</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по логистике</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Регламентирующие документы</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция качества и работы с обращениями</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция маркетинга</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция развития и инновационных проектов</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по развитию и эксплуатации</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по управлению персоналом</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по финансам</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Дирекция по логистике</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
-										<li class="file-tree__item file-tree__item--folder">
+										<li class="file-tree__item">
 											<span class="file-tree__name">Регламентирующие документы</span>
+											<button class="file-tree__folder-handler"></button>
 										</li>
 									</ul>
+								</li>
+								<li class="file-tree__item file-tree__item--root">
+									<span class="file-tree__name">Регламентирующие документы</span>
+									<button class="file-tree__folder-handler"></button>
 								</li>
 							</ul>
 						</div>

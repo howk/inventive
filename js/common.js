@@ -395,6 +395,39 @@ window.onload = function () {
             }
         });        
     }
+
+    const fileTree = document.querySelectorAll('[data-tree=true]');
+    if (fileTree.length > 0) {
+        fileTree.forEach((tree) => {
+            tree.addEventListener('click', (event) => {
+                event.preventDefault();
+                event.stopPropagation();
+                const item = event.target.closest('.file-tree__item');
+                if (event.target.classList.contains('file-tree__name')) {
+                    // Выбор итема
+                    if (item.classList.contains('file-tree__item--active')) {
+                        item.classList.remove('file-tree__item--active');
+                    } else {
+                        const prevActive = tree.querySelector('.file-tree__item--active');
+                        if (prevActive) {
+                            prevActive.classList.remove('file-tree__item--active');
+                        }
+                        item.classList.add('file-tree__item--active');
+                    }
+                } else if (event.target.classList.contains('file-tree__folder-handler--collapsed')) {
+                    // "Раскрывание" директории
+                    event.target.classList.add('file-tree__folder-handler--expanded');
+                    event.target.classList.remove('file-tree__folder-handler--collapsed');
+                    event.target.nextElementSibling.classList.add('file-tree--active');
+                } else if (event.target.classList.contains('file-tree__folder-handler--expanded')) {
+                    // "Скрывание" директории
+                    event.target.classList.add('file-tree__folder-handler--collapsed');
+                    event.target.classList.remove('file-tree__folder-handler--expanded');
+                    event.target.nextElementSibling.classList.remove('file-tree--active');
+                }
+            });
+        });
+    }
 }
 
 
