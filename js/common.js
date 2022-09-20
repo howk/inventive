@@ -381,19 +381,53 @@ window.onload = function () {
         });
     }    
 
-    const headerSearchFieldElement = document.querySelector('.search-header__input');
+    const headerSearch = document.querySelector('.search-header__content');
+    const headerSearchField = document.querySelector('.search-header__input');
+    const headerSearchDropdown = document.querySelector('.search-dropdown');
     const headerAudioplayerElement = document.querySelector('.header__audioplayer');
-    if (headerSearchFieldElement && headerAudioplayerElement) {
-        headerSearchFieldElement.addEventListener('focus', () => {
+
+    if (headerSearchField) {
+        headerSearchField.addEventListener('input', (event) => {
+            if (event.target.value === '') {
+                hideHeaderDropdown();
+            } else {
+                showHeaderDropdown();
+            }
+        });
+    }
+
+    function expandHeaderSearch() {
+        if (headerAudioplayerElement) {
             if (headerAudioplayerElement.classList.contains('header__audioplayer--active')) {
                 headerAudioplayerElement.classList.add('header__audioplayer--hidden');
             }
-        });
-        headerSearchFieldElement.addEventListener('blur', () => {
+        }
+    }
+
+    function collapseHeaderSearch() {
+        if (headerAudioplayerElement) {
             if (headerAudioplayerElement.classList.contains('header__audioplayer--active')) {
                 headerAudioplayerElement.classList.remove('header__audioplayer--hidden');
             }
-        });        
+        }
+    }
+
+    function showHeaderDropdown() {
+        if (headerSearchDropdown) {
+            headerSearchDropdown.classList.add('search-dropdown--active');
+        }
+    }
+
+    function hideHeaderDropdown() {
+        if (headerSearchDropdown) {
+            headerSearchDropdown.classList.remove('search-dropdown--active');
+        }        
+    }    
+
+    if (headerSearch && headerAudioplayerElement) {
+        headerSearch.addEventListener('click', () => {
+            expandHeaderSearch();
+        });      
     }
 
     const fileTree = document.querySelectorAll('[data-tree=true]');
@@ -459,13 +493,18 @@ window.onload = function () {
         });
     }
 
-    document.addEventListener('click', function() {
+    document.addEventListener('click', function(event) {
         diskFilesCloseContextMenu();
+        if (!event.target.closest('.search-header__content')) {
+            collapseHeaderSearch();
+            hideHeaderDropdown();
+        }        
     }); 
 
     document.addEventListener('keydown', function(event){
         if (event.key === "Escape"){
             diskFilesCloseContextMenu();
+            collapseHeaderSearch();
         }
     });    
 

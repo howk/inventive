@@ -332,6 +332,8 @@
     .btn-gray-border:hover{ background: #C4C4C4; border-color: #C4C4C4;}
     .header__logo{ width: 45px;}
     input.search-header__input, .search-header__submit{ height: 28px;}
+    .search-dropdown {top: 28px;}
+    .search-list__item {width: 100%;}
     .search-header__submit{ background-size: 16px 25px;}
     .profile-header__link{ width: 24px; height: 24px;}
     .profile-header__link--wifi svg{ width: 16px;}
@@ -500,6 +502,8 @@
     .b-box-vacancy .vacancy-group-head-item {flex-basis: 100%;text-align: center}
     .vacancy-info-post-group-item {flex-basis: 100%}
     .datap-ofise .datap-ofise-item:first-child .month-calendar__title {text-align: right; margin-right: -6px;}
+    .search-list__item-avatar {width: 34px; height: 34px;}
+    .search-list__item-name {font-size: 12px; line-height: 17px;}
 }
 @media (max-width: 420px) {
     .profile-header__item:not(:last-child){margin: 0 0 0 5px;}
