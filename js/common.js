@@ -428,6 +428,47 @@ window.onload = function () {
             });
         });
     }
+
+    const diskFilesList = document.querySelector('.disk-files-list');
+    function diskFilesCloseContextMenu() {
+        if (diskFilesList) {
+            const activeContextMenu = diskFilesList.querySelector('.disk-files-item__context-menu.disk-files-item__context-menu--active');
+            if (!activeContextMenu) return;
+            activeContextMenu.classList.remove('disk-files-item__context-menu--active');
+        }
+    }
+
+    const diskFilesListItems = document.querySelectorAll('.disk-files-item');
+    if (diskFilesListItems.length > 0) {
+        diskFilesListItems.forEach((item) => {
+            item.addEventListener('contextmenu', (event) => {
+                if (!event.target.closest('.disk-files-actions')) {
+                    event.preventDefault();
+                    const rect = item.getBoundingClientRect();
+                    const x = event.clientX - rect.left;
+                    const y = event.clientY - rect.top;
+                    const dropDown = item.querySelector('.disk-files-item__context-menu');
+                    if (dropDown) {
+                        diskFilesCloseContextMenu();
+                        dropDown.style.top = `${y}px`;
+                        dropDown.style.left = `${x}px`;
+                        dropDown.classList.add('disk-files-item__context-menu--active');
+                    }
+                }
+            });
+        });
+    }
+
+    document.addEventListener('click', function() {
+        diskFilesCloseContextMenu();
+    }); 
+
+    document.addEventListener('keydown', function(event){
+        if (event.key === "Escape"){
+            diskFilesCloseContextMenu();
+        }
+    });    
+
 }
 
 

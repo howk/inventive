@@ -3956,7 +3956,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 }
 
 .disk-files-list_view-list .disk-files__header,
-.disk-files-list_view-list .disk-files-item {display:table-row;}
+.disk-files-list_view-list .disk-files-item {display:table-row; position: relative;}
 .disk-files-list_view-list .disk-files__column {display:table-cell;  padding: 7px 10px 5px; vertical-align: middle; border-bottom: 2px solid var(--bs-graycolor);}
 
 .disk-files-list_view-list .disk-files__column_check {padding-left:0;}
@@ -3979,6 +3979,14 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
     margin:-10px -20px;
     background: var(--bs-graycolor);
     caret-color:var(--bs-greencolor);
+}
+
+.disk-files-item__context-menu {
+	display: none;
+}
+
+.disk-files-item__context-menu--active {
+	display: block;
 }
 
 .disk-files-list_view-card .disk-files-item__title {width:100%; height:100%; margin-top:15px;}
