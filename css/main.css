@@ -1028,7 +1028,8 @@ input.search-header__input{
 .vacancies__caption{
 	flex-grow: 1;
 	font-size: 15px;
-	height: 38px;
+	line-height: 18px;
+	height: 36px;
 	overflow: hidden;
 }
 .vacancies__caption ul{
@@ -1054,6 +1055,15 @@ input.search-header__input{
 	line-height: 1;
 	font-weight: bold;
 	margin: 0 0 30px;
+}
+.survey__item.radio-wrap__item{
+	margin-bottom: 3px;
+}
+.survey__item-text{
+	font-size: 15px;
+	line-height: 18px;
+	height: 36px;
+	overflow: hidden;
 }
 .radio-wrap__item{
 	margin: 0 0 25px;
@@ -1102,6 +1112,9 @@ input.search-header__input{
 }
 .initiatives__caption{
 	font-size: 15px;
+	line-height: 18px;
+	height: 36px;
+	overflow: hidden;
 	margin: 0 0 15px;
 }
 .initiatives__like-wrap,
@@ -1112,7 +1125,7 @@ input.search-header__input{
 	cursor: pointer;
 }
 .initiatives__item{
-	margin: 0 0 22px;
+	margin: 0 0 24px;
 }
 .initiatives__like-ico,
 .like-wrap__icon,
