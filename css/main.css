@@ -1403,6 +1403,31 @@ input.search-header__input{
 .news-sidebar{
 	padding: 0 0 15px;
 }
+
+.services-favorites-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.services-favorites-list__link {
+	position: relative;
+	text-decoration: none;
+	color: #000;
+	padding-left: 30px;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 18px;
+}
+.services-favorites-list__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+.services-favorites-list__icon {
+	font-size: 16px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
 /*-----------------modal-------------------*/
 .modal--container .modal-dialog{
 	max-width: 420px;
