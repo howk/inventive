@@ -2481,6 +2481,14 @@ input.control-filter__input{
 	font-size: 10px;
 	line-height: 1;
 }
+.table-reserv-item__time-reserv-label {
+	display: none;
+	text-align: center;
+	font-size: 15px;
+	line-height: 18px;
+	margin-bottom: 2px;
+	color: #000;
+}
 .table-reserv-item__time-reserv{
 	min-width: 32px;
 	width: 32px;

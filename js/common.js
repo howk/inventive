@@ -508,6 +508,16 @@ window.onload = function () {
         }
     });    
 
+    const reservList = document.querySelectorAll('.table-reserv-item__row');
+    if (reservList.length > 0) {
+        reservList.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                if (event.target.closest('.table-reserv-item__name')) {
+                    item.classList.toggle('table-reserv-item__row--collapsed');
+                }
+            });
+        });
+    }
 }
 
 

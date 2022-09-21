@@ -25,95 +25,96 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-folder-minus:before {
-    content: "\e91d";
-  }
-  .icon-close:before {
-    content: "\e900";
-  }
-  .icon-player-next:before {
-    content: "\e901";
-  }
-  .icon-player-play:before {
-    content: "\e902";
-  }
-  .icon-player-prev:before {
-    content: "\e903";
-  }
-  .icon-in:before {
-    content: "\e904";
-  }
-  .icon-youtube:before {
-    content: "\e905";
-  }
-  .icon-telegramm:before {
-    content: "\e906";
-  }
-  .icon-facebook:before {
-    content: "\e907";
-  }
-  .icon-insta:before {
-    content: "\e908";
-  }
-  .icon-vk:before {
-    content: "\e909";
-  }
-  .icon-like:before {
-    content: "\e90a";
-  }
-  .icon-comment:before {
-    content: "\e90b";
-  }
-  .icon-fav1:before {
-    content: "\e90c";
-  }
-  .icon-fav2:before {
-    content: "\e90d";
-  }
-  .icon-heart:before {
-    content: "\e90e";
-  }
-  .icon-hr:before {
-    content: "\e90f";
-  }
-  .icon-important:before {
-    content: "\e910";
-  }
-  .icon-it:before {
-    content: "\e911";
-  }
-  .icon-office:before {
-    content: "\e912";
-  }
-  .icon-privilegies:before {
-    content: "\e913";
-  }
-  .icon-smile:before {
-    content: "\e914";
-  }
-  .icon-bin:before {
-    content: "\e915";
-  }
-  .icon-document_add:before {
-    content: "\e916";
-  }
-  .icon-download:before {
-    content: "\e917";
-  }
-  .icon-edit:before {
-    content: "\e918";
-  }
-  .icon-folder:before {
-    content: "\e919";
-  }
-  .icon-folder_add:before {
-    content: "\e91a";
-  }
-  .icon-settings:before {
-    content: "\e91b";
-  }
-  .icon-share:before {
-    content: "\e91c";
-  }
-  
-  
+.icon-chevron:before {
+  content: "\e91e";
+}
+.icon-folder-minus:before {
+  content: "\e91d";
+}
+.icon-close:before {
+  content: "\e900";
+}
+.icon-player-next:before {
+  content: "\e901";
+}
+.icon-player-play:before {
+  content: "\e902";
+}
+.icon-player-prev:before {
+  content: "\e903";
+}
+.icon-in:before {
+  content: "\e904";
+}
+.icon-youtube:before {
+  content: "\e905";
+}
+.icon-telegramm:before {
+  content: "\e906";
+}
+.icon-facebook:before {
+  content: "\e907";
+}
+.icon-insta:before {
+  content: "\e908";
+}
+.icon-vk:before {
+  content: "\e909";
+}
+.icon-like:before {
+  content: "\e90a";
+}
+.icon-comment:before {
+  content: "\e90b";
+}
+.icon-fav1:before {
+  content: "\e90c";
+}
+.icon-fav2:before {
+  content: "\e90d";
+}
+.icon-heart:before {
+  content: "\e90e";
+}
+.icon-hr:before {
+  content: "\e90f";
+}
+.icon-important:before {
+  content: "\e910";
+}
+.icon-it:before {
+  content: "\e911";
+}
+.icon-office:before {
+  content: "\e912";
+}
+.icon-privilegies:before {
+  content: "\e913";
+}
+.icon-smile:before {
+  content: "\e914";
+}
+.icon-bin:before {
+  content: "\e915";
+}
+.icon-document_add:before {
+  content: "\e916";
+}
+.icon-download:before {
+  content: "\e917";
+}
+.icon-edit:before {
+  content: "\e918";
+}
+.icon-folder:before {
+  content: "\e919";
+}
+.icon-folder_add:before {
+  content: "\e91a";
+}
+.icon-settings:before {
+  content: "\e91b";
+}
+.icon-share:before {
+  content: "\e91c";
+}
