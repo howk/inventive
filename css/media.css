@@ -17,6 +17,7 @@
     .table-reserv-item__heading:after{ content: ""; position: absolute; top: 0; left: 0; width: 54px; background-color: #fff; 
     bottom: 10px; z-index: 3; box-shadow: 8px 0 5px -5px rgba(0,0,0,.15);}
     .panel-main__title, .content-main__title{ font-size: 24px;}
+    .club__main-title{ font-size: 25px; letter-spacing: 0.125em;}
     .content-main__title{margin: 0 0 30px;}
     .panel-main__link-item{ margin: 0 0 0 20px;}
     .panel-main__control, .panel-main__view{padding: 0 0 0 20px;}
@@ -66,7 +67,9 @@
     .header__search{order: 2; flex-grow: 1; width: calc(100% - 80px)}
     .header__coin{order: 4; width: calc(100% - 150px)}
     .header__btn {position: relative; bottom: 0; order: 5; margin-left: 10px;}
-
+    .nominee-list__item {flex-wrap: wrap;}
+    .nominee-list__user {padding-top: 0; margin-bottom: 6px;}
+    .nominee-list__params-list {width: 100%; justify-content: flex-start;}
 }
 @media (max-width: 900px){
     .panel-main__filter {
@@ -206,7 +209,7 @@
     .panel-main__title {width:100%; margin-bottom:20px;}
     .panel-main__row {flex-grow: 1;}
 
-    .panel-main__container_2 .panel-main__link-item {;}
+    .panel-main__container_2 .panel-main__link-item {}
     .panel-main__container_2 .panel-main__row {order:2;}
 
     .panel-main__search {
@@ -237,6 +240,31 @@
     }
 
     .disk-files-list_view-card_big .disk-files-item {width:calc(50% - 14px);}
+    .club__back-link {display: none;}
+    .club__container--heading {flex-wrap: wrap;}
+    .club__container--heading .panel-main__title {margin-bottom: 50px;}
+    .club__container-btn-wrap{width: 100%;}
+    .club__container-btn-wrap .btn-black {min-height: 46px; min-width: 275px;}
+    .club-tabs-nav__item {font-size: 18px; padding: 18px;}
+    .nominee-list {gap: 8px;}
+    .nominee-list__item {width: 100%;}
+    .ranking-title {width: calc(100% - 40px); margin-left: auto; margin-right: auto;}
+    .club__container--heading {margin-bottom: 0;}
+    .nominee-filter__label {
+        display: none;
+    }
+    .nominee-filter__control {
+        width: 100%;
+    }
+    .nominee-filter__item {
+        width: 50%;
+    }
+    .nominee-filter__item--mobile {
+        display: flex;
+    }
+    .nominee-filter-month {
+        display: none;
+    }
 }
 @media (max-width: 700px){
     .filter-panel__item {
@@ -250,7 +278,7 @@
     .filter-panel__item--btn {
         width: auto;
         flex-grow: 1;
-    }    
+    }
 }
 @media (max-width: 640px) {
     .main-rows__item{ width: 100%;}
@@ -353,10 +381,12 @@
     .profile-header__link--user img{ width: 11px;}
     .modal--container .modal-dialog{ max-width: 100%;}
     .panel-main__title, .content-main__title{ font-size: 20px;}
+    .club__main-title{ font-size: 25px; letter-spacing: 0.125em;}
     .panel-main__title::after, .content-main__title::after{ bottom: -5px; width: 12px; height: 5px;}
     .reservation__emblem{ width: 26px; height: 26px;}
     .panel-main__view{ bottom: 3px;}
     .filter-panel{ flex-wrap: wrap; padding: 0 0 45px; gap: 0;}
+    .nominee-filter {flex-wrap: nowrap; padding: 0; gap: 0 20px;}
     .filter-panel__item { width: auto;}
     .filter-panel__item:nth-child(1),
     .filter-panel__item:nth-child(2),
@@ -483,6 +513,8 @@
     }
 
     .disk-files-list_view-card_big .disk-files-item {width:calc(100% - 14px);}
+    .club-tabs-nav {gap: 0 10px;}    
+    .club-tabs-nav__item {font-size: 15px; padding: 13px; min-height: 60px;}
 }
 @media (max-width: 450px) {
     .table-reserv-item__heading{ width: 34px;}
@@ -533,6 +565,9 @@
     .modal--reservation .form-modal__submit-wrap{ flex-direction: column;}
     .modal--reservation .form-modal__submit-wrap .form-modal__submit{ max-width: 100%;}
     .modal--reservation .form-modal__submit-wrap .form-modal__submit:not(:last-child){ margin: 0 0 10px;}
+    .modal--nominate-employee .form-modal__submit-wrap{ flex-direction: column;}
+    .modal--nominate-employee .form-modal__submit-wrap .form-modal__submit{ max-width: 100%;}
+    .modal--nominate-employee .form-modal__submit-wrap .form-modal__submit:not(:last-child){ margin: 0 0 10px;}    
     .modal--delete .form-modal__submit-wrap .form-modal__submit{max-width: 110px;}
     .post-filter__item{ font-size: 14px; margin: 0 10px 10px 0;}
     .form-modal__submit-wrap--s_between{ flex-direction: column; padding: 0;}
@@ -540,6 +575,7 @@
     .form-modal__submit-wrap--s_between .form-modal__submit:not(:first-child){margin: 10px 0 0 0;}
     .vacancy-post-item {flex-basis: 100%}
     .datap-ofise .name-h {width: 130px;}
+    .nominee-filter {gap: 0 10px;}
 } 
 @media (max-width: 360px) {
     .post-catalog--two_column .card-post__content,

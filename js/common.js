@@ -518,6 +518,26 @@ window.onload = function () {
             });
         });
     }
+    
+    const clubTabs = document.querySelectorAll('.club-tabs');
+    if (clubTabs.length > 0) {
+        clubTabs.forEach((item) => {
+            item.addEventListener('click', (event) => {
+                if (event.target.classList.contains('club-tabs-nav__item') && !event.target.classList.contains('club-tabs-nav__item--active')) {
+                    const tabAlias = event.target.dataset.tab;
+                    const prevNavActive = item.querySelector('.club-tabs-nav__item--active');
+                    const prevTabActive = item.querySelector('.club-tabs-content--active');
+                    const tabContentElement = item.querySelector(`.club-tabs-content[data-tab=${tabAlias}]`);
+                    if (prevNavActive && prevTabActive && tabContentElement) {
+                        prevNavActive.classList.remove('club-tabs-nav__item--active');
+                        prevTabActive.classList.remove('club-tabs-content--active');
+                        event.target.classList.add('club-tabs-nav__item--active');
+                        tabContentElement.classList.add('club-tabs-content--active');
+                    }
+                }
+            });
+        });
+    }       
 }
 
 
