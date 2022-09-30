@@ -70,6 +70,36 @@
     .nominee-list__item {flex-wrap: wrap;}
     .nominee-list__user {padding-top: 0; margin-bottom: 6px;}
     .nominee-list__params-list {width: 100%; justify-content: flex-start;}
+    .learning-calendar {
+        gap: 0 48px;
+    }
+    .learning-calendar__panel {
+        padding: 30px 20px;
+    }
+    .learning-calendar__month::after {
+        right: -25px;
+    }
+
+    .learning-columns {
+        gap: 0 20px;
+    }
+    .learning-columns__column:first-child {
+        width: 50%;
+    }
+    .learning-columns__column:last-child {
+        width: 50%;
+    }        
+    .training-edit-columns--dates {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .training-edit-columns--dates > div:first-child {
+        width: 100%;
+    }
+    .training-edit-columns--dates > div:nth-child(2),
+    .training-edit-columns--dates > div:nth-child(3) {
+        width: calc(50% - 10px);
+    }     
 }
 @media (max-width: 900px){
     .panel-main__filter {
@@ -85,6 +115,9 @@
     .box-calend{padding: 25px;}
     .profile__row{ display: block;}
     .profile__col--sidebar .card-profile{width: 100%; flex: initial;}
+    .learning-documents {gap: 15px 30px;}    
+    .learning-toolbar__button--all {padding: 20px 15px 20px 30px; min-width: 260px;}
+    .learning-toolbar__button--all .label {padding-left: 15px;}
 }
 @media (max-width: 768px) {
     .main-banner__title{ display: block;}
@@ -265,6 +298,136 @@
     .nominee-filter-month {
         display: none;
     }
+    .learning-toolbar {
+        flex-wrap: wrap;
+    }
+    .learning-toolbar .title {
+        text-transform: uppercase;
+    }    
+    .learning-toolbar__left {
+        width: 100%;
+        min-width: 160px;
+        border-bottom: 1px #000 solid;
+        padding-bottom: 28px;
+        margin-bottom: 30px;
+    }
+    .learning-toolbar__right {
+        width: 100%;
+        border-bottom: 1px #000 solid;
+        padding-bottom: 28px;        
+    }
+    .learning-portal {
+        padding: 20px;
+    }
+    .learning-documents {
+        background: none;
+        padding: 0;
+        gap: 10px 10px;
+    }
+    .learning-toolbar__button--all {
+        grid-row: auto;
+        grid-column: span 2;
+        border-radius: 15px;
+        justify-content: center;
+    }
+    .learning-toolbar__button--all .label {
+        max-width: 190px;
+    }
+    .learning-toolbar__button {
+        background-color: #F1F1F1;
+        min-height: 90px;
+    }
+    .learning-calendar {
+        flex-wrap: wrap;
+    }    
+    .learning-calendar__month {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    .learning-calendar__month::after {
+        display: none;
+    }
+    .learning-calendar__year {
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;        
+    }    
+    .learning-calendar__year .learning-calendar__panel {
+        padding: 0;
+        background: none;
+    }
+    .learning-calendar .month-calendar__date {
+        background-color: #fff;
+    }
+    .learning-calendar .month-calendar__date--disabled {
+        background-color: var(--bs-graycolor);
+    }    
+
+    .learning-columns {
+        flex-wrap: wrap;
+    }
+    .learning-columns__column:first-child,
+    .learning-columns__column:last-child {
+        width: 100%;
+    }
+    .learning-columns__column:first-child {
+        margin-bottom: 40px;
+    }
+    .learning-columns .learning-calendar {
+        padding: 0;
+        border-radius: 0;
+        background: none;
+    }
+    .learning-columns .learning-calendar__panel {
+        background: var(--bs-graycolor);
+    }
+    .learning-columns .calendar__td:not(:last-child) {
+        border-right: 2px #fff solid;
+        padding: 3px 0;
+    }
+    .learning-columns .learning-calendar .month-calendar__date {
+        background-color: var(--bs-graycolor);
+    }
+    .learning-columns .learning-calendar .month-calendar__date--disabled {
+        background-color: #fff;
+    }    
+    .training-edit {
+        margin-left: -40px;
+        margin-right: -40px;
+        border-radius: 0;
+        padding: 30px 40px;
+    }
+    .title-toggler {
+        background-color: var(--bs-graycolor);
+        margin: 0 -40px;
+        padding: 25px 40px;
+        position: relative;
+    }
+    .title-toggler::after {
+        font-family: 'icomoon';
+        content: '\e91e';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #000;
+        font-size: 12px;
+    }
+    .title-toggler.title-toggler--collapsed::after {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    .training-edit--collapsed {
+        display: none;
+    }
+    .data-list__item {
+        width: 100%;
+    }
 }
 @media (max-width: 700px){
     .filter-panel__item {
@@ -359,7 +522,8 @@
     .sidebar-main .btn-white{ background-color: #fff; color: #000;}
     .btn-gray-border:hover{ background: #C4C4C4; border-color: #C4C4C4;}
     .header__logo{ width: 45px;}
-    input.search-header__input, .search-header__submit{ height: 28px;}
+    .modal--choose-department input.search-header__input, .search-header__submit{ height: 28px;}
+    .modal--choose-department input.search-header__input, .search-header__submit{ height: 40px;}
     .search-dropdown {top: 28px;}
     .search-list__item {width: 100%;}
     .search-header__submit{ background-size: 16px 25px;}
@@ -545,6 +709,14 @@
     .datap-ofise .datap-ofise-item:first-child .month-calendar__title {text-align: right; margin-right: -6px;}
     .search-list__item-avatar {width: 34px; height: 34px;}
     .search-list__item-name {font-size: 12px; line-height: 17px;}
+    .department-buttons--active {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .department-buttons--active .department-buttons__plus {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 420px) {
     .profile-header__item:not(:last-child){margin: 0 0 0 5px;}

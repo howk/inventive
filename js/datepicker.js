@@ -183,17 +183,19 @@ const Defaults = {
 };
 
 class Calendar {
-  constructor(root, { minDate, maxDate, selectedDate }) {
+  constructor(root, { minDate, maxDate, selectedDate, eventsList }) {
     this._root = root;
 
     this._minDate = minDate || Defaults.minDate;
     this._maxDate = maxDate || Defaults.maxDate;
+    this._eventsList = eventsList || [];
 
     this._localize();
 
     this._createUi();
 
     this.setDate(selectedDate || new Date());
+    console.log(this);
   }
 
   /*
@@ -425,7 +427,16 @@ class Calendar {
               this._selectedDate.getMonth(),
               this._selectedDate.getDate()
             ).getTime()) {
-              span.classList.add(ClassNames.TABLE_CELL_SELECTED);
+              if (this._eventsList.length === 0) {
+                span.classList.add(ClassNames.TABLE_CELL_SELECTED);
+              }
+            }
+            if (this._eventsList.length > 0) {
+              this._eventsList.forEach((ev) => {
+                if (date.getFullYear() === ev.date.getFullYear() && date.getMonth() === ev.date.getMonth() && date.getDate() === ev.date.getDate()) {
+                  span.classList.add(ev.type);
+                }
+              });
             }
           } else {
             span.classList.add(ClassNames.TABLE_CELL_DISABLED);
@@ -434,7 +445,10 @@ class Calendar {
 
         row.appendChild(cell);
         cell.appendChild(span);
-        cell.appendChild(svg);
+        if (this._eventsList.length === 0) {
+          cell.appendChild(svg);
+        }
+        
 
         date.setDate(date.getDate() + 1);
       }
@@ -480,4 +494,3 @@ if (calendarElem.length > 0) {
     });
   });
 }
-

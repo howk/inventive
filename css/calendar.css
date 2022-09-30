@@ -81,3 +81,24 @@
 .calendar__table-cell_selected, .calendar__table-cell:hover {
     color: #00BAC6;
 }
+
+.calendar .event--purple {
+    border: 1.39px #B71CFC solid;
+    border-radius: 100%;
+    color: #B71CFC;
+    font-weight: 700;
+}
+
+.calendar .event--turquoise1 {
+    border: 1.39px #2CDAC7 solid;
+    border-radius: 100%;
+    color: #2CDAC7;
+    font-weight: 700;
+}
+
+.calendar .event--blueberry {
+    border: 1.39px #4E8BFF solid;
+    border-radius: 100%;
+    color: #4E8BFF;
+    font-weight: 700;
+}

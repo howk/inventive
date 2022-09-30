@@ -538,6 +538,13 @@ window.onload = function () {
             });
         });
     }       
+
+    const titleToggle = document.querySelector('.title-toggler');
+    const trainingEdit = document.querySelector('.training-edit');
+    titleToggle.addEventListener('click', () => {
+        titleToggle.classList.toggle('title-toggler--collapsed');
+        trainingEdit.classList.toggle('training-edit--collapsed');
+    })
 }
 
 
