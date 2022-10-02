@@ -6596,3 +6596,75 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 .post-edit__btn--black {
 	background-color: #000;
 }
+
+.post-docs {
+	margin-bottom: 16px;
+}
+
+.post-docs .title {
+	margin-bottom: 28px;
+}
+
+.post-docs__items {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+.post-doc-item {
+	min-height: 40px;
+	border-radius: 20px;
+	font-size: 15px;
+	line-height: 20px;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10px 30px;
+	background-color: #F1F1F1;	
+	text-decoration: none;
+	color: #000;
+	margin: 0 12px 16px 12px;
+}
+
+.post-doc-item__icon {
+	font-size: 20px;
+	margin-right: 16px;
+}
+
+.post-links {
+	margin-bottom: 38px;
+}
+
+.post-links__items {
+	background: #F1F1F1;
+	border-radius: 15px;
+	padding: 20px 25px;
+}
+
+.post-link-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+.post-link-item:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.post-link-item__name {
+	width: 200px;
+	padding-right: 20px;
+	flex-shrink: 0;
+}
+
+.post-link-item__url {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
