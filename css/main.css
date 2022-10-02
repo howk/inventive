@@ -1065,6 +1065,12 @@ input.search-header__input{
 	margin: 0 25px 0 0;
 	flex: 0 0 auto;
 }
+.vacancies__photo{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin: 0 25px 0 0;
+}
 .vacancies__caption{
 	flex-grow: 1;
 	font-size: 15px;
@@ -2923,6 +2929,7 @@ input.control-filter__input{
 .post-one__text{
 	font-size: 17px;
 	padding: 0 0 15px;
+	line-height: 1.2;
 }
 .post-one__text a{
 	color: var(--bs-greencolor);
@@ -2931,6 +2938,25 @@ input.control-filter__input{
 .post-one__text ul li{
 	margin: 0 0 10px;
 }
+
+.post-one__text h2 {
+	font-size: 20px;
+	line-height: 1;
+	margin: 38px 0 20px 0;
+	font-weight: bold;
+	position: relative;
+}
+
+.post-one__text p {
+	margin-bottom: 20px;
+}
+
+.post-one__text blockquote {
+	margin-left: 20px;
+	padding-left: 22px;
+	border-left: 6px #00BAC6 solid;
+}
+
 .comment-post__count{
 	margin: 0 0 30px;
 	position: relative;
@@ -6392,4 +6418,181 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 
 .modal--choose-department .form-modal__item {
 	margin-bottom: 25px;
+}
+
+.learning-article {
+	margin-bottom: 22px;
+}
+
+.video-placeholder {
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+
+.video-placeholder::after {
+	content: '';
+	inset: 0 0 0 0;
+	display: block;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 14px;
+	transition-property: background-color;
+	transition-timing-function: ease;
+	transition-duration: 200ms;
+}
+
+.video-placeholder__cover {
+	width: 100%;
+	display: block;
+	border-radius: 14px;
+}
+
+.video-placeholder__icon {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 140px;
+	color: rgba(255, 255, 255, 0.8);
+	transition-property: transform;
+	transition-timing-function: ease;
+	transition-duration: 200ms;	
+}
+
+.video-placeholder:hover::after {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+	
+.video-placeholder:hover .video-placeholder__icon {
+	transform: translate(-50%, -50%) scale(1.1, 1.1);
+}
+
+.post-addons {
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 0 25px;
+	margin-bottom: 36px;
+}
+
+.post-addons__left {
+	width: 38%;
+}
+
+.post-addons__right {
+	width: 62%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.post-addons__buttons {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0 38px;
+}
+
+.post-addons .title {
+	margin-bottom: 28px;
+}
+
+.learning-media {
+	padding: 30px;
+	background-color: var(--bs-graycolor);
+	border-radius: 15px;
+	margin-bottom: 30px;
+}
+
+.learning-media__item:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.post-addons__button-docs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40px;
+	border-radius: 20px;
+	font-size: 15px;
+	line-height: 1.2;
+	background-color: var(--bs-graycolor);
+	border: none;
+	width: 100%;
+}
+
+.media-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+.media-item__icon {
+	margin-right: 30px;
+	width: 34px;
+}
+
+.media-item__icon.icon-media-book {
+	height: 46px;
+	font-size: 46px;
+}
+
+.media-item__icon.icon-media-movie {
+	height: 29px;
+	font-size: 29px;
+	margin-top: 4px;
+	margin-bottom: -4px;	
+}
+
+.media-item__icon.icon-media-app {
+	height: 29px;
+	font-size: 29px;
+	margin-top: 4px;
+	margin-bottom: -4px;
+}
+
+.post-edit {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 36px 0;
+	gap: 0 32px;
+	position: relative;
+}
+
+.post-edit::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 100vw;
+	height: 1px;
+	border-top: 1px #000 solid;
+	top: 0;
+	transform: translateX(-50%);
+}
+
+.post-edit__btn {
+	min-height: 40px;
+	border-radius: 20px;
+	border: none;
+	font-size: 15px;
+	line-height: 1.2;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	min-width: 158px;
+	background-color: #C4C4C4;
+	color: #fff;
+}
+
+.post-edit__btn--black {
+	background-color: #000;
 }
