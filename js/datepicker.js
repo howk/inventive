@@ -195,7 +195,6 @@ class Calendar {
     this._createUi();
 
     this.setDate(selectedDate || new Date());
-    console.log(this);
   }
 
   /*
