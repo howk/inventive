@@ -6732,6 +6732,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	margin-bottom: 25px;
 }
 
+.initiative-detailed__title,
 .news-edit__title {
 	font-weight: 700;
 	font-size: 40px;
@@ -6870,7 +6871,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	background-color: transparent;
 	padding: 0;
 	overflow: hidden;
-	margin: 0;
+	margin: 0 0 35px;
 }
 
 .news-links--preview .news-links__row {
@@ -7048,4 +7049,37 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	width: 28px;
   height: 24px;
 	display: inline-block;
+}
+
+.caption-list {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 35px;
+}
+
+.caption-list li {
+	margin-bottom: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+}
+
+.caption-list__label {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	width: 30%;
+	padding-right: 20px;
+}
+
+.caption-list__value {
+	font-size: 17px;
+	line-height: 20px;
+	flex: auto;
+}
+
+.initiative-detailed__text {
+	font-size: 17px;
+	line-height: 20px;
+	margin-bottom: 40px;
 }
