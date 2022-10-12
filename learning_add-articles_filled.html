@@ -220,9 +220,9 @@
 					</div>
 				</div>
 				<div class="main__container">
-					<div class="main__content content-main news-edit">
-						<textarea style="height: 83px;" class="form-modal__input form-modal__input--white form-modal__input--large news-edit__textarea"  placeholder="Название новости">Cбор заявок в кадровый резерв на позицию «Директор магазина»</textarea>
-						<time class="post-one__time news-edit__time" datetime="2021-06-28">28.06.2021</time>
+					<div class="main__content content-main article-edit">
+						<h1 class="article-edit__title">Обучение</h1>
+						<input class="form-modal__input form-modal__input--white article-edit__name"  placeholder="Название проекта" value="Field trainers" />
 						<div class="add-image" style="background-image: url(img/news/news-learning2_2x.jpg)">
 							<a href="#" class="dropdown-item add-image__edit" title="Редактировать"><i
 								class="disk-files-action__icon icon-edit"></i></a>
@@ -234,52 +234,102 @@
 							</div>
 							<div class="news-editor__footer"></div>
 						</div>
-						<h2 class="title">Ссылки</h2>
-						<div class="news-links">
-							<div class="news-links__row">
-								<div class="news-links__col">
-									<div class="news-links__caption">Название</div>
-									<input class="form-modal__input form-modal__input--white" type="text" value="Статья про Lorem Ipsum:">
-								</div>
-								<div class="news-links__col">
-									<div class="news-links__caption">Ссылка</div>
-									<div class="news-links__item">
-										<input class="form-modal__input form-modal__input--white" type="text" value="https://www.loremipzum.com/en/text-generator">
-										<div class="news-links__remove"></div>
-									</div>
+						<div class="add-image" style="background-image: url(img/news_one/img4.jpg)">
+							<a href="#" class="dropdown-item add-image__edit" title="Редактировать"><i
+								class="disk-files-action__icon icon-edit"></i></a>
+							<div class="add-image__video-over"></div>
+						</div>
+						<div class="article-edit__row">
+							<div class="article-edit__col">
+								<h2 class="title">Полезные статьи</h2>
+								<div class="articles">
+									<ul>
+										<li>
+											<div class="articles__img"><img src="img/articles/1.jpg" alt=""></div>
+											<div class="articles__content">
+												<p>Field trainers day: встреча всех field-ов всех брендов ...</p>
+												<a href="">Подробнее...</a>
+											</div>
+										</li>
+										<li>
+											<div class="articles__img"><img src="img/articles/2.jpg" alt=""></div>
+											<div class="articles__content">
+												<p>Тренинг тренинг тренинг по поводу филдовства</p>
+												<a href="">Подробнее...</a>
+											</div>
+										</li>
+										<li>
+											<div class="articles__img"><img src="img/articles/3.jpg" alt=""></div>
+											<div class="articles__content">
+												<p>Вебинар: про вебинары</p>
+												<a href="">Подробнее...</a>
+											</div>
+										</li>
+										<li>
+											<div class="articles__img"><img src="img/articles/4.jpg" alt=""></div>
+											<div class="articles__content">
+												<p>Вебинар: “Транслируй позитивные мысли”</p>
+												<a href="">Подробнее...</a>
+											</div>
+										</li>
+									</ul>
+									<a href="" class="articles__show-all"><span>...</span>Все новости обучения</a>
 								</div>
 							</div>
-							<div class="news-links__row">
-								<div class="news-links__col">
-									<div class="news-links__caption">Название</div>
-									<input class="form-modal__input form-modal__input--white" type="text" value="Конференция в Zoom:">
-								</div>
-								<div class="news-links__col">
-									<div class="news-links__caption">Ссылка</div>
-									<div class="news-links__item">
-										<input class="form-modal__input form-modal__input--white" type="text" value="https://us02web.zoom.us/j/85723108734?pwd=QlhYM0с1M">
-										<div class="news-links__remove"></div>
+							<div class="article-edit__col">
+								<div class="recomendations">
+									<h2 class="title">Саморазвитие</h2>
+									<div class="recomendations__holder">
+										<ul>
+											<li>
+												<div class="recomendations__ico"><span class="icon-book"></span></div>
+												<div class="recomendations__text"><p>Книга «Название книги название название»,</p> Автор Авторович</div>
+												<div class="recomendations__controls">
+													<a href="#" data-bs-toggle="modal" data-bs-target="#selectActionModal"><span class="icon-edit"></span></a>
+													<a href=""><span class="icon-close"></span></a>
+												</div>
+											</li>
+											<li>
+												<div class="recomendations__ico"><span class="icon-book"></span></div>
+												<div class="recomendations__text"><p>Книга «Название книги название название»,</p> Автор Авторович</div>
+												<div class="recomendations__controls">
+													<a href="#" data-bs-toggle="modal" data-bs-target="#selectActionModal"><span class="icon-edit"></span></a>
+													<a href=""><span class="icon-close"></span></a>
+												</div>
+											</li>
+											<li>
+												<div class="recomendations__ico"><span class="icon-type"></span></div>
+												<div class="recomendations__text"><p>Фильм «Название фильма название название»,</p> Режиссёр Режиссёрович</div>
+												<div class="recomendations__controls">
+													<a href="#" data-bs-toggle="modal" data-bs-target="#selectActionModal"><span class="icon-edit"></span></a>
+													<a href=""><span class="icon-close"></span></a>
+												</div>
+											</li>
+											<li>
+												<div class="recomendations__ico"><span class="icon-app"></span></div>
+												<div class="recomendations__text"><p>Приложение «Название приложения»,</p> Разработчик</div>
+												<div class="recomendations__controls">
+													<a href="#" data-bs-toggle="modal" data-bs-target="#selectActionModal"><span class="icon-edit"></span></a>
+													<a href=""><span class="icon-close"></span></a>
+												</div>
+											</li>
+										</ul>
 									</div>
 								</div>
-							</div>
-							<div class="news-links__row">
-								<div class="news-links__col">
-									<div class="news-links__caption">Название</div>
-									<input class="form-modal__input form-modal__input--white" type="text" value="Запись вебинара:">
-								</div>
-								<div class="news-links__col">
-									<div class="news-links__caption">Ссылка</div>
-									<div class="news-links__item">
-										<input class="form-modal__input form-modal__input--white" type="text" value="https://www.zapis-vebinara.ru">
-										<div class="news-links__remove"></div>
+								<div class="doc-buttons">
+									<h2 class="title">Документы</h2>
+									<div class="doc-buttons__holder">
+										<div class="doc-buttons__item doc-buttons__item--filled">
+											<a href="#" data-bs-toggle="modal" data-bs-target="#selectFolderModal" class="btn-white btn-gray"><span>Field trainers</span><i class="icon-edit"></i></a>
+										</div>
+										<div class="doc-buttons__item">
+											<a href="" class="btn-white btn-gray">Все документы</a>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="news-links__add">
-								<span><b></b>Добавить ссылку</span>
 							</div>
 						</div>
-						<div class="news-edit__footer">
+						<div class="article-edit__footer">
 							<a href="" class="btn-dark">Предпросмотр</a>
 							<a href="" class="btn-dark">Опубликовать</a>
 						</div>
@@ -520,6 +570,98 @@
 				</div>
 			</div>
 		</div>		
+		<!-- Modal addRecomedation-->
+		<div class="modal modal--container fade" id="addRecomedationModal" tabindex="-1" aria-labelledby="addRecomedationModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content add-recomendation-modal">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-content__add-recomendation">
+						<h2 class="add-recomendation-modal__title">Добавить рекомендацию</h2>
+						<form class="modal-content__form form-modal">
+							<div class="form-modal__items">
+								<div class="form-modal__item">
+									<label for="" class="form-modal__label">Название<span class="required-info">*</span></label>
+									<input type="text" class="form-modal__input">
+								</div>							
+								<div class="form-modal__item">
+									<label for="" class="form-modal__label">Автор/режиссёр/разработчик<span class="required-info">*</span></label>
+									<input type="text" class="form-modal__input">
+								</div>
+								<div class="form-modal__item">
+									<div class="radio-wrap worth-wrap">
+										<div class="radio-wrap__item worth-wrap__item">
+											<input id="radio6" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+											<label for="radio6" class="radio-wrap__name worth-wrap__name">Книга</label>
+										</div>
+										<div class="radio-wrap__item worth-wrap__item">
+											<input id="radio7" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+											<label for="radio7" class="radio-wrap__name worth-wrap__name">Фильм/видеоролик</label>
+										</div>
+										<div class="radio-wrap__item worth-wrap__item">
+											<input id="radio8" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+											<label for="radio8" class="radio-wrap__name worth-wrap__name">Приложение</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-modal__submit-wrap">
+								<button class="form-modal__submit btn-black" data-bs-dismiss="modal" aria-label="Закрыть">Сохранить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Modal addRecomedation-->
+		<!-- Modal selectFolder-->
+		<div class="modal modal--container fade" id="selectFolderModal" tabindex="-1" aria-labelledby="selectFolderModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content select-folder-modal">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-content__select-folder-modal">
+						<h2 class="select-folder-modal__title">Выбрать папку</h2>
+						<form class="modal-content__form form-modal">
+							<div class="form-modal__items">
+								<div class="form-modal__item search-file">
+									<div class="search-file__content">
+										<input class="search-file__input" type="text" name="" value="Field Trainers">
+										<button class="search-file__submit"></button>
+									</div>
+								</div>							
+								<div class="form-modal__item">
+									<label for="" class="form-modal__label">Ссылка на папку</label>
+									<input type="text" class="form-modal__input" value="https://inventivespace.ru/docs/all/path/%D0%">
+								</div>
+							</div>
+							<div class="form-modal__submit-wrap">
+								<button class="form-modal__submit btn-black" data-bs-dismiss="modal" aria-label="Закрыть">Сохранить</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Modal selectFolder end-->
+		<!-- Modal selectAction-->
+		<div class="modal modal--container fade" id="selectActionModal" tabindex="-1" aria-labelledby="selectActionModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" style="align-items: flex-end;">
+				<div class="modal-content select-action-modal">
+					<div class="modal-content__select-folder-modal">
+						<form class="modal-content__form form-modal">
+							<div class="form-modal__submit-wrap">
+								<button class="form-modal__submit btn-gray" data-bs-dismiss="modal" aria-label="Удалить">Удалить</button>
+								<a href="#" data-bs-toggle="modal" data-bs-target="#addRecomedationModal" class="form-modal__submit btn-black" data-bs-dismiss="modal" aria-label="Редактировать">Редактировать</a>
+								<button type="button" class="form-modal__submit select-action-modal__close" data-bs-dismiss="modal" aria-label="Close"><span class="icon-close"></span></button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Modal selectAction end-->
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -560,27 +702,7 @@
 					]
 				});
 			});
-		}		
-
-		const mediaQuery = window.matchMedia('(max-width: 768px)')
-		const tx = document.getElementsByClassName("news-edit__textarea")[0];
-		let height = tx.scrollHeight + 2;
-		if (mediaQuery.matches) {
-			height = tx.scrollHeight - 41;
-		}
-		tx.setAttribute("style", "height:" + (height) + "px;overflow-y:hidden;");
-		tx.addEventListener("input", OnInput, false);
-		window.addEventListener('resize', OnInput, true);	
-		function OnInput() {
-			tx.style.height = 0;
-			height = tx.scrollHeight;
-			if (mediaQuery.matches) {
-				tx.style.height = (height) + "px";
-			} else {
-				tx.style.height = (height + 5) + "px";
-			}
-		}	
-								
+		}										
 	</script>	
 </body>
 

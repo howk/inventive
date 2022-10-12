@@ -129,6 +129,7 @@
     .learning-toolbar__button--all .label {padding-left: 15px;}
 }
 @media (max-width: 768px) {
+    .article-edit__title { margin-top: -30px; }
     .main-banner__title{ display: block;}
     .sidebar-main, .nav-main__link--new, .home .sidebar-main, .news-home .sidebar-main{ display: none;}
     .sidebar-main{order: 1; width: 100%; margin: 0 0 30px; padding: 30px 15px;}
@@ -494,7 +495,14 @@
     .post-links {
         border-top: 1px #000 solid;
         padding-top: 30px;
-    }    
+    }   
+    .article-edit__row .article-edit__col:first-of-type {
+        width: 100%;
+    }
+    
+    .article-edit__row .article-edit__col:last-of-type {
+        width: 100%;
+    } 
 }
 @media (max-width: 700px){
     .filter-panel__item {
@@ -808,34 +816,34 @@
         margin-bottom: 18px;
     }
 
-    .news-image {
+    .add-image {
         border: 3px dashed #c4c4c4;
         border-radius: 14px;
         height: 154px;
     }
 
-    .news-image--preview {
+    .add-image--preview {
         border: none;
     }
 
-    .news-image__plus {
+    .add-image__plus {
         width: 57px;
         height: 57px;
         top: -15px;
     }
 
-    .news-image__plus:before,
-    .news-image__plus:after {
+    .add-image__plus:before,
+    .add-image__plus:after {
         height: 21px;
     }
 
-    .news-image__caption {
+    .add-image__caption {
         font-size: 15px;
         line-height: 18px;
         margin-top: 25px;
     }
 
-    .news-image__caption span {
+    .add-image__caption span {
         display: none;
     }
 
@@ -856,7 +864,9 @@
         right: 40px;
     }
 
-    
+    .news-editor__holder {
+        padding: 15px 40px;
+    }
 
     .news-editor__footer {
         background-color: #fff;
@@ -889,6 +899,14 @@
         bottom: -20px;
         left: 30px;
         right: 0;
+    }
+
+    .article-edit .news-editor {
+        margin-bottom: 30px;
+    }
+
+    .article-edit .news-editor:before {
+        display: none;  
     }
 
     .news-docs li {
@@ -958,8 +976,128 @@
         background-color: #fff;
     }
 
-    .news-edit__footer {
-        
+    input.article-edit__name {
+        text-transform: uppercase;
+        padding: 2px 25px 0;
+    }
+
+    .add-image__video {
+        width: 57px;
+        height: 57px;
+        top: -15px;
+    }
+
+    .add-image__video:before {
+        width: 33px;
+        height: 25px;
+        font-size: 25px;
+    }
+
+    .add-image__caption {
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 25px;
+    }
+
+    .articles {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .article-edit .add-image {
+        margin-bottom: 60px;
+        position: relative;
+    }
+
+    .article-edit .add-image:before {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #000;
+        bottom: -35px;
+        left: 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .articles {
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .articles:before {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #000;
+        bottom: -35px;
+        left: 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .recomendations__holder {
+        position: relative;
+        margin: 0 -40px 50px;
+        background-color: transparent;
+        padding: 5px 0 0;
+    }
+
+    .recomendations__holder:before {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #000;
+        bottom: -15px;
+        right: 40px;
+        left: 40px;
+    }
+
+    .recomendations__holder ul li {
+        padding: 25px 40px;
+        margin-bottom: 0;
+    }
+
+    .recomendations__holder ul li:nth-of-type(odd) {
+        background-color: #f1f1f1;
+    }
+
+    .doc-buttons__holder {
+        margin-left: -10px;
+    }
+
+    .doc-buttons__item {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .doc-buttons__item a {
+        height: 90px;
+    }
+
+    .doc-buttons a span {
+        margin-top: 10px;
+        width: 100%;
+        flex: none;
+    }
+
+    .doc-buttons__item--filled span {
+        order: 1;
+    }
+
+    .doc-buttons__item--filled .icon-edit {
+        margin: 0;
+        order: 0;
+    }
+
+    .doc-buttons a .icon-link {
+        margin-right: 0;
+    }
+
+    .add-image__video-over {
+        width: 32px;
+        height: 36px;
+    }
+
+    .recomendations__controls a:last-of-type {
+        display: none;
     }
 }
 @media (max-width: 450px) {
