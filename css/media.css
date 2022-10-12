@@ -495,6 +495,13 @@
         border-top: 1px #000 solid;
         padding-top: 30px;
     }    
+    .initiative-detailed__title {
+        margin-top: -30px;
+    }
+
+    .caption-list__label {
+        width: 50%;
+    }
 }
 @media (max-width: 700px){
     .filter-panel__item {
@@ -958,8 +965,28 @@
         background-color: #fff;
     }
 
-    .news-edit__footer {
-        
+    .initiative-detailed__title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .caption-list__label {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    
+    .caption-list__value {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .initiative-detailed__text {
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 35px;
     }
 }
 @media (max-width: 450px) {
