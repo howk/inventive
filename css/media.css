@@ -495,12 +495,19 @@
         border-top: 1px #000 solid;
         padding-top: 30px;
     }    
+    .in-club__title,
     .initiative-detailed__title {
         margin-top: -30px;
+        font-size: 30px;
+        line-height: 36px;
     }
 
     .caption-list__label {
         width: 50%;
+    }
+
+    .in-club-list li {
+        width: 100%;
     }
 }
 @media (max-width: 700px){
@@ -987,6 +994,20 @@
         font-size: 15px;
         line-height: 18px;
         margin-bottom: 35px;
+    }
+
+    .in-club-list__text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .in-club-list__text b {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .in-club-list {
+        row-gap: 15px;
     }
 }
 @media (max-width: 450px) {

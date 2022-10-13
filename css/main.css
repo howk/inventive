@@ -6732,6 +6732,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	margin-bottom: 25px;
 }
 
+.in-club__title,
 .initiative-detailed__title,
 .news-edit__title {
 	font-weight: 700;
@@ -7044,6 +7045,38 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	font-size: 22px;
 }
 
+.icon-star {
+	background: url('../img/icons/star.svg') no-repeat;
+	background-size: cover;
+	width: 35px;
+	height: 47px;
+	display: inline-block;
+}
+
+.icon-rules {
+	background: url('../img/icons/rules.svg') no-repeat;
+	background-size: cover;
+	width: 35px;
+	height: 49px;
+	display: inline-block;
+}
+
+.icon-heart2 {
+	background: url('../img/icons/heart2.svg') no-repeat;
+	background-size: cover;
+	width: 47px;
+	height: 44px;
+	display: inline-block;
+}
+
+.icon-cart {
+	background: url('../img/icons/cart.svg') no-repeat;
+	background-size: cover;
+	width: 47px;
+	height: 46px;
+	display: inline-block;
+}
+
 .icon-doc {
 	background: url('../img/icons/document_add.svg') no-repeat;
 	width: 28px;
@@ -7082,4 +7115,68 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	font-size: 17px;
 	line-height: 20px;
 	margin-bottom: 40px;
+}
+
+.in-club-list {
+	padding-left: 0;
+	list-style: none;
+	gap: 25px 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.in-club-list li {
+	background: #F1F1F1;
+	border-radius: 15px;
+	width: calc(50% - 10px);
+}
+
+.in-club-list li a {
+	padding: 20px;
+	display: flex;
+	color: #000;
+	text-decoration: none;
+}
+
+.in-club-list__ico {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: flex;
+	align-items: flex-end;
+	flex-shrink: 0;
+	margin-right: 18px;
+}
+
+.in-club-list__ico span {
+	margin-left: -10px;
+}
+
+.in-club-list__text {
+	font-size: 15px;
+	line-height: 18px;
+	padding-top: 10px;
+}
+
+.in-club-list__text b {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.charity-modal__title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 35px;
+}
+
+.charity-modal .form-modal__submit-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px 30px;
+	padding-top: 25px;
 }
