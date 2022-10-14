@@ -503,17 +503,23 @@
     .post-links {
         border-top: 1px #000 solid;
         padding-top: 30px;
-    }  
-    
+    }    
+
+    .in-club__title,
     .map__title,
     .initiative-detailed__title {
         margin-top: -30px;
+        font-size: 30px;
+        line-height: 36px;
     }
 
     .caption-list__label {
         width: 50%;
     }
 
+    .in-club-list li {
+        width: 100%;
+    }
     .map-search .search-list__item {
         width: calc(50% - 10px);
     }
@@ -1016,6 +1022,19 @@
         margin-bottom: 35px;
     }
 
+    .in-club-list__text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    
+    .in-club-list__text b {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .in-club-list {
+        row-gap: 15px;
+    }
     .map__title {
         font-size: 25px;
         line-height: 30px;
