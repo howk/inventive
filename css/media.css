@@ -131,6 +131,9 @@
     .learning-documents {gap: 15px 30px;}    
     .learning-toolbar__button--all {padding: 20px 15px 20px 30px; min-width: 260px;}
     .learning-toolbar__button--all .label {padding-left: 15px;}
+    .inshop-list__item {
+        width: calc(50% - 10px);
+    }
 }
 @media (max-width: 768px) {
     .map-description ul li {
@@ -255,7 +258,7 @@
     .submenu {margin:10px 0;}
     .submenu__link {font-size: 13px; line-height:16px;}
 
-    .map .submenu__link {font-size: 20px; line-height: 24px;}
+    .map .submenu__link, .inshop .submenu__link {font-size: 20px; line-height: 24px;}
 
     .panel-main__title {width:100%; margin-bottom:20px;}
     .panel-main__row {flex-grow: 1;}
@@ -503,7 +506,13 @@
     .post-links {
         border-top: 1px #000 solid;
         padding-top: 30px;
-    }    
+    }   
+    
+    .page-title {
+        margin-top: -30px;
+        font-size: 30px;
+        line-height: 36px;
+    }
 
     .in-club__title,
     .map__title,
@@ -1096,6 +1105,19 @@
 
     .result-employee-select__holder {
         margin-bottom: 10px;
+    }
+
+    .inshop-list__name {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .inshop-list__item {
+        width: 100%;
+    }
+
+    .inshop-list__img {
+        background-size: contain;
     }
 }
 @media (max-width: 450px) {
