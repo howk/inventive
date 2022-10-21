@@ -7998,3 +7998,48 @@ a.card-employee-viewed:hover .card-employee-viewed__name{
 	font-size: 15px;
 	line-height: 18px;
 }
+
+.error-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -20px;
+    height: 100%;
+}
+
+.error-page__title {
+    color: #C4C4C4;
+}
+
+.error-page__content {
+    max-width: 600px;
+}
+
+.error-page__col {
+   padding: 20px;
+}
+
+.error-page__col-text {
+    display: flex;
+    align-items: center;
+}
+
+.error-page__img {
+    width: 100%;
+    height: auto;
+}
+
+.error-page__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.error-page__btn, a.error-page__btn, .error-page__btn:hover, a.error-page__btn:hover {
+    display: inline-block;
+    width: auto;
+    color:#ffffff;
+    background-color: black;
+    padding: 0 20px;
+    height:auto;
+}

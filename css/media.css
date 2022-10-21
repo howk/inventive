@@ -532,6 +532,21 @@
     .map-search .search-list__item {
         width: calc(50% - 10px);
     }
+
+    .error-page {
+        flex-direction: column;
+    }
+
+    .error-page__text {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .error-page__col-img {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 @media (max-width: 700px){
     .filter-panel__item {
