@@ -1609,6 +1609,7 @@ input.search-header__input{
     justify-content: space-between;
     margin-bottom:20px;
     min-height: 134px;
+    cursor: pointer;
 }
 
 .hr-list-item:last-child {
