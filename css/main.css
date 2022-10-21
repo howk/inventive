@@ -1594,6 +1594,53 @@ input.search-header__input{
 	top: 0;
 }
 
+/*-------------------HR---------------------*/
+
+.hr-list {
+    display:flex;
+    flex-direction: column;
+}
+
+.hr-list-item {
+    padding: 17px 27px;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+    min-height: 134px;
+}
+
+.hr-list-item:last-child {
+    margin-bottom: 0;
+}
+
+.hr-list-item__subtitle {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color:#00BAC6;
+    margin-bottom: 10px;
+}
+
+.hr-list-item__title {
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.hr-list .hr-list-item__icon {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.hr-list-item__icon i:before {
+    font-size:70px;
+}
+
 /*-----------------modal-------------------*/
 .modal--container .modal-dialog{
 	max-width: 420px;

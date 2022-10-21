@@ -533,6 +533,26 @@
         width: calc(50% - 10px);
     }
 
+    .hr-list-item__title {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .hr-list-item__subtitle {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .hr-list .hr-list-item__icon {
+        width: 54px;
+        height: 54px;
+        align-self: flex-end;
+    }
+
+    .hr-list-item__icon i:before {
+        font-size:37px;
+    }
+
     .error-page {
         flex-direction: column;
     }

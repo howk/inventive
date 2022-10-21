@@ -25,111 +25,123 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-folder-thin:before {
-  content: "\e91f";
-}
-.icon-file-thin:before {
-  content: "\e920";
-}
-.icon-media-app:before {
-  content: "\e921";
-}
-.icon-media-movie:before {
-  content: "\e922";
-}
-.icon-media-book:before {
-  content: "\e923";
-}
-.icon-chevron:before {
-  content: "\e91e";
-}
-.icon-folder-minus:before {
-  content: "\e91d";
-}
 .icon-close:before {
-  content: "\e900";
+    content: "\e900";
 }
 .icon-player-next:before {
-  content: "\e901";
+    content: "\e901";
 }
 .icon-player-play:before {
-  content: "\e902";
+    content: "\e902";
 }
 .icon-player-prev:before {
-  content: "\e903";
+    content: "\e903";
 }
 .icon-in:before {
-  content: "\e904";
+    content: "\e904";
 }
 .icon-youtube:before {
-  content: "\e905";
+    content: "\e905";
 }
 .icon-telegramm:before {
-  content: "\e906";
+    content: "\e906";
 }
 .icon-facebook:before {
-  content: "\e907";
+    content: "\e907";
 }
 .icon-insta:before {
-  content: "\e908";
+    content: "\e908";
 }
 .icon-vk:before {
-  content: "\e909";
+    content: "\e909";
 }
 .icon-like:before {
-  content: "\e90a";
+    content: "\e90a";
 }
 .icon-comment:before {
-  content: "\e90b";
+    content: "\e90b";
 }
 .icon-fav1:before {
-  content: "\e90c";
+    content: "\e90c";
 }
 .icon-fav2:before {
-  content: "\e90d";
+    content: "\e90d";
 }
 .icon-heart:before {
-  content: "\e90e";
+    content: "\e90e";
 }
 .icon-hr:before {
-  content: "\e90f";
+    content: "\e90f";
 }
 .icon-important:before {
-  content: "\e910";
+    content: "\e910";
 }
 .icon-it:before {
-  content: "\e911";
+    content: "\e911";
 }
 .icon-office:before {
-  content: "\e912";
+    content: "\e912";
 }
 .icon-privilegies:before {
-  content: "\e913";
+    content: "\e913";
 }
 .icon-smile:before {
-  content: "\e914";
+    content: "\e914";
 }
 .icon-bin:before {
-  content: "\e915";
+    content: "\e915";
 }
 .icon-document_add:before {
-  content: "\e916";
+    content: "\e916";
 }
 .icon-download:before {
-  content: "\e917";
+    content: "\e917";
 }
 .icon-edit:before {
-  content: "\e918";
+    content: "\e918";
 }
 .icon-folder:before {
-  content: "\e919";
+    content: "\e919";
 }
 .icon-folder_add:before {
-  content: "\e91a";
+    content: "\e91a";
 }
 .icon-settings:before {
-  content: "\e91b";
+    content: "\e91b";
 }
 .icon-share:before {
-  content: "\e91c";
+    content: "\e91c";
+}
+.icon-folder-minus:before {
+    content: "\e91d";
+}
+.icon-chevron:before {
+    content: "\e91e";
+}
+.icon-folder-thin:before {
+    content: "\e91f";
+}
+.icon-file-thin:before {
+    content: "\e920";
+}
+.icon-media-app:before {
+    content: "\e921";
+}
+.icon-media-movie:before {
+    content: "\e922";
+}
+.icon-media-book:before {
+    content: "\e923";
+}
+.icon-hr-add:before {
+    content: "\e924";
+}
+.icon-hr-all:before {
+    content: "\e925";
+}
+.icon-hr-my:before {
+    content: "\e926";
+}
+.icon-hr-emp:before {
+    content: "\e927";
 }
