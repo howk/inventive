@@ -1,4 +1,46 @@
 window.onload = function () {
+
+    const sidebarMenuSticky = document.querySelector('.pep-sidebar__container');
+    if (sidebarMenuSticky && sidebarMenuSticky.offsetParent) {
+        const container = document.querySelector('.pep-sidebar');
+        const containerContent = document.querySelector('.pep-sidebar__container');
+        const smController = new ScrollMagic.Controller();
+        const smScene = new ScrollMagic.Scene({
+            triggerElement: sidebarMenuSticky,
+            offset: sidebarMenuSticky.offsetHeight,
+            triggerHook: 1,
+            duration: container.offsetHeight - containerContent.offsetHeight
+        }).setPin(sidebarMenuSticky).addTo(smController);
+    }
+
+    const collapseTriggers = document.querySelectorAll('.collapse-block__trigger');
+    if (collapseTriggers.length > 0) {
+        collapseTriggers.forEach((item) => {
+            item.addEventListener('click', function() {
+                const parent = item.closest('.collapse-block');
+                parent.classList.toggle('collapse-block--collapsed');
+            });
+        });
+    }
+
+    document.addEventListener('click', function(event) {
+        const hintPrev = document.querySelector('.score-item__hint--active');
+        if (event.target.matches('.score-item__info')) {
+            const parent = event.target.closest('.score-item__name');
+            const hint = parent.querySelector('.score-item__hint');
+            if (hint) {
+                if (hint.classList.contains('score-item__hint--active')) {
+                    hint.classList.remove('score-item__hint--active');
+                } else {
+                    if (hintPrev) hintPrev.classList.remove('score-item__hint--active');
+                    hint.classList.add('score-item__hint--active');
+                }
+            }
+        } else if (!event.target.matches('.popup-hint')) {
+            if (hintPrev) hintPrev.classList.remove('score-item__hint--active');
+        }
+    });
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
