@@ -389,7 +389,13 @@
     .page-title-wrap .page-title {
         margin-top: 0;
         letter-spacing: 0.125em;
-    }    
+    }
+    .title-wrap .back-link {
+        display: none;
+    }
+    .title-wrap .title {
+        max-width: 100%;
+    }
     .map-description ul li {
         width: calc(50% - 15px);
     }
