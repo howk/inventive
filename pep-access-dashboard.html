@@ -1,0 +1,1209 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>inspace</title>
+	<!--favicon-->
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<link rel="icon" href="favicon.png" type="image/png">
+	<!--style-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/calendar.css" />
+	<link rel="stylesheet" href="css/OverlayScrollbars.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/icomoon.css" />
+	<link rel="stylesheet" href="css/media.css" />
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<!---Header-->
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo">
+						<a href="/" class="header__logo-link"><img src="img/logo.svg" alt="" /></a>
+					</div>
+					<div class="header__profile profile-header">
+						<div class="profile-header__item">
+							<a href="#" class="profile-header__link profile-header__link--user" data-bs-toggle="tooltip" data-bs-placement="bottom" title="бронь переговорных">
+								<img src="img/user-two-icon.svg" alt="" />
+								<svg width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5148 8.41728C11.5148 9.02704 11.3793 9.56904 11.1761 10.0433C11.5148 10.111 11.8536 10.1788 12.1924 10.1788C14.4959 10.1788 16.3929 8.28178 16.3929 5.97825C16.3929 3.67473 14.4959 1.77771 12.1924 1.77771C10.4308 1.77771 8.94032 2.86172 8.33057 4.35224C10.1598 4.82649 11.5148 6.45251 11.5148 8.41728Z" stroke="white" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+									<path d="M8.33039 4.35224C7.99164 4.28449 7.65288 4.21674 7.31413 4.21674C5.01061 4.21674 3.11359 6.11376 3.11359 8.41728C3.11359 10.7208 5.01061 12.6178 7.31413 12.6178C9.07565 12.6178 10.5662 11.5338 11.1759 10.0433C11.3792 9.56904 11.5147 8.95929 11.5147 8.41728C11.5147 6.45251 10.1597 4.82649 8.33039 4.35224Z" stroke="white" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+									<path d="M12.192 11.7371C10.2272 11.7371 8.53347 12.6856 7.51721 14.1761C10.566 14.2439 13.0728 16.8184 13.0728 19.935V21.561H17.9508V17.4959C17.9508 14.3116 15.3763 11.7371 12.192 11.7371Z" stroke="white" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+									<path class="user-line-anim" d="M7.51748 14.1761C7.44973 14.1761 7.38198 14.1761 7.31423 14.1761C4.12995 14.1761 1.55542 16.7507 1.55542 19.935V24H13.0053V21.561V19.935C13.073 16.8184 10.5663 14.3116 7.51748 14.1761Z" stroke="#00BAC6" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+								</svg>
+							</a>
+						</div>
+						<div class="profile-header__item">
+							<a href="#" data-bs-toggle="modal" data-bs-target="#wifiModal" class="profile-header__link profile-header__link--wifi">
+								<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="line-three" d="M1 5.8C4.06074 2.83601 8.30682 1 13 1C17.6932 1 21.9393 2.83601 25 5.8" stroke="black" stroke-width="2" />
+									<path class="line-two" d="M4.59961 9.40078C6.74213 7.17779 9.71438 5.80078 12.9996 5.80078C16.2848 5.80078 19.2571 7.17779 21.3996 9.40078" stroke="black" stroke-width="2" />
+									<path class="line-first" d="M8 13C9.27531 11.765 11.0445 11 13 11C14.9555 11 16.7247 11.765 18 13" stroke="black" stroke-width="2" />
+									<circle class="circle" cx="12.9998" cy="16.2" r="1.2" fill="black" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="header__audioplayer audioplayer-widget header__audioplayer--active">
+						<div class="audioplayer-widget__controls">
+							<button class="audioplayer-widget__btn-control audioplayer-widget__btn-control--prev">
+								<span class="icon-player-prev"></span>
+							</button>
+							<button class="audioplayer-widget__btn-control audioplayer-widget__btn-control--play">
+								<span class="icon-player-play"></span>
+							</button>
+							<button class="audioplayer-widget__btn-control audioplayer-widget__btn-control--next">
+								<span class="icon-player-next"></span>
+							</button>
+						</div>
+						<div class="audioplayer-widget__track-wrapper">
+							<div class="audioplayer-widget__track">Chill mix - музыкальный трек с длинным названием</div>
+						</div>
+					</div>
+					<div class="header__search search-header">
+						<form class="search-header__content">
+							<input class="search-header__input" type="text" name="" />
+							<button class="search-header__submit"></button>
+							<div class="search-dropdown">
+								<div class="search-list">
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>		
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>	
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>																																																					
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="header__coin coin-header">
+						<div class="coin-header__item">
+							<div class="coin-header__card card-coin card-coin--info">
+								<a href="#" class="card-coin__label" data-bs-toggle="tooltip" data-bs-placement="bottom" title="командные in.COIN">2000 in.COIN</a>
+								<a href="#" class="card-coin__icon">
+									<img src="img/cup.svg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="coin-header__item">
+							<div class="coin-header__card card-coin card-coin--user">
+								<a href="#" class="card-coin__label">9999 in.COIN</a>
+								<div class="card-coin__icon--popup_open">
+									<a href="#" class="card-coin__icon">
+										<img src="img/avatar.svg" alt="" />
+									</a>
+									<button class="card-coin__icon_btn">
+										<img src="img/avatar.svg" alt="" />
+									</button>
+									<div class="card-coin__popup-bg"></div>
+									<div class="card-coin__popup popup-card-coin">
+										<div class="popup-card-coin__content">
+											<a href="#" class="popup-card-coin__link">Моя страница</a>
+											<a href="#" class="popup-card-coin__link">Рабочий стол руководителя</a>
+											<a href="#" class="popup-card-coin__link">PEP</a>
+											<a href="#" class="popup-card-coin__link">Выйти</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="header__btn btn-nav-mobile btn-nav-mobile-js">
+						<span class="btn-nav-mobile__label"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!---/Header-->
+		<!---Main-->
+		<main class="main">
+			<div class="container">
+				<nav class="main__nav nav-main">
+					<a href="#" class="nav-main__link">Профиль</a>
+					<a href="#" class="nav-main__link nav-main__link--active">PEP</a>
+					<a href="#" class="nav-main__link">рабочий стол руководителя</a>
+				</nav>
+
+				<div class="main__container">
+					<div class="main__content content-main">
+						<div class="page-title-wrap">
+							<h1 class="page-title">Дашборд доступов PEP</h1>
+							<a href="#" class="back-link">Назад</a>
+						</div>
+						<div class="title title--pep-access">Добавление доступа сотруднику</div>
+
+						<div class="form-columns">
+							<div class="form-modal__item form-columns__item3">
+								<label for="" class="form-modal__label">Имя сотрудника (поиск по конкретному пользователю)</label>
+								<div class="select">
+									<div class="select__label">Введи ФИО пользователя...</div>
+									<div class="select__option-box">
+										<ul class="select__list">
+											<li class="select__item">1</li>
+											<li class="select__item">2</li>
+											<li class="select__item">3</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="form-modal__item form-columns__item3">
+								<label for="" class="form-modal__label">Укажи доступ к подразделению</label>
+								<div class="select">
+									<div class="select__label">Выбор подразделения...</div>
+									<div class="select__option-box">
+										<ul class="select__list">
+											<li class="select__item">1</li>
+											<li class="select__item">2</li>
+											<li class="select__item">3</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="form-modal__item form-columns__item3">
+								<label for="" class="form-modal__label">Укажи доступы</label>
+								<div class="select">
+									<div class="select__label">Выбери доступы...</div>
+									<div class="select__option-box">
+										<ul class="select__list">
+											<li class="select__item">1</li>
+											<li class="select__item">2</li>
+											<li class="select__item">3</li>
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>						
+
+						<div class="buttons-center buttons-center--pep-access">
+							<button class="btn-grey">Сбросить</button>
+							<button class="btn-black">Добавить</button>
+						</div>
+
+						<div class="table-data table-data--pep-access-list">
+							<div class="table-data__row table-data__row--heading">
+								<span class="table-data__cell table-data__heading">ФИО</span>
+								<span class="table-data__cell table-data__heading">Группы доступов</span>
+								<span class="table-data__cell table-data__heading">Доступы к подразделениям</span>
+								<span class="table-data__cell table-data__heading">Редактирование</span>
+								<span class="table-data__cell table-data__heading">Удаление</span>
+							</div>
+							<div class="table-data__row">
+								<div class="table-data__cell">
+									<div class="card-employee-viewed table-data__usercard">
+										<span class="card-employee-viewed__img">
+											<img src="img/avatar.svg" alt="">
+										</span>
+										<span class="card-employee-viewed__content">
+											<span class="card-employee-viewed__name">Александров Александр Александрович</span>
+											<span class="card-employee-viewed__post">должность</span>
+										</span>
+									</div>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Группы доступов</span>
+									<span class="table-data__title">Настройка доступов PEP</span>
+									<ul class="table-data__list">
+										<li class="table-data__list-item">Доступ к TLU</li>
+										<li class="table-data__list-item">Генерация PEP форм</li>
+										<li class="table-data__list-item">Просмотр всех PEP форм</li>
+										<li class="table-data__list-item">Генерация PEP отчётов</li>
+										<li class="table-data__list-item">Генерация PEP отчёта "Текущий статус PEP"</li>
+									</ul>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Доступы к подразделениям</span>
+									<div class="table-data__value">Вся компания</div>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Редактирование</span>
+									<button class="table-data__btn-text">Редактировать</button>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Удаление</span>
+									<button class="table-data__btn-text">Удалить</button>
+								</div>
+							</div>
+							<div class="table-data__row">
+								<div class="table-data__cell">
+									<div class="card-employee-viewed table-data__usercard">
+										<span class="card-employee-viewed__img">
+											<img src="img/avatar.svg" alt="">
+										</span>
+										<span class="card-employee-viewed__content">
+											<span class="card-employee-viewed__name">Александров Александр Александрович</span>
+											<span class="card-employee-viewed__post">должность</span>
+										</span>
+									</div>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Группы доступов</span>
+									<span class="table-data__title">Настройка доступов PEP</span>
+									<ul class="table-data__list">
+										<li class="table-data__list-item">Доступ к TLU</li>
+										<li class="table-data__list-item">Генерация PEP форм</li>
+										<li class="table-data__list-item">Просмотр всех PEP форм</li>
+										<li class="table-data__list-item">Генерация PEP отчётов</li>
+										<li class="table-data__list-item">Генерация PEP отчёта "Текущий статус PEP"</li>
+									</ul>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Доступы к подразделениям</span>
+									<div class="table-data__value">Вся компания</div>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Редактирование</span>
+									<button class="table-data__btn-text">Редактировать</button>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Удаление</span>
+									<button class="table-data__btn-text">Удалить</button>
+								</div>
+							</div>
+							<div class="table-data__row">
+								<div class="table-data__cell">
+									<div class="card-employee-viewed table-data__usercard">
+										<span class="card-employee-viewed__img">
+											<img src="img/avatar.svg" alt="">
+										</span>
+										<span class="card-employee-viewed__content">
+											<span class="card-employee-viewed__name">Александров Александр Александрович</span>
+											<span class="card-employee-viewed__post">должность</span>
+										</span>
+									</div>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Группы доступов</span>
+									<span class="table-data__title">Настройка доступов PEP</span>
+									<ul class="table-data__list">
+										<li class="table-data__list-item">Доступ к TLU</li>
+										<li class="table-data__list-item">Генерация PEP форм</li>
+										<li class="table-data__list-item">Просмотр всех PEP форм</li>
+										<li class="table-data__list-item">Генерация PEP отчётов</li>
+										<li class="table-data__list-item">Генерация PEP отчёта "Текущий статус PEP"</li>
+									</ul>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Доступы к подразделениям</span>
+									<div class="table-data__value">Вся компания</div>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Редактирование</span>
+									<button class="table-data__btn-text">Редактировать</button>
+								</div>
+								<div class="table-data__cell">
+									<span class="table-data__heading table-data__heading--mobile">Удаление</span>
+									<button class="table-data__btn-text">Удалить</button>
+								</div>
+							</div>
+						</div>
+
+					</div>		
+				</div>
+			</div>
+		</main>
+		<!---/Main-->
+		<!---Footer-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__logo-company logo-company">
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/reStore.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/samsung.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/mi.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/nike.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/sb.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/sbkids.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/tnf.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/lego.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/uno.svg" alt="" /></a>
+					</div>
+				</div>
+				<div class="footer__info">
+					<div class="footer__social social">
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-vk"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-insta"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-facebook"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-youtube"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-telegramm"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-in"></a>
+						</div>
+					</div>
+					<div class="footer__logo">
+						<img src="img/inventive-logo.svg" alt="" />
+					</div>
+					<div class="footer__contacts-info">
+						<div class="footer__contacts">
+							<a href="tel:+74956516288" class="phone-link">+7 (495) 651 62 88</a>
+							<a href="mailto:helpspace@inventive.ru" class="email-link">helpspace@inventive.ru</a>
+						</div>
+						<div class="footer__adress">г. Москва, Причальный проезд, 2,<br> м. Шелепиха</div>
+					</div>
+				</div>
+				<div class="footer__about about-footer">
+					<div class="about-footer__logo">
+						<img src="img/inventive-logo.svg" alt="" />
+					</div>
+					<div class="about-footer__content">
+						<p>Inventive Digital Space (inventivespace.ru) — внутренний сервис Inventive Retail Group.
+							Информация предназначена только для действующих сотрудников, её нельзя распространять вне
+							Компании.</p>
+						<p><span class="green-item">Сентябрь 2021.</span> Обновление основано на обратной связи
+							сотрудников.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!---/Footer-->	
+		<!-- Modal 1-->
+		<div class="modal modal--container fade" id="wifiModal" tabindex="-1" aria-labelledby="wifiModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-content__wifi wifi-modal">
+						<h2 class="wifi-modal__title">ГОСТЕВОЙ wi-fi</h2>
+						<div class="wifi-modal__items">
+							<div class="wifi-modal__item">
+								<h3 class="wifi-modal__name">БЦ Якорь/Кузнецкий мост</h3>
+								<div class="wifi-modal__content">
+									<div class="wifi-modal__input-wrap">
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Cеть</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="Inventive_Guest" />
+										</div>
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Пароль</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="pdqyu924s7" />
+										</div>
+									</div>
+									<div class="wifi-modal__qkod">
+										<div class="wifi-modal__caption">Для iOS</div>
+										<img class="wifi-modal__qr" src="img/qr.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="wifi-modal__item">
+								<h3 class="wifi-modal__name">Спартаковская</h3>
+								<div class="wifi-modal__content">
+									<div class="wifi-modal__input-wrap">
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Cеть</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="IRG-Guests:)" />
+										</div>
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Пароль</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="ke5pkd12" />
+										</div>
+									</div>
+									<div class="wifi-modal__qkod">
+										<div class="wifi-modal__caption">Для iOS</div>
+										<img class="wifi-modal__qr" src="img/qr.svg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 2-->
+		<div class="modal modal--container fade" id="initiativesModal" tabindex="-1" aria-labelledby="initiativesModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Предложить инициативу</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__description">Прежде чем добавить инициативу, пожалуйста, ознакомься со
+							списком уже предложенных.
+							Если инициатива наберёт более 100 лайков (для офиса), 700 лайков (для розницы) или 800
+							лайков (для всей компании), она будет рассмотрена для реализации.</div>
+						<div class="form-modal__items">
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Название<span class="required-info">*</span></label>
+								<input class="form-modal__input" type="text" name="" required />
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Описание<span class="required-info">*</span></label>
+								<textarea class="form-modal__input" name="" required></textarea>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Стоимость реализации<span class="required-info">*</span></label>
+								<input class="form-modal__input" type="text" name="" required />
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Срок (укажи дату запуска)<span
+										class="required-info">*</span></label>
+								<div class="form-modal__calend">
+									<input class="form-modal__input" type="text" name="" placeholder="Выбери дату" required />
+									<button class="form-modal__btn"></button>
+								</div>
+							</div>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<div class="form-modal__file-wrap">
+								<span class="form-modal__file-input">Прикрепить файл<input class="file-input" type="file"
+										name="" /></span>
+								<div class="file-input__info"></div>
+							</div>
+							<button type="submit" class="form-modal__submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal 3-->
+		<div class="modal modal--container fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Добавить событие</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__category">Для подчинённых подразделений</div>
+						<div class="form-modal__items">
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Название<span class="required-info">*</span></label>
+								<input class="form-modal__input" type="text" name="" required />
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Срок (укажи дату запуска)<span
+										class="required-info">*</span></label>
+								<div class="form-modal__calend">
+									<input class="form-modal__input" type="text" name="" placeholder="Выбери дату" required />
+									<button class="form-modal__btn"></button>
+								</div>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Анонс событий<span class="required-info">*</span></label>
+								<textarea class="form-modal__input" name="" required></textarea>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Описание события<span class="required-info">*</span></label>
+								<textarea class="form-modal__input" name="" required></textarea>
+							</div>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Добавить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal--move modal--container modal--container-wide fade" id="disk-tree" tabindex="-1"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Переместить</h2>
+					<form class="modal-content__form form-modal">
+						<div class="scroll-content-xy file-tree-scroll">
+							<ul class="file-tree" data-tree="true">
+								<li class="file-tree__item file-tree__item--root">
+									<span class="file-tree__name">Диск: все</span>
+									<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
+									<ul class="file-tree">
+										<li class="file-tree__item">
+											<span class="file-tree__name">Розничная сеть</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+											<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
+											<ul class="file-tree">
+												<li class="file-tree__item">
+													<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+													<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
+													<ul class="file-tree">
+														<li class="file-tree__item">
+															<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+															<button class="file-tree__folder-handler file-tree__folder-handler--collapsed"></button>
+															<ul class="file-tree">
+																<li class="file-tree__item">
+																	<span class="file-tree__name">Дирекция корпоративных продаж и дистрибуции</span>
+																	<button class="file-tree__folder-handler"></button>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по информационным технологиям</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция качества и работы с обращениями</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция маркетинга</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция развития и инновационных проектов</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по развитию и эксплуатации</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по управлению персоналом</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по финансам</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по логистике</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Регламентирующие документы</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция качества и работы с обращениями</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция маркетинга</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция развития и инновационных проектов</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по развитию и эксплуатации</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по управлению персоналом</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по финансам</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Дирекция по логистике</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+										<li class="file-tree__item">
+											<span class="file-tree__name">Регламентирующие документы</span>
+											<button class="file-tree__folder-handler"></button>
+										</li>
+									</ul>
+								</li>
+								<li class="file-tree__item file-tree__item--root">
+									<span class="file-tree__name">Регламентирующие документы</span>
+									<button class="file-tree__folder-handler"></button>
+								</li>
+							</ul>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Переместить</button>
+							<button type="submit" class="form-modal__submit">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal--share modal--container fade" id="modal-share" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Поделиться</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__item">
+							<label class="form-modal__label">Копировать ссылку</label>
+							<input class="form-modal__input" type="text" name="" disabled
+								value="https://inventivespace.ru/bitrix/tools/disk/bitrix/tools/disk/">
+						</div>
+						<div class="form-modal__item">
+							<label class="form-modal__label">Сотрудник</label>
+							<div class="search-sec">
+								<input class="search-sec__input" type="text" name="">
+								<button class="search-sec__btn" type="button" name=""></button>
+							</div>
+						</div>
+						<div class="form-modal__item">
+							<label class="form-modal__label">Последние просмотренные</label>
+							<div class="form-modal__employee-viewed employee-viewed">
+								<div class="employee-viewed__holder">
+									<div class="employee-viewed__items scroll-content">
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Переместить</button>
+							<button type="submit" class="form-modal__submit">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal--access-settings modal--container modal--container-wide fade" id="modal-access-settings"
+			tabindex="-1" aria-hidden="true" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Настройка прав доступа</h2>
+					<form class="modal-content__form form-modal">
+
+						<div class="employee-viewed__items employee-viewed__items--top">
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Имя Фамилия</span>
+										<span class="card-employee-viewed__post">должность</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">редактирование</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close"
+											aria-label="Удалить"></button>
+									</div>
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Имя Фамилия</span>
+										<span class="card-employee-viewed__post">должность</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">полный доступ</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close"
+											aria-label="Удалить"></button>
+									</div>
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Администраторы</span>
+										<span class="card-employee-viewed__post">группа</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">чтение</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close"
+											aria-label="Удалить"></button>
+									</div>
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Invetivespace: Отдел кадров</span>
+										<span class="card-employee-viewed__post">группа</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">добавление</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close"
+											aria-label="Удалить"></button>
+									</div>
+								</div>
+							</div>
+							<div class="employee-viewed__item">
+								<div class="employee-viewed__card card-employee-viewed">
+									<div class="card-employee-viewed__img">
+										<img src="img/avatar.svg" alt="">
+									</div>
+									<div class="card-employee-viewed__content">
+										<span class="card-employee-viewed__name">Имя Фамилия</span>
+										<span class="card-employee-viewed__post">должность</span>
+									</div>
+									<div class="card-employee-viewed__access">
+										<span class="card-employee-viewed__access-value" data-bs-toggle="dropdown">редактирование</span>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item dropdown-item_active" href="#">чтение</a></li>
+											<li><a class="dropdown-item" href="#">добавление</a></li>
+											<li><a class="dropdown-item" href="#">редактирование</a></li>
+											<li><a class="dropdown-item" href="#">делиться</a></li>
+											<li><a class="dropdown-item" href="#">полный доступ</a></li>
+										</ul>
+									</div>
+									<div class="card-employee-viewed__remove">
+										<button type="button" class="card-employee-viewed__btn-remove icon-close"
+											aria-label="Удалить"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-modal__item">
+							<label class="modal-content__title">Добавить пользователя</label>
+							<div class="search-sec">
+								<input class="search-sec__input" type="text" name="">
+								<button class="search-sec__btn" type="button" name=""></button>
+							</div>
+						</div>
+						<div class="form-modal__item">
+							<label class="form-modal__label">Последние</label>
+							<div class="form-modal__employee-viewed employee-viewed">
+								<div class="employee-viewed__holder">
+									<div class="employee-viewed__items scroll-content">
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+										<div class="employee-viewed__item">
+											<a href="#" class="employee-viewed__card card-employee-viewed">
+												<span class="card-employee-viewed__img">
+													<img src="img/avatar.svg" alt="" />
+												</span>
+												<span class="card-employee-viewed__content">
+													<span class="card-employee-viewed__name">Имя Фамилия</span>
+													<span class="card-employee-viewed__post">должность</span>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-modal__item">
+							<label class="modal-content__title">Добавить группу</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Администраторы</span>
+							</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Invetivespace: Сотрудники</span>
+							</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Invetivespace: Отдел кадров</span>
+							</label>
+							<label class="custom-checkbox1">
+								<input class="custom-checkbox1__input" type="checkbox" name="group">
+								<span class="custom-checkbox1__visual">Invetivespace: Руководство</span>
+							</label>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Применить</button>
+							<button type="submit" class="form-modal__submit">Отмена</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="js/dragscroll.js"></script>
+	<script src="js/OverlayScrollbars.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/mask.js"></script>
+
+
+	
+
+
+	<script>
+		window.addEventListener('load', function () {
+			let panel = document.querySelector('.view-panel');
+			let list = document.querySelector('.disk-files-list');
+			if (!panel) return;
+
+			panel.addEventListener('click', function (e) {
+				e && e.preventDefault();
+
+				if (!e.target.closest('.view-panel__item'))
+					return;
+
+				let active = panel.querySelectorAll('.view-panel__link--current');
+
+				active.forEach(function (item) {
+					item.classList.remove('view-panel__link--current');
+				});
+
+				e.target.classList.add('view-panel__link--current');
+
+				let view = ['disk-files-list_view-list'];
+
+				list.classList.remove('disk-files-list_view-list', 'disk-files-list_view-card', 'disk-files-list_view-card_big');
+
+				if (e.target.classList.contains('view-panel__link--grid')) {
+					view = ['disk-files-list_view-card'];
+				}
+				else if (e.target.classList.contains('view-panel__link--grid_lg')) {
+					view = ['disk-files-list_view-card', 'disk-files-list_view-card_big'];
+				}
+
+				list.classList.add(...view);
+
+			});
+		});
+	</script>
+
+
+</body>
+
+</html>
