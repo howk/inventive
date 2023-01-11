@@ -10088,6 +10088,11 @@ span.ds-company-part {
     color: #000!important;
 }
 
+.sidebar-menu__item--completed .sidebar-menu__item-link {
+    border-left: 6px #00BAC6 solid;
+    padding-left: 9px;
+}
+
 .sidebar-menu__item:not(:last-child) {
     border-bottom: 2px #fff solid;
 }
