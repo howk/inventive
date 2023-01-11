@@ -9583,6 +9583,30 @@ a.error-page__btn:hover {
     padding: 0 1.25rem 1rem 1.25rem;
 }
 
+/* Salary */
+.salary {
+    padding: 33px 33px 25px;
+    border-radius: 15px;
+    background-color: var(--bs-graycolor);;
+}
+
+.salary__form-wrapper {
+    margin-bottom:15px;
+}
+
+.salary__text {
+    font-family: 'MyriadPro', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--bs-maincolor);
+}
+
+.salary__button {
+    max-width:200px;
+}
+
 /***** Meeting ******/
 
 .meeting-booking {
