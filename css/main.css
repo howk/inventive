@@ -2077,6 +2077,11 @@ input.search-header__input {
     color: var(--bs-colorsociallink);
 }
 
+.form-modal__label--green {
+    color: var(--bs-greencolor);
+    font-weight: 700;
+}
+
 .required-info {
     color: #ff0000;
 }
@@ -6143,6 +6148,12 @@ a.card-employee-viewed:hover .card-employee-viewed__name {
     line-height: 1.2;
 }
 
+.btn-black--hollow {
+    background: none;
+    color: #000;
+    border-width: 1px;
+}
+
 .vacancy-group {
     background: #f1f1f1;
     border-radius: 15px;
@@ -10081,6 +10092,29 @@ span.ds-company-part {
     border-bottom: 2px #fff solid;
 }
 
+.sidebar-menu__buttons {
+    padding: 15px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+.sidebar-menu__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    white-space: normal;
+    text-overflow: initial;
+    height: auto;
+    line-height: 1.2;
+    min-height: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
 .pep-sidebar__inner {
     padding: 20px 15px 30px;
     background-color: var(--bs-graycolor);
@@ -10093,6 +10127,10 @@ span.ds-company-part {
 
 .pep__title {
     margin-bottom: 38px;
+}
+
+.pep__goal-saved {
+    margin-bottom: 36px;
 }
 
 @media (max-width: 768px) {
@@ -10148,6 +10186,18 @@ span.ds-company-part {
     margin: 0 0 33px 0;
 }
 
+.pep__goals .form-columns__item2 .form-modal__label {
+    flex-grow: 0;
+}
+
+.pep--admin .pep__goals .form-modal__item.form-columns__item2:nth-child(1) textarea.form-modal__input {
+    border: 1px solid #00BAC6;
+}
+
+.pep--admin .pep__goals .form-modal__item.form-columns__item2:nth-child(3) .select__label {
+    border: 1px solid #00BAC6;
+}
+
 .pep__scores {
     margin-bottom: 36px;
 }
@@ -10184,6 +10234,10 @@ span.ds-company-part {
 
 .pep .form-modal__label {
     font-size: 15px;
+}
+
+.pep textarea.form-modal__input {
+    overflow: auto;
 }
 
 .pep .form-columns {
@@ -10873,4 +10927,113 @@ span.ds-company-part {
 }
 .table-data--pep-archive .table-data__cell:nth-child(3) .table-data__balloon {
     width: 100%;
+}
+
+.fileupload-wrapper {
+    color: #00BAC6;
+}
+
+.fileupload-wrapper__notification {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #9D9D9C;
+    display: none;
+    padding-top: 8px;
+}
+
+.fileupload-wrapper__notification--active {
+    display: block;
+}
+
+.fileupload {
+    display: inline-flex;
+    gap: 0 16px;
+    cursor: pointer;
+}
+
+.fileupload__input {
+    display: none;
+}
+
+.fileupload__icon {
+    width: 18px;
+    height: 16px;
+    background: url(../img/icons/file-upload.svg) no-repeat;
+    background-size: cover;
+}
+
+.fileupload__label {
+    color: #00BAC6;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.fileupload-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0 0 0;
+}
+
+.fileupload-list__item {
+    color: #9D9D9C;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0 16px;
+}
+
+.fileupload-list__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.fileupload-list__item-link {
+    color: #00BAC6;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.fileupload-list__item-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.fileupload-list__item-name-label {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: block;
+    overflow: hidden;
+}
+
+.fileupload-list__item-name-label span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+}
+
+.fileupload-list__item-remove {
+    border: none;
+    padding: 0;
+    background: none;
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    color: #FF0000;
+}
+
+.form-modal__input + .fileupload-wrapper {
+    padding-top: 10px;
 }

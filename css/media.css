@@ -1286,6 +1286,21 @@
     }
 }
 @media (max-width: 576px) {
+    .fileupload-list__item-name {
+        white-space: normal;
+        text-overflow: initial;
+        overflow: visisble;
+    }
+    
+    .fileupload-list__item-name-label {
+        overflow: visisble;
+    }
+    
+    .fileupload-list__item-name-label span {
+        white-space: normal;
+        text-overflow: initial;
+        overflow: visisble;
+    }    
     .table-data--pep-access .table-data__row {
         margin-bottom: 20px;
     }
