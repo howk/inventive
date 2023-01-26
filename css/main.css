@@ -11042,3 +11042,7 @@ span.ds-company-part {
 .form-modal__input + .fileupload-wrapper {
     padding-top: 10px;
 }
+
+.modal .vc-popover-content-wrapper {
+    transform: translate3d(0, 40px, 0px)!important;
+}
