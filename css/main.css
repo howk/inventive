@@ -11046,3 +11046,7 @@ span.ds-company-part {
 .modal .vc-popover-content-wrapper {
     transform: translate3d(0, 40px, 0px)!important;
 }
+
+.modal .vc-popover-caret.align-left {
+    left: 20px!important;
+}
