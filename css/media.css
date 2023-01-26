@@ -299,6 +299,15 @@
         min-width: 165px;
     }
 }
+@media (max-width: 952px) {
+    .main-news__item {
+        width: 100%;
+    }
+    .main-news__item .card-news {
+        height: auto;
+        aspect-ratio: 1.5;
+    }
+}
 @media (max-width: 900px) {
     .form-columns__item3 {
         width: calc(50% - 7px);
@@ -1384,6 +1393,9 @@
         background-color: transparent;
         padding: 100% 0 0 0;
         height: auto;
+    }
+    .main-news__item .card-news {
+        padding: 0;
     }
     .main-news__item--lg .card-news__content {
         order: 2;
