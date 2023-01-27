@@ -9774,6 +9774,11 @@ blockquote {
     margin: 10px 0;
 }
 
+.ds-user__ava {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
 .ds-user__name {
     display: flex;
     flex-wrap: nowrap;
@@ -11049,4 +11054,10 @@ span.ds-company-part {
 
 .modal .vc-popover-caret.align-left {
     left: 20px!important;
+}
+
+.ds-heading-mob {
+    display: none;
+    color: #00bac6;
+    margin-bottom: 10px;
 }

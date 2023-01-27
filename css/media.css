@@ -1,5 +1,26 @@
 /*-----------------media-------------------*/
 @media (max-width: 1000px) {
+    .ds-wrap-struct-head {
+        display: none;
+    }
+    .ds-tr-main {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px 10px;
+    }
+    .ds-struct-fio {
+        width: 100%;
+    }
+    .ds-struct-phone,
+    .ds-struct-dob,
+    .ds-struct-email {
+        width: auto;
+    }
+    .ds-heading-mob {
+        display: block;
+    }
+
     .table-data--pep-access .table-data__row--heading {
         display: none;
     }
@@ -369,6 +390,15 @@
     }
 }
 @media (max-width: 768px) {
+    .ds-tr-main {
+        justify-content: flex-start;
+    }
+    .ds-struct-phone,
+    .ds-struct-dob,
+    .ds-struct-email {
+        width: 100%;
+    }
+
     .form-columns__item2,
     .form-columns__item3 {
         width: 100%;
