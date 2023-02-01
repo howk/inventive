@@ -64,6 +64,18 @@
     .table-data--pep-access-list .table-data__row:not(.table-data__row--heading) {
         padding-top: 15px;
     }
+    .logo-company {
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+    .footer__info {
+        flex-wrap: wrap;
+    }
+    .footer__social.social {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
 }
 @media (max-width: 991px) {
     .map-description ul li {
@@ -76,8 +88,11 @@
         /*padding: 0 15px;*/
         padding: 0 40px;
     }
+    .footer__adress {
+        flex-grow: 1;
+    }
     .footer__contacts {
-        padding: 0 20px 0 7%;
+        /*padding: 0 20px 0 7%;*/
     }
     .nav-main__link {
         font-size: 24px;
@@ -479,14 +494,21 @@
     .card-coin__label {
         justify-content: center;
     }
+    .btn.footer__helpdesk-btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer__contacts-info {
+        gap: 0 15px;
+    }
     .social__item:not(:last-child) {
-        margin: 0 20px 0 0;
+        /*margin: 0 20px 0 0;*/
     }
     .footer {
         padding: 20px 0;
     }
     .logo-company {
-        margin: 0 -10px 25px;
+        /*margin: 0 -10px 25px;*/
     }
     .about-footer {
         padding: 30px 0 0 0;
@@ -1186,6 +1208,7 @@
     .playlist-img {
         margin: 0 auto;
     }
+    /*
     .social__link.icon-vk,
     .social__link.icon-telegramm {
         font-size: 28px;
@@ -1202,6 +1225,7 @@
     .social__link.icon-in {
         font-size: 22px;
     }
+    */
     .footer .container {
         display: flex;
         flex-direction: column;
@@ -1210,26 +1234,49 @@
         padding: 110px 0 10px;
         position: relative;
     }
-    .footer__social {
+    .footer__social.social {
         position: absolute;
-        top: 40px;
-        left: 15px;
-        right: 15px;
+        top: -75px;
+        left: 50%;
+        transform: translate(-50%, 0);
         z-index: 5;
-        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 380px;
     }
     .footer__social .social__item {
-        margin: 0 10px;
+        /*margin: 0 10px;*/
     }
     .footer__info {
         order: 0;
+        flex-wrap: nowrap;
     }
     .footer__logo-company {
         order: 1;
         flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 25px;
     }
     .footer__about {
         order: 2;
+    }
+    .footer__contacts-info {
+        flex-wrap: wrap;
+    }
+    .footer__info, .about-footer__content {
+        font-size: 16px;
+    }
+    .footer__helpdesk {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -82px;
+        display: flex;
+        justify-content: center;
+    }
+    .btn.footer__helpdesk-btn {
+        padding-left: 35px;
+        padding-right: 35px;
     }
     .about-footer__logo {
         display: none;
@@ -1238,18 +1285,27 @@
         padding: 0;
     }
     .logo-company {
+        /*
         margin: 0 -10px;
         padding: 45px 0 0 0;
+        */
     }
     .footer__contacts {
         padding: 0 15px 0 0;
     }
     .footer__logo {
         display: block;
+        margin: 0;
+        width: 87px;
+    }
+    .footer__logo img {
+        width: 100%;
     }
     .logo-company__item {
+        /*
         padding: 0 10px 25px;
         width: 33.3%;
+        */
     }
     .logo-company__card img {
         margin: 0 auto;
@@ -1321,10 +1377,14 @@
         padding: 0;
     }
     .footer__info {
-        margin: 10px 0;
+        position: relative;
+        margin: 0 0 115px 0;
     }
 }
 @media (max-width: 576px) {
+    .footer__adress {
+        margin-bottom: 10px;
+    }    
     .fileupload-list__item-name {
         white-space: normal;
         text-overflow: initial;

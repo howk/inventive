@@ -5469,11 +5469,14 @@ a.card-employee-viewed:hover .card-employee-viewed__name {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 -10px 50px;
+    flex-wrap: wrap;
+    /*margin: 0 -10px 50px;*/
+    margin: 0 auto 70px auto;
+    gap: 20px;
 }
 
 .logo-company__item {
-    padding: 10px;
+
 }
 
 .logo-company__card {
@@ -5483,8 +5486,10 @@ a.card-employee-viewed:hover .card-employee-viewed__name {
 .logo-company__card img {
     transition: all ease 0.5s;
     filter: grayscale(1);
+    /*
     max-width: 67px;
     height: auto;
+    */
 }
 
 .logo-company__card:hover img {
@@ -5495,11 +5500,13 @@ a.card-employee-viewed:hover .card-employee-viewed__name {
     display: flex;
     align-items: center;
     font-size: 16px;
+    gap: 0 44px;
 }
 
 .social {
     display: flex;
     align-items: center;
+    gap: 0 29px;
 }
 
 .social__link {
@@ -5540,7 +5547,7 @@ a.card-employee-viewed:hover .card-employee-viewed__name {
 }
 
 .social__item:not(:last-child) {
-    margin: 0 34px 0 0;
+    /*margin: 0 34px 0 0;*/
 }
 
 .phone-link,
@@ -5560,13 +5567,19 @@ a.card-employee-viewed:hover .card-employee-viewed__name {
     flex-grow: 1;
     flex-direction: column;
     display: flex;
-    padding: 0 20px 0 10%;
+    /*padding: 0 20px 0 10%;*/
+}
+
+.btn.footer__helpdesk-btn {
+    padding-left: 35px;
+    padding-right: 35px;
 }
 
 .footer__contacts-info {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    gap: 0 30px;
 }
 
 .footer__logo {
@@ -9697,11 +9710,13 @@ a.error-page__btn:hover {
     background-color: #fff;
 }
 
+/*
 .footer__adress,
 .footer__contacts,
 .footer__helpdesk {
     padding: 0 0 0 5%;
 }
+*/
 
 .descktop {
     display: block;
