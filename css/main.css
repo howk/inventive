@@ -1263,6 +1263,7 @@ input.search-header__input {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left center;
 }
 
 .main-news__item--lg .card-news {
