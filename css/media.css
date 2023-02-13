@@ -1497,7 +1497,8 @@
     .main-news__item--lg .card-news__img {
         order: 1;
         width: 100%;
-        padding: 60% 0 0 0;
+        padding: 0;
+        aspect-ratio: 1.4;
         height: auto;
         border-radius: 15px;
         overflow: hidden;
