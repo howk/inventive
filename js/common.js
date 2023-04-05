@@ -41,6 +41,30 @@ window.onload = function () {
         }
     });
 
+    document.addEventListener('click', function(event) {
+        const hintPrev = document.querySelector('.steps__popup--active');
+        console.log('test1');
+        console.log(hintPrev);
+        if (event.target.matches('.steps__item--interactive')) {
+            const parent = event.target;
+            const hint = parent.querySelector('.steps__popup');
+            if (hint) {
+                if (hint.classList.contains('steps__popup--active')) {
+                    hint.classList.remove('steps__popup--active');
+                } else {
+                    console.log('test2');
+                    console.log(hintPrev);
+                    if (hintPrev) hintPrev.classList.remove('steps__popup--active');
+                    hint.classList.add('steps__popup--active');
+                }
+            }
+        } else if (!event.target.matches('.popup-hint')) {
+            console.log('test3');
+            console.log(hintPrev);
+            if (hintPrev) hintPrev.classList.remove('steps__popup--active');
+        }
+    });
+
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
