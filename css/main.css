@@ -1144,7 +1144,8 @@ input.search-header__input {
 }
 
 .home .sidebar-main,
-.news-home .sidebar-main {
+.news-home .sidebar-main,
+.pep-first .sidebar-main {
     display: block;
 }
 
@@ -11198,4 +11199,120 @@ figure.image_resized img {
 
 .modal--pep-goal-example .form-modal__item:last-child {
     margin-bottom: 0;
+}
+
+
+.pep-first  {
+    padding-top: 21px;
+}
+
+.pep-first .content-main .title {
+    margin: 0 0 40px 0;
+}
+
+.pep-first .form-modal__item {
+    width: 100%;
+    margin: 0 0 12px 0;
+}
+
+.pep-first .form-columns {
+    margin: 0 0 10px 0;
+}
+
+.pep-first .form-modal__label {
+    font-size: 15px;
+}
+
+.pep-first .sidebar-main__title {
+    font-weight: 700;
+    margin: 0 0 16px 0;
+}
+
+.pep-first .sidebar-main {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.pep-first .sidebar-text {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 0 0 23px 0;
+}
+
+.pep-first .sidebar-text p {
+    margin: 0;
+}
+
+.pep-first .sidebar-text p:not(:last-child) {
+    margin: 0 0 10px 0;
+}
+
+.btn-big-green {
+    height: 76px;
+    border-radius: 38px;
+    background-color: var(--bs-greencolor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 5px 17px;
+}
+
+.pep-first__mobile {
+    display: none;
+    border-bottom: 1px #000 solid;
+    margin: 0 0 30px 0;
+}
+
+.pep-first__mobile .sidebar-main__title {
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+}
+
+.pep-first .content-main .btn-big-green {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .pep-first .sidebar-main {
+        display: none;
+    }
+
+    .pep-first .content-main .title {
+        margin: 0 0 33px 0;
+    }
+
+    .pep-first__mobile {
+        display: block;
+    }
+    .main__container.pep-first {
+        padding-top: 20px;
+    }
+
+    .pep-first .content-main .btn-big-green {
+        display: inline-flex;
+    }
+
+    .pep-first .btn-wrap {
+        text-align: center;
+    }
+
+    .pep-first .btn-wrap .btn-black,
+    .pep-first .btn-wrap .btn-big-green {
+        width: 186px;
+    }
+
+    .pep-first .btn-wrap .btn-big-green {
+        margin-top: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pep-first .title {
+        text-transform: none;
+        letter-spacing: 0;
+    }
 }
