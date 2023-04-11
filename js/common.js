@@ -43,8 +43,6 @@ window.onload = function () {
 
     document.addEventListener('click', function(event) {
         const hintPrev = document.querySelector('.steps__popup--active');
-        console.log('test1');
-        console.log(hintPrev);
         if (event.target.matches('.steps__item--interactive')) {
             const parent = event.target;
             const hint = parent.querySelector('.steps__popup');
@@ -52,15 +50,11 @@ window.onload = function () {
                 if (hint.classList.contains('steps__popup--active')) {
                     hint.classList.remove('steps__popup--active');
                 } else {
-                    console.log('test2');
-                    console.log(hintPrev);
                     if (hintPrev) hintPrev.classList.remove('steps__popup--active');
                     hint.classList.add('steps__popup--active');
                 }
             }
         } else if (!event.target.matches('.popup-hint')) {
-            console.log('test3');
-            console.log(hintPrev);
             if (hintPrev) hintPrev.classList.remove('steps__popup--active');
         }
     });
@@ -613,6 +607,33 @@ window.onload = function () {
             trainingEdit.classList.toggle('training-edit--collapsed');
         });
     }
+
+    const tluNames = document.querySelectorAll('.tlu-item__top');
+    tluNames.forEach((item) => {
+        item.addEventListener('mouseover', function() {
+            const hint = item.querySelector('.popup-hint');
+            if (hint) hint.classList.add('popup-hint--active');
+        });
+        item.addEventListener('mouseleave', function() {
+            const hint = item.querySelector('.popup-hint');
+            if (hint) hint.classList.remove('popup-hint--active');
+        });
+    });
+
+    const tluNavButtons = document.querySelectorAll('.tlu-grid.tlu-grid--nav .tlu-item');
+    tluNavButtons.forEach((btn) => {
+        btn.addEventListener('click', function() {
+            const parent = (btn.matches('.tlu-item')) ? btn : btn.closest('.tlu-item');
+            if (parent) {
+                const nav = parent.dataset.tluNav;
+                const targetElement = document.querySelector(`.tlu-grid:not(.tlu-grid--nav) .tlu-item[data-tlu-nav="${nav}"]`);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth"});
+                }
+            }
+            
+        });
+    });
 }
 
 
