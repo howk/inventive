@@ -3,24 +3,20 @@
     .ds-wrap-struct-head {
         display: none;
     }
-
     .ds-tr-main {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px 10px;
     }
-
     .ds-struct-fio {
         width: 100%;
     }
-
     .ds-struct-phone,
     .ds-struct-dob,
     .ds-struct-email {
         width: auto;
     }
-
     .ds-heading-mob {
         display: block;
     }
@@ -28,25 +24,21 @@
     .table-data--pep-access .table-data__row--heading {
         display: none;
     }
-
     .table-data--pep-access .table-data__row {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px 10px;
     }
-
     .table-data--pep-access .table-data__cell:nth-child(1) {
         width: 100%;
     }
-
     .table-data--pep-access .table-data__cell:nth-child(2),
     .table-data--pep-access .table-data__cell:nth-child(3),
     .table-data--pep-access .table-data__cell:nth-child(4),
     .table-data--pep-access .table-data__cell:nth-child(5) {
         width: auto;
     }
-
     .table-data__heading--mobile {
         display: block;
         margin-bottom: 10px;
@@ -55,109 +47,86 @@
     .table-data--pep-access-list .table-data__row--heading {
         display: none;
     }
-
     .table-data--pep-access-list .table-data__row {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px 10px;
     }
-
     .table-data--pep-access-list .table-data__cell:nth-child(1) {
         width: 100%;
     }
-
     .table-data--pep-access-list .table-data__cell:nth-child(2) {
         width: auto;
         max-width: 400px;
         flex-grow: 1;
-    }
-
+    }    
     .table-data--pep-access-list .table-data__row:not(.table-data__row--heading) {
         padding-top: 15px;
     }
-
     .logo-company {
         justify-content: center;
         margin-bottom: 45px;
     }
-
     .footer__info {
         flex-wrap: wrap;
     }
-
     .footer__social.social {
         width: 100%;
         justify-content: center;
         margin-bottom: 35px;
     }
 }
-
 @media (max-width: 991px) {
     .map-description ul li {
         width: calc(33% - 15px);
     }
-
     .map__controls {
         display: flex;
     }
-
     .container {
         /*padding: 0 15px;*/
         padding: 0 40px;
     }
-
     .footer__adress {
         flex-grow: 1;
     }
-
     .footer__contacts {
         /*padding: 0 20px 0 7%;*/
     }
-
     .nav-main__link {
         font-size: 24px;
         margin: 0 30px 0 0;
     }
-
     .card-news {
         height: 220px;
     }
-
     .card-coin__icon_btn {
         display: flex;
     }
-
     .card-coin__icon--popup_open .card-coin__icon {
         display: none;
     }
-
     .table-reservation__items {
         overflow-x: auto;
         overflow-y: hidden;
     }
-
     .table-reserv-item {
         width: 740px;
         padding: 0 0 15px;
     }
-
     .table-reservation__item:not(:last-child) {
         margin: 0 0 30px;
     }
-
     .informer-calend--line {
         padding: 25px 0 0 0;
     }
-
     .table-reservation__body {
         position: relative;
     }
-
     .table-reserv-item__body {
         padding: 0 0 0 58px;
     }
-
     .table-reserv-item__name {
         position: absolute;
         background-color: #fff;
@@ -170,7 +139,6 @@
         min-width: 50px;
         width: 50px;
     }
-
     .table-reserv-item__heading:after {
         content: "";
         position: absolute;
@@ -182,84 +150,67 @@
         z-index: 3;
         box-shadow: 8px 0 5px -5px rgba(0, 0, 0, 0.15);
     }
-
     .panel-main__title,
     .content-main__title {
         font-size: 24px;
     }
-
     .club__main-title {
         font-size: 25px;
         letter-spacing: 0.125em;
     }
-
     .content-main__title {
         margin: 0 0 30px;
     }
-
     .panel-main__link-item {
         margin: 0 0 0 20px;
     }
-
     .panel-main__control,
     .panel-main__view {
         padding: 0 0 0 20px;
     }
-
     .filter-panel__item--lg {
         width: 210px;
     }
-
     .filter-panel__sort {
         margin: 0 5px;
     }
-
     .line-card__name {
         font-size: 18px;
     }
-
     .profile-calendar__col-lg {
         display: none;
     }
-
     .profile-calendar__col-xs {
         width: 100%;
     }
-
     .profile-calendar .calendar__td,
     .profile-calendar .calendar__table-col-header {
         font-size: 14px;
     }
-
     .group-user figure {
         width: 36px;
         height: 36px;
         min-width: 36px;
     }
-
     .group-user figure:before {
         width: 12px;
         height: 20px;
         margin-left: -6px;
         margin-top: -10px;
     }
-
     .datap-head-group,
     .day-vacation,
     .datap-ofise .month-calendar__title {
         font-size: 13px;
         line-height: 1em;
     }
-
     .name-h {
         width: 140px;
     }
-
     .my-employees .name-h {
         width: 100%;
         padding-right: 80px;
     }
-
     .day-h,
     .day-vacation {
         width: 80px;
@@ -274,7 +225,6 @@
     .profile-header__item:first-child {
         order: 2;
     }
-
     .profile-header__item:not(:last-child) {
         margin: 0 0 0 10px;
     }
@@ -282,15 +232,12 @@
     .coin-header__item {
         padding: 0;
     }
-
     .coin-header__item:not(:first-child) {
         padding-left: 10px;
     }
-
     .card-coin__label {
         justify-content: center;
     }
-
     .header__btn {
         display: block;
         bottom: 53px;
@@ -299,22 +246,18 @@
     .disk-files-list_view-card .disk-files-item {
         width: calc(25% - 14px);
     }
-
     .disk-files-list_view-card_big .disk-files-item {
         width: calc(33.333% - 14px);
     }
-
     .header__logo {
         order: 1;
         flex-grow: 0;
     }
-
     .header__profile {
         order: 3;
         padding: 0;
         margin-right: 10px;
     }
-
     .header__audioplayer {
         order: 6;
         flex-grow: 1;
@@ -322,47 +265,38 @@
         margin: 0;
         max-width: 100%;
     }
-
     .header__search {
         order: 2;
         flex-grow: 1;
         width: calc(100% - 80px);
     }
-
     .header__coin {
         order: 4;
         width: calc(100% - 150px);
     }
-
     .header__btn {
         position: relative;
         bottom: 0;
         order: 5;
         margin-left: 10px;
     }
-
     .nominee-list__item {
         flex-wrap: wrap;
     }
-
     .nominee-list__user {
         padding-top: 0;
         margin-bottom: 6px;
     }
-
     .nominee-list__params-list {
         width: 100%;
         justify-content: flex-start;
     }
-
     .learning-calendar {
         gap: 0 48px;
     }
-
     .learning-calendar__panel {
         padding: 30px 20px;
     }
-
     .learning-calendar__month::after {
         right: -25px;
     }
@@ -370,37 +304,29 @@
     .learning-columns {
         gap: 0 20px;
     }
-
     .learning-columns__column:first-child {
         width: 50%;
     }
-
     .learning-columns__column:last-child {
         width: 50%;
     }
-
     .training-edit-columns--dates {
         flex-wrap: wrap;
         gap: 20px;
     }
-
-    .training-edit-columns--dates>div:first-child {
+    .training-edit-columns--dates > div:first-child {
         width: 100%;
     }
-
-    .training-edit-columns--dates>div:nth-child(2),
-    .training-edit-columns--dates>div:nth-child(3) {
+    .training-edit-columns--dates > div:nth-child(2),
+    .training-edit-columns--dates > div:nth-child(3) {
         width: calc(50% - 10px);
     }
-
     .video-placeholder__icon {
         font-size: 12vw;
     }
-
     .post-addons__left {
         width: 50%;
     }
-
     .post-addons__right {
         width: 50%;
     }
@@ -421,14 +347,13 @@
     }
 
     .main-news__item--lg .card-news__content {
-        display: none;
+        display:none;
         /*order: 2;*/
         /*width: 100%;*/
         /*!*padding: 15px 0 30px;*!*/
         /*padding: 10px 0 10px 0;*/
         /*height: auto;*/
     }
-
     .main-news__item--lg .card-news__img {
         order: 1;
         width: 100%;
@@ -438,7 +363,6 @@
         border-radius: 15px;
         overflow: hidden;
     }
-
     .main-news__item--lg .card-news {
         flex-direction: column;
         height: auto;
@@ -450,7 +374,6 @@
     .main-news__item {
         width: 100%;
     }
-
     .main-news__item .card-news {
         height: auto;
         aspect-ratio: 1.5;
@@ -461,31 +384,25 @@
     .form-columns__item3 {
         width: calc(50% - 7px);
     }
-
     .structure {
         flex-wrap: wrap;
     }
-
     .panel-main__filter {
         flex-wrap: wrap;
         gap: 20px 0;
     }
-
     .filter-panel__item--sort,
     .filter-panel__item--btn {
         flex-grow: 0;
     }
-
     .meeting-booking .form-modal__input {
         min-width: 140px;
     }
 }
-
 @media (max-width: 850px) {
     .table-data--pep-access-list .table-data__row {
         gap: 30px 0;
     }
-
     .table-data--pep-access-list .table-data__cell:nth-child(2),
     .table-data--pep-access-list .table-data__cell:nth-child(3),
     .table-data--pep-access-list .table-data__cell:nth-child(4),
@@ -498,29 +415,23 @@
     .box-calend {
         padding: 25px;
     }
-
     .profile__row {
         display: block;
     }
-
     .profile__col--sidebar .card-profile {
         width: 100%;
         flex: initial;
     }
-
     .learning-documents {
         gap: 15px 30px;
     }
-
     .learning-toolbar__button--all {
         padding: 20px 15px 20px 30px;
         min-width: 260px;
     }
-
     .learning-toolbar__button--all .label {
         padding-left: 15px;
     }
-
     .inshop-list__item {
         width: calc(50% - 10px);
     }
@@ -529,12 +440,10 @@
         min-width: 125px;
     }
 }
-
 @media (max-width: 768px) {
     .ds-tr-main {
         justify-content: flex-start;
     }
-
     .ds-struct-phone,
     .ds-struct-dob,
     .ds-struct-email {
@@ -545,14 +454,12 @@
     .form-columns__item3 {
         width: 100%;
     }
-
     .table-data--pep-access .table-data__row {
         flex-direction: column;
         gap: 20px 10px;
         padding-bottom: 20px;
         margin-bottom: 15px;
     }
-
     .table-data--pep-access .table-data__cell:nth-child(1),
     .table-data--pep-access .table-data__cell:nth-child(2),
     .table-data--pep-access .table-data__cell:nth-child(3),
@@ -560,69 +467,55 @@
     .table-data--pep-access .table-data__cell:nth-child(5) {
         width: 100%;
     }
-
     .table-data--pep-access .table-data__cell:nth-child(2) .table-data__heading--mobile {
         margin-bottom: 20px;
-    }
-
+    }    
     .choose-list--select .choose-list__item {
         width: calc(50% - 15px);
-    }
-
+    }    
     .page-title-wrap .back-link {
         display: none;
     }
-
     .page-title-wrap .page-title {
         margin-top: 0;
         letter-spacing: 0.125em;
     }
-
     .title-wrap .back-link {
         display: none;
     }
-
     .title-wrap .title {
         max-width: 100%;
     }
-
     .map-description ul li {
         width: calc(50% - 15px);
     }
-
     .main-banner__title {
         display: block;
     }
-
     .sidebar-main,
     .nav-main__link--new,
     .home .sidebar-main,
     .news-home .sidebar-main {
         display: none;
     }
-
     .sidebar-main {
         order: 1;
         width: 100%;
         margin: 0 0 30px;
         padding: 30px 15px;
     }
-
     .sidebar-main.open {
         display: block;
     }
-
     .nav-main__link--news {
         display: block;
     }
-
     .nav-main {
         justify-content: space-between;
         border-bottom: 1px solid #000;
         padding: 30px 0 0 0;
         margin: 0;
     }
-
     .nav-main__link {
         font-size: 18px;
         margin: 0;
@@ -631,74 +524,57 @@
         font-weight: normal;
         letter-spacing: normal;
     }
-
     .nav-main__link::after {
         display: none;
     }
-
     .card-coin__label {
         justify-content: center;
     }
-
     .btn.footer__helpdesk-btn {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .footer__contacts-info {
         gap: 0 15px;
     }
-
     .social__item:not(:last-child) {
         /*margin: 0 20px 0 0;*/
     }
-
     .footer {
         padding: 20px 0;
     }
-
     .logo-company {
         /*margin: 0 -10px 25px;*/
     }
-
     .about-footer {
         padding: 30px 0 0 0;
     }
-
     .footer__info,
     .about-footer__content {
         font-size: 14px;
     }
-
     .about-footer__logo {
         margin: 0 25px 0 0;
     }
-
     .main__container {
         margin: 0 0 45px;
         padding: 30px 0 0 0;
     }
-
     .footer__contacts {
         padding: 0 15px 0 5%;
     }
-
     .footer__adress br {
         display: none;
     }
-
     .main__container {
         flex-wrap: wrap;
     }
-
     .content-main {
         order: 2;
     }
-
     .insta-wrap__img img {
         margin: 0 auto;
     }
-
     .panel-main__container {
         position: relative;
         padding: 60px 0 0 0;
@@ -706,7 +582,6 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-
     .panel-main__link-item {
         position: absolute;
         top: 0;
@@ -715,303 +590,238 @@
         z-index: 3;
         margin: 0;
     }
-
     .back-link {
         padding: 0 0 14px 25px;
         display: block;
         border-bottom: 1px solid #000;
     }
-
     .panel-main__view {
         padding: 0;
     }
-
     .panel-main__control {
         padding: 0;
     }
-
     .table-reserv-item {
         width: 520px;
     }
-
     .informer-calend--line {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-
     .informer-calend--line .informer-calend__item {
         margin: 0 10px 10px 0;
     }
-
     .calend-reservation__body {
         flex-wrap: wrap;
         margin: 0 -10px 30px;
     }
-
     .calend-reservation__item {
         width: 100%;
     }
-
     .box-calend {
         min-height: inherit;
         margin: 0 0 30px;
     }
-
     .card-time__holder::after {
         width: 24px;
         height: 24px;
     }
-
     .card-time__holder {
         padding: 0 0 0 35px;
     }
-
     .card-time__count {
         padding: 1px 0 5px;
     }
-
     .time-calend__content {
         height: 215px;
     }
-
     .booking-week__item {
         width: 50%;
     }
-
     .card-booking-week {
         margin: 0 0 10px;
     }
-
     .booking-week__title {
         margin: 0 0 25px;
     }
-
     .reservation__heading {
         margin: 0 0 30px;
     }
-
     .card-reserv__name-floor {
         margin: 0 0 35px;
     }
-
     .card-reserv__items {
         padding: 0 0 33px;
         margin: 0 -5px;
     }
-
     .card-reserv__item {
         padding: 0 5px;
     }
-
     .line-card {
         margin: 0 0 10px;
         padding: 5px 10px;
     }
-
     .line-card__place {
         font-size: 16px;
         width: 30px;
         height: 30px;
     }
-
     .line-card__label,
     .line-card__label-floor,
     .line-card__text {
         font-size: 13px;
     }
-
     .line-card__label {
         width: 50px;
     }
-
     .line-card__name {
         font-size: 16px;
     }
-
     .line-card__label-floor {
         margin: 0 0 0 10px;
     }
-
     .line-card__icon-monitor {
         width: 30px;
         height: 30px;
         padding: 3px;
     }
-
     .line-card__icon-monitor img {
         max-width: 16px;
     }
-
     .card-post__name {
         font-size: 18px;
         height: 64px;
     }
-
     .post-catalog__item {
         width: 50%;
     }
-
     .post-catalog--club .card-post__content {
         padding: 15px;
     }
-
     .post-filter__item {
         font-size: 16px;
         margin: 0 15px 10px 0;
     }
-
     .post-filter {
         padding: 0 0 10px;
     }
-
     .post-catalog--filter .post-catalog__item.visible {
         width: 50%;
     }
-
     .post-one__time {
         margin-bottom: 25px;
     }
-
     .datap-ofise .calendarFull__body {
         width: 300px;
         margin-left: -250px;
     }
-
     .link-open-calendarFull {
         display: block;
     }
-
     .datap-ofise .calendarFull__body .calendarFull__item {
         display: none;
     }
-
     .datap-ofise .calendarFull__body {
         position: relative;
         padding-top: 100px;
     }
-
     .datap-ofise .calendarFull__body .calendarFull__item:first-child {
         display: block;
         position: absolute;
         right: 14px;
         top: 0;
     }
-
     .datap-ofise .calendarFull__body.active .calendarFull__item {
         display: block;
     }
-
     .datap-ofise .datap-ofise-item .month-calendar__title {
         display: block;
     }
-
     .performance-directorate-item {
         font-size: 13px;
         line-height: 1.2em;
         padding: 20px 15px;
     }
-
     .performance-directorate-item .h6 {
         display: flex;
         align-items: center;
     }
-
     .h6 mark {
         font-size: 58px;
         line-height: 1em;
         letter-spacing: -1px;
         margin-right: 5px;
     }
-
     .h6 mark sup {
         font-size: 0.5em;
     }
-
     .my-employees-group-item {
         align-items: baseline !important;
         position: relative;
         width: 100%;
     }
-
     .my-employees .head-my-emploues:nth-child(2),
     .my-employees-group-item .my-employees-item:nth-child(2),
     .my-employees .head-my-emploues:nth-child(4),
     .my-employees-group-item .my-employees-item:nth-child(4) {
         display: none;
     }
-
     .my-employees .head-my-emploues:nth-child(1),
     .my-employees-group-item .my-employees-item:nth-child(1) {
         width: 34%;
     }
-
     .my-employees .head-my-emploues:nth-child(5),
     .my-employees-group-item .my-employees-item:nth-child(5) {
         width: 28%;
     }
-
     .my-employees .head-my-emploues:nth-child(6),
     .my-employees-group-item .my-employees-item:nth-child(6) {
         width: 22%;
     }
-
     .my-employees-item .head-my-emploues,
     .my-employees-item .my-employees-item {
         display: block !important;
         margin: 0;
     }
-
     .mobile-block {
         display: flex;
         flex-wrap: wrap;
     }
-
     .mobile-block-640 {
         display: none;
     }
-
     .mobile-block-576 {
         display: none;
     }
-
     .vacancy-group-head {
         padding-right: 20px;
     }
-
     .vacancy-completed .vacancy-group-head {
         padding-right: 0;
     }
-
     .vacancy-group-head .d-flex .vacancy-group-head-item {
         margin-left: 20px;
     }
-
     .vacancy-group {
         padding: 18px 14px;
     }
-
     .box-vacancy-post-group,
     .vacancy-completed {
         display: none;
     }
-
     .vacancy-completed .box-vacancy-post-group {
         display: block;
     }
-
     .link-open,
     .vacancy-off .title:after {
         display: block;
     }
-
     .vacancy-completed .link-open {
         display: none;
     }
-
     .vacancy-info-post-group-item-head {
         height: 20px;
     }
-
     .vacancy-post-item {
         margin: 0;
         padding: 6px 0;
@@ -1020,11 +830,9 @@
     .service {
         column-count: 1;
     }
-
     .submenu {
         margin: 10px 0;
     }
-
     .submenu__link {
         font-size: 13px;
         line-height: 16px;
@@ -1040,13 +848,12 @@
         width: 100%;
         margin-bottom: 20px;
     }
-
     .panel-main__row {
         flex-grow: 1;
     }
 
-    .panel-main__container_2 .panel-main__link-item {}
-
+    .panel-main__container_2 .panel-main__link-item {
+    }
     .panel-main__container_2 .panel-main__row {
         order: 2;
     }
@@ -1066,22 +873,18 @@
         justify-content: space-between;
         margin-top: 0;
     }
-
     .panel-main__action-settings {
         flex-grow: 0;
     }
-
     .panel-main__description {
         order: 3;
         border-radius: 0;
         margin-left: -15px;
         margin-right: -15px;
     }
-
     .panel-main__breadcrumbs {
         order: 4;
     }
-
     .panel-main__action {
         width: calc(50% - 8px);
         background: #f1f1f1;
@@ -1099,79 +902,61 @@
     .disk-files-list_view-card_big .disk-files-item {
         width: calc(50% - 14px);
     }
-
     .club__back-link {
         display: none;
     }
-
     .club__container--heading {
         flex-wrap: wrap;
     }
-
     .club__container--heading .panel-main__title {
         margin-bottom: 50px;
     }
-
     .club__container-btn-wrap {
         width: 100%;
     }
-
     .club__container-btn-wrap .btn-black {
         min-height: 46px;
         min-width: 275px;
     }
-
     .club-tabs-nav__item {
         font-size: 18px;
         padding: 18px;
     }
-
     .nominee-list {
         gap: 8px;
     }
-
     .nominee-list__item {
         width: 100%;
     }
-
     .ranking-title {
         width: calc(100% - 40px);
         margin-left: auto;
         margin-right: auto;
     }
-
     .club__container--heading {
         margin-bottom: 0;
     }
-
     .nominee-filter__label {
         display: none;
     }
-
     .nominee-filter__control {
         width: 100%;
     }
-
     .nominee-filter__item {
         width: 50%;
     }
-
     .nominee-filter__item--mobile {
         display: flex;
     }
-
     .nominee-filter-month {
         display: none;
     }
-
     .learning-toolbar {
         flex-wrap: wrap;
     }
-
     .learning-toolbar .title {
         text-transform: uppercase;
     }
-
     .learning-toolbar__left {
         width: 100%;
         min-width: 160px;
@@ -1179,43 +964,35 @@
         padding-bottom: 28px;
         margin-bottom: 30px;
     }
-
     .learning-toolbar__right {
         width: 100%;
         border-bottom: 1px #000 solid;
         padding-bottom: 28px;
     }
-
     .learning-portal {
         padding: 20px;
     }
-
     .learning-documents {
         background: none;
         padding: 0;
         gap: 10px 10px;
     }
-
     .learning-toolbar__button--all {
         grid-row: auto;
         grid-column: span 2;
         border-radius: 15px;
         justify-content: center;
     }
-
     .learning-toolbar__button--all .label {
         max-width: 190px;
     }
-
     .learning-toolbar__button {
         background-color: #f1f1f1;
         min-height: 90px;
     }
-
     .learning-calendar {
         flex-wrap: wrap;
     }
-
     .learning-calendar__month {
         width: 100%;
         max-width: 400px;
@@ -1223,27 +1000,22 @@
         margin-right: auto;
         margin-bottom: 40px;
     }
-
     .learning-calendar__month::after {
         display: none;
     }
-
     .learning-calendar__year {
         width: 100%;
         max-width: 400px;
         margin-left: auto;
         margin-right: auto;
     }
-
     .learning-calendar__year .learning-calendar__panel {
         padding: 0;
         background: none;
     }
-
     .learning-calendar .month-calendar__date {
         background-color: #fff;
     }
-
     .learning-calendar .month-calendar__date--disabled {
         background-color: var(--bs-graycolor);
     }
@@ -1251,53 +1023,43 @@
     .learning-columns {
         flex-wrap: wrap;
     }
-
     .learning-columns__column:first-child,
     .learning-columns__column:last-child {
         width: 100%;
     }
-
     .learning-columns__column:first-child {
         margin-bottom: 40px;
     }
-
     .learning-columns .learning-calendar {
         padding: 0;
         border-radius: 0;
         background: none;
     }
-
     .learning-columns .learning-calendar__panel {
         background: var(--bs-graycolor);
     }
-
     .learning-columns .calendar__td:not(:last-child) {
         border-right: 2px #fff solid;
         padding: 3px 0;
     }
-
     .learning-columns .learning-calendar .month-calendar__date {
         background-color: var(--bs-graycolor);
     }
-
     .learning-columns .learning-calendar .month-calendar__date--disabled {
         background-color: #fff;
     }
-
     .training-edit {
         margin-left: -40px;
         margin-right: -40px;
         border-radius: 0;
         padding: 30px 40px;
     }
-
     .title-toggler {
         background-color: var(--bs-graycolor);
         margin: 0 -40px;
         padding: 25px 40px;
         position: relative;
     }
-
     .title-toggler::after {
         font-family: "icomoon";
         content: "\e91e";
@@ -1310,46 +1072,37 @@
         color: #000;
         font-size: 12px;
     }
-
     .title-toggler.title-toggler--collapsed::after {
         transform: translateY(-50%) rotate(180deg);
     }
-
     .training-edit--collapsed {
         display: none;
     }
-
     .data-list__item {
         width: 100%;
     }
-
     .post-addons {
         flex-wrap: wrap;
         border-top: 1px #000 solid;
         padding-top: 30px;
     }
-
     .post-addons__left {
         width: 100%;
         margin-bottom: 30px;
     }
-
     .post-addons__right {
         width: 100%;
         border-top: 1px #000 solid;
         padding-top: 30px;
     }
-
     .post-addons .holder-gray {
         background: none;
         padding: 0;
         border-radius: 0;
     }
-
     .post-addons .title {
         text-transform: uppercase;
     }
-
     .learning-media {
         margin-left: -40px;
         margin-right: -40px;
@@ -1358,38 +1111,30 @@
         padding: 0;
         margin-bottom: 0;
     }
-
     .learning-media__item:not(:last-child) {
         margin: 0;
     }
-
     .learning-media__item {
         padding: 20px 40px;
     }
-
     .learning-media__item:nth-child(odd) {
         background: #f1f1f1;
     }
-
     .post-addons__self-education {
         border-bottom: 1px #000 solid;
         padding-bottom: 35px;
         margin-bottom: 30px;
     }
-
     .post-edit::before {
         width: 100%;
     }
-
     .post-docs {
         border-top: 1px #000 solid;
         padding-top: 30px;
     }
-
     .post-docs .title {
         text-transform: uppercase;
     }
-
     .post-links {
         border-top: 1px #000 solid;
         padding-top: 30px;
@@ -1416,7 +1161,6 @@
     .in-club-list li {
         width: 100%;
     }
-
     .map-search .search-list__item {
         width: calc(50% - 10px);
     }
@@ -1466,7 +1210,6 @@
         margin: 10px 0;
     }
 }
-
 @media (max-width: 700px) {
     .filter-panel__item {
         width: 50%;
@@ -1481,33 +1224,26 @@
         flex-grow: 1;
     }
 }
-
 @media (max-width: 640px) {
     .main-rows__item .initiatives__items {
         max-height: none;
         overflow-y: unset;
     }
-
     .main-rows__item {
         width: 100%;
     }
-
     .main-rows__items:not(:last-child) .main-rows__item {
         margin: 0 0 30px;
     }
-
     .main-rows__items .main-rows__item {
         margin: 0 0 30px;
     }
-
     .main-rows__items:last-child .main-rows__item:last-child {
         margin: 0;
     }
-
     .playlist-img {
         margin: 0 auto;
     }
-
     /*
     .social__link.icon-vk,
     .social__link.icon-telegramm {
@@ -1530,12 +1266,10 @@
         display: flex;
         flex-direction: column;
     }
-
     .footer {
         padding: 110px 0 10px;
         position: relative;
     }
-
     .footer__social.social {
         position: absolute;
         top: -75px;
@@ -1546,36 +1280,28 @@
         width: 100%;
         max-width: 380px;
     }
-
     .footer__social .social__item {
         /*margin: 0 10px;*/
     }
-
     .footer__info {
         order: 0;
         flex-wrap: nowrap;
     }
-
     .footer__logo-company {
         order: 1;
         flex-wrap: wrap;
         gap: 24px;
         margin-bottom: 25px;
     }
-
     .footer__about {
         order: 2;
     }
-
     .footer__contacts-info {
         flex-wrap: wrap;
     }
-
-    .footer__info,
-    .about-footer__content {
+    .footer__info, .about-footer__content {
         font-size: 16px;
     }
-
     .footer__helpdesk {
         width: 100%;
         position: absolute;
@@ -1584,64 +1310,51 @@
         display: flex;
         justify-content: center;
     }
-
     .btn.footer__helpdesk-btn {
         padding-left: 35px;
         padding-right: 35px;
     }
-
     .about-footer__logo {
         display: none;
     }
-
     .about-footer {
         padding: 0;
     }
-
     .logo-company {
         /*
         margin: 0 -10px;
         padding: 45px 0 0 0;
         */
     }
-
     .footer__contacts {
         padding: 0 15px 0 0;
     }
-
     .footer__logo {
         display: block;
         margin: 0;
         width: 87px;
     }
-
     .footer__logo img {
         width: 100%;
     }
-
     .logo-company__item {
         /*
         padding: 0 10px 25px;
         width: 33.3%;
         */
     }
-
     .logo-company__card img {
         margin: 0 auto;
     }
-
     .about-footer__content {
         padding: 15px 0 0 0;
     }
-
     .vacancies__caption {
         height: auto;
     }
-
     .card-reserv__item {
         width: 100%;
     }
-
     .reservation__title {
         font-size: 18px;
     }
@@ -1650,121 +1363,99 @@
     .my-employees-group-item .my-employees-item:nth-child(5) {
         display: none;
     }
-
     .my-employees .head-my-emploues:nth-child(1),
     .my-employees-group-item .my-employees-item:nth-child(1) {
         width: 50%;
     }
-
     .my-employees .head-my-emploues:nth-child(3),
     .my-employees-group-item .my-employees-item:nth-child(3) {
         width: 16%;
     }
-
     .my-employees .head-my-emploues:nth-child(6),
     .my-employees-group-item .my-employees-item:nth-child(6) {
         width: 32%;
     }
-
     .mobile-block-640 {
         display: flex;
     }
-
     .mobile-block-576 {
         display: none;
     }
-
-    .audioplayer {}
-
+    .audioplayer {
+    }
     .audioplayer--playlist {
         flex-wrap: wrap;
     }
-
     .audioplayer__column {
         width: 100%;
     }
-
     .audioplayer__column:nth-child(1) {
         margin-bottom: 30px;
     }
-
     .audioplayer__column:nth-child(2) {
         padding-left: 25px;
     }
-
     .playlist-scroll {
         width: 100%;
         height: 214px;
         position: relative;
         right: 0;
     }
-
     .descktop {
         display: none;
     }
-
     .mobile {
         display: block;
     }
-
     .footer__adress,
     .footer__contacts,
     .footer__helpdesk {
         padding: 0;
     }
-
     .footer__info {
         position: relative;
         margin: 0 0 115px 0;
     }
 }
-
 @media (max-width: 576px) {
     .footer__adress {
         margin-bottom: 10px;
-    }
-
+    }    
     .fileupload-list__item-name {
         white-space: normal;
         text-overflow: initial;
         overflow: visisble;
     }
-
+    
     .fileupload-list__item-name-label {
         overflow: visisble;
     }
-
+    
     .fileupload-list__item-name-label span {
         white-space: normal;
         text-overflow: initial;
         overflow: visisble;
-    }
-
+    }    
     .table-data--pep-access .table-data__row {
         margin-bottom: 20px;
     }
-
     .table-data--pep-access .table-data__cell:nth-child(1) {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
     }
-
     .table-data--pep-access .table-data__usercard {
         width: 100%;
         margin-bottom: 25px;
     }
-
     .buttons-center--pep-access {
         padding: 30px 0;
         flex-direction: column;
         align-items: center;
     }
-
     .choose-list--select .choose-list__item {
         width: 100%;
-    }
-
+    }        
     .map-description:before {
         content: "";
         position: absolute;
@@ -1773,113 +1464,88 @@
         top: -2px;
         border-top: 2px solid #f1f1f1;
     }
-
     .map-description ul li {
         width: 100%;
     }
-
     .map-description__poppup {
         display: block;
     }
-
     .header__container {
         gap: 15px 0;
     }
-
     .header__profile {
         order: 3;
         padding: 0;
         margin-right: 10px;
     }
-
     .header__search {
         width: calc(100% - 60px);
     }
-
     .header__coin {
         width: calc(100% - 102px);
     }
-
     .audioplayer-widget__track {
         font-size: 13px;
     }
-
     .footer__info {
         align-items: flex-start;
     }
-
     .footer__contacts-info {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .footer__contacts {
         padding: 0 0 10px;
     }
-
     .footer__info,
     .about-footer__content {
         font-size: 16px;
     }
-
     .title {
         text-transform: uppercase;
         letter-spacing: 0.125em;
     }
-
     .main-banner__date,
     .main-banner__name {
         font-size: 15px;
     }
-
     .main-news .title {
         display: none;
     }
-
     .main-banner {
         margin: 0 0 25px;
     }
-
     .card-news {
         background-color: transparent;
         padding: 100% 0 0 0;
         height: auto;
     }
-
     .main-news__item .card-news {
         padding: 0;
     }
-
     .card-news__content .all-link {
         display: none;
     }
-
     .card-news__date {
         margin: 0 0 8px;
     }
-
     .main-news__item--lg {
         /*margin: 0;*/
     }
-
     .main-news__all {
         padding: 0 0 30px;
         border-bottom: 1px solid #000;
     }
-
     .card-news__date,
     .card-news__name {
         font-size: 15px;
     }
-
     .vacancies__img {
         background-color: var(--bs-graycolor);
     }
-
     .vacancies__item {
         margin: 0 0 25px;
     }
-
     .holder-gray {
         padding: 0;
         background-color: transparent;
@@ -1888,237 +1554,188 @@
         border-bottom: 1px solid #000;
         overflow: visible;
     }
-
     .survey__title {
         color: #c4c4c4;
     }
-
     .btn-white {
         background-color: var(--bs-graycolor);
         color: #000;
     }
-
     .sidebar-main .btn-white {
         background-color: #fff;
         color: #000;
     }
-
     .btn-gray-border:hover {
         background: #c4c4c4;
         border-color: #c4c4c4;
     }
-
     .header__logo {
         width: 45px;
     }
-
     .modal--choose-department input.search-header__input,
     .search-header__submit {
         height: 28px;
     }
-
     .modal--choose-department input.search-header__input,
     .search-header__submit {
         height: 40px;
     }
-
     .search-dropdown {
         right: 0;
         left: 10px;
         top: 40px;
     }
-
     .search-list__item {
         width: 100%;
     }
-
     .search-header__submit {
         background-size: 16px 25px;
     }
-
     .profile-header__link {
         width: 24px;
         height: 24px;
     }
-
     .profile-header__link--wifi svg {
         width: 16px;
     }
-
     .profile-header__link--user svg {
         width: 11px;
     }
-
     .card-coin--info .card-coin__icon {
         display: none;
     }
-
     .card-coin--info .card-coin__label {
         padding: 3px 8px 0;
     }
-
     .card-coin__label {
         font-size: 12px;
     }
-
     .card-coin {
         height: 24px;
         min-width: inherit;
     }
-
     .card-coin__icon,
     .btn-nav-mobile,
     .card-coin__icon_btn {
         width: 24px;
         height: 24px;
     }
-
     .card-coin__icon img,
     .card-coin__icon_btn img {
         width: 24px;
     }
-
     .btn-nav-mobile__label::after {
         margin: -2px 0 0 0;
     }
-
     .initiatives__item {
         display: flex;
         align-items: center;
         padding: 20px 15px;
         margin: 0 -15px;
     }
-
     .initiatives__caption {
         margin: 0 15px 0 0;
         flex-grow: 1;
         overflow: initial;
         white-space: initial;
     }
-
     .initiatives__items {
         margin: 0 0 30px;
     }
-
     .initiatives__item:nth-child(odd) {
         background-color: var(--bs-graycolor);
     }
-
     .nav-main__link {
         font-size: 14px;
     }
-
     .profile-header__link--user img {
         width: 11px;
     }
-
     .modal--container .modal-dialog {
         max-width: 100%;
     }
-
     .panel-main__title,
     .content-main__title {
         font-size: 20px;
     }
-
     .club__main-title {
         font-size: 25px;
         letter-spacing: 0.125em;
     }
-
     .panel-main__title::after,
     .content-main__title::after {
         bottom: -5px;
         width: 12px;
         height: 5px;
     }
-
     .reservation__emblem {
         width: 26px;
         height: 26px;
     }
-
     .panel-main__view {
         bottom: 3px;
     }
-
     .filter-panel {
         flex-wrap: wrap;
         padding: 0 0 45px;
         gap: 0;
     }
-
     .nominee-filter {
         flex-wrap: nowrap;
         padding: 0;
         gap: 0 20px;
     }
-
     .filter-panel__item {
         width: auto;
     }
-
     .filter-panel__item:nth-child(1),
     .filter-panel__item:nth-child(2),
     .filter-panel__item:nth-child(3) {
         width: 100%;
     }
-
     .filter-panel__item--btn {
         width: 100%;
     }
-
     .filter-panel__submit {
         max-width: 160px;
         margin: auto;
     }
-
     .panel-main__filter .filter-panel__item {
         display: flex;
         flex-direction: column;
         margin: 0 0 10px;
     }
-
     .panel-main__filter .control-filter {
         order: 2;
     }
-
     .panel-main__filter .control-filter__label {
         order: 1;
         padding: 0 0 10px;
     }
-
     .filter-panel__sort {
         top: -10px;
     }
-
     .panel-main__filter .filter-panel__item--btn {
         margin: 0 auto;
     }
-
     .table-reservation__city {
         font-size: 16px;
     }
-
     .table-reservation__caption {
         font-size: 14px;
     }
-
     .table-reserv-item {
         width: 100%;
         flex-direction: inherit;
         padding: 0;
     }
-
     .table-reservation__items {
         overflow: inherit;
     }
-
     .table-reserv-item__heading .table-reserv-item__row {
         flex-direction: column;
         margin: 0;
     }
-
     .table-reserv-item__body .table-reserv-item__row {
         position: relative;
         padding: 15px;
@@ -2130,11 +1747,9 @@
         margin: 0;
         gap: 16px 8px;
     }
-
     .table-reserv-item__body .table-reserv-item__row:not(:last-child) {
         margin-bottom: 5px;
     }
-
     .table-reserv-item__body .table-reserv-item__row::before {
         font-family: "icomoon";
         content: "\e91e";
@@ -2146,20 +1761,16 @@
         top: 18px;
         right: 14px;
     }
-
     .table-reserv-item__body {
         display: block;
         padding: 0;
     }
-
     .table-reserv-item__heading::after {
         display: none;
     }
-
     .table-reserv-item__heading {
         display: none;
     }
-
     .table-reserv-item__name {
         font-size: 15px;
         background: none;
@@ -2174,7 +1785,6 @@
         padding: 15px 30px 15px 15px;
         margin: -15px;
     }
-
     .table-reserv-item__label {
         font-size: 11px;
         height: 16px;
@@ -2182,324 +1792,259 @@
         align-items: center;
         justify-content: center;
     }
-
     .table-reserv-item__col {
         padding: 0;
     }
-
     .table-reserv-item__heading .table-reserv-item__col {
         width: 100%;
         margin: 0 0 2px;
     }
-
     .table-reserv-item__body {
         width: 100%;
     }
-
     .table-reserv-item__body .table-reserv-item__col {
         margin: 0;
         width: calc(20% - (32px / 5));
     }
-
     .table-reserv-item__body .table-reserv-item__col:first-child {
         width: 100%;
         text-align: left;
         font-weight: 700;
     }
-
-    .table-reserv-item__body .table-reserv-item__row--collapsed .table-reserv-item__col--collapsible {
+    .table-reserv-item__body
+        .table-reserv-item__row--collapsed
+        .table-reserv-item__col--collapsible {
         display: none;
     }
-
     .table-reserv-item__body .table-reserv-item__row--collapsed::before {
         transform: rotate(180deg);
     }
-
     .table-reserv-item__time-reserv-label {
         display: block;
     }
-
     .table-reserv-item__time-reserv {
         width: 100%;
     }
-
-    .table-reserv-item__time-reserv:not(.table-reserv-item__time-reserv--turquoise,
-        .table-reserv-item__time-reserv--green,
-        .table-reserv-item__time-reserv--orange,
-        .table-reserv-item__time-reserv--blue,
-        .table-reserv-item__time-reserv--red) {
+    .table-reserv-item__time-reserv:not(
+            .table-reserv-item__time-reserv--turquoise,
+            .table-reserv-item__time-reserv--green,
+            .table-reserv-item__time-reserv--orange,
+            .table-reserv-item__time-reserv--blue,
+            .table-reserv-item__time-reserv--red
+        ) {
         background: #fff;
     }
-
     .time-calend__count,
     .card-time__count {
         font-size: 15px;
     }
-
     .calend-reservation__heading {
         margin: 0 0 25px;
     }
-
     .calend-reservation__heading .control-filter {
         max-width: 100%;
     }
-
     .box-calend .calendar__table-col-header,
     .box-calend .calendar__td {
         padding: 3px 0;
     }
-
     .box-calend .calendar__table-col-header,
     .box-calend .calendar__td {
         font-size: 11px;
     }
-
     .box-calend .calendar__table-cell,
     .box-calend .calendar__td .circle-icon {
         width: 25px;
         height: 25px;
     }
-
     .box-calend .calendar__td .circle-icon {
         top: 2px;
     }
-
     .box-calend .calendar__btn_prev {
         border-width: 6.5px 6px 6.5px 0;
     }
-
     .box-calend .calendar__btn_next {
         border-width: 6.5px 0 6.5px 6px;
     }
-
     .box-calend .calendar__header {
         padding: 0 15px;
         margin: 0 0 20px;
         min-height: 16px;
         line-height: 16px;
     }
-
     .time-calend__content {
         height: 215px;
     }
-
     .booking-week__item {
         width: 100%;
     }
-
     .card-booking-week {
         padding: 20px;
     }
-
     .reservation__title,
     .card-reserv__name-floor {
         font-size: 16px;
     }
-
     .card-reserv__name-floor,
     .reservation__heading {
         margin: 0 0 15px;
     }
-
     .card-reserv__items {
         padding: 0 0 10px;
     }
-
     .reservation {
         margin: 0 0 25px;
     }
-
     .informer-calend {
         padding: 0 0 20px;
     }
-
     .main__container {
         margin: 0 0 20px;
     }
-
     .line-card__place {
         font-size: 13px;
         width: 25px;
         height: 25px;
     }
-
     .line-card__label,
     .line-card__label-floor,
     .line-card__text {
         font-size: 12px;
     }
-
     .line-card__label {
         width: 40px;
         padding: 0 3px 0 0;
     }
-
     .line-card__name {
         font-size: 14px;
     }
-
     .card-post__name {
         font-size: 16px;
         height: 58px;
     }
-
     .post-catalog__item {
         padding: 0 9px 18px;
     }
-
     .post-catalog--gray .card-post__content {
         min-height: 62px;
         padding: 10px 20px;
         align-items: center;
     }
-
     .post-catalog--gray .card-post__img {
         padding: 82% 0 0 0;
     }
-
     .post-catalog--filter .post-catalog__item.visible {
         padding: 0 9px 18px;
     }
-
     .card-employee__img {
         width: 220px;
         height: 220px;
         border: 1px solid var(--bs-colornavlink);
     }
-
     .card-profile--employee .title {
         font-size: 25px;
     }
-
     .card-profile--employee .card-profile__content {
         padding: 0 0 30px;
     }
-
     .card-employee__name {
         font-size: 20px;
     }
-
     .card-employee__content {
         padding: 0;
     }
-
     .card-profile {
         position: relative;
     }
-
     .card-profile__content {
         position: static;
     }
-
     .edit-btn--pos_top {
         top: 0;
         right: 0;
     }
-
     .card-profile__col {
         width: 100%;
     }
-
     .card-profile__col:first-child {
         padding: 0 5px 20px;
     }
-
     .profile__col--gray .card-profile {
         background-color: var(--bs-graycolor);
         border-radius: 15px;
         overflow: hidden;
         padding: 40px 15px 0;
     }
-
     .profile__col--gray {
         border-bottom: 1px solid #000;
         margin: 0 0 30px;
     }
-
     .profile__col--gray .holder-gray {
         border-bottom: none;
     }
-
     .clubsList__col {
         width: 100%;
     }
-
     .clubsList__row {
         flex-wrap: wrap;
     }
-
     .profile__row {
         margin: 0;
     }
-
     .profile__col {
         padding: 0;
     }
-
     .card-profile {
         margin: 0 0 30px;
     }
-
     .profile-calendar .informer-calend {
         padding: 35px 0 0 0;
     }
-
     .profile-calendar__col-xs .calendar-sec {
         background-color: var(--bs-graycolor);
         padding: 20px 15px;
         border-radius: 15px;
         overflow: hidden;
     }
-
     .card-profile--caledar .holder-gray {
         border-bottom: none;
         padding: 0;
     }
-
     .card-profile .initiatives__item {
         border-radius: 15px;
     }
-
     .card-profile .initiatives__caption {
         height: auto;
         margin: 0 0 15px;
     }
-
     .group-icons {
         background-color: var(--bs-graycolor);
         padding: 17px 15px 11px;
         border-radius: 15px;
     }
-
     .group-icons__item {
         padding: 0 2px 4px;
         width: 20%;
     }
-
     .group-icons__card {
         margin: 0 auto;
     }
-
     .history-in_coin {
         background-color: var(--bs-graycolor);
         padding: 25px 15px;
         border-radius: 15px;
     }
-
     .holder-gray .lineWrapCareer__footer::after,
     .holder-gray .lineWrapCareer__heading::after {
         background-color: var(--bs-bgmain);
     }
-
     .datap-ofise-group .informer-calend__item {
         display: flex;
         margin: 0 0 10px;
     }
-
     .datap-ofise-group .informer-calend {
         text-align: left;
     }
-
     .datap-ofise-group-head {
         margin-bottom: 30px;
     }
@@ -2508,13 +2053,11 @@
     .my-employees-group-item .my-employees-item:nth-child(6) {
         display: none;
     }
-
     .my-employees .head-my-emploues:nth-child(1),
     .my-employees-group-item .my-employees-item:nth-child(1) {
         /*width: 73%*/
         width: 100%;
     }
-
     .my-employees .head-my-emploues:nth-child(3),
     .my-employees-group-item .my-employees-item:nth-child(3) {
         /*width: 26%*/
@@ -2522,40 +2065,32 @@
         right: 0;
         top: 7px;
     }
-
     .mobile-block-576 {
         display: flex;
     }
-
     .btn-gray {
         padding: 10px 13px 10px;
     }
-
     .open-vacancy-tabs-group {
         padding: 0 0 20px;
     }
-
     .my-employees-group {
         margin-bottom: 40px;
         padding-bottom: 20px;
     }
-
     .open-vacancy-tabs-group .btn-black {
         flex-basis: 100%;
         margin-bottom: 16px;
     }
-
     .open-vacancy-tabs {
         justify-content: space-between;
         width: 100%;
     }
-
     .open-vacancy-tabs li {
         margin: 0;
         min-width: 10px;
         width: 48%;
     }
-
     .vacancy-info-post-group-item {
         flex-basis: 50%;
     }
@@ -2567,45 +2102,36 @@
     .disk-files-list_view-card_big .disk-files-item {
         width: calc(100% - 14px);
     }
-
     .club-tabs-nav {
         gap: 0 10px;
     }
-
     .club-tabs-nav__item {
         font-size: 15px;
         padding: 13px;
         min-height: 60px;
     }
-
     .post-addons__buttons {
         gap: 0 10px;
     }
-
     .post-addons__button-docs {
         min-height: 90px;
         border-radius: 15px;
     }
-
     .post-addons .holder-gray {
         border-bottom: 0;
     }
-
     .post-edit {
         gap: 24px 0;
         flex-direction: column;
     }
-
     .post-doc-item {
         width: 100%;
         min-height: 62px;
         border-radius: 31px;
     }
-
     .post-doc-item__icon {
         width: 22px;
     }
-
     .post-links__items {
         background: none;
         border-radius: 0;
@@ -2613,20 +2139,16 @@
         margin-left: -40px;
         margin-right: -40px;
     }
-
     .post-link-item {
         padding: 15px 40px;
         display: block;
     }
-
     .post-link-item:nth-child(odd) {
         background: #f1f1f1;
     }
-
     .post-link-item__name {
         margin-bottom: 10px;
     }
-
     .post-link-item__url {
         width: 100%;
         overflow: visible;
@@ -2641,7 +2163,6 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
-
     .news-edit__textarea {
         margin-bottom: 15px;
         margin-top: -25px;
@@ -2836,7 +2357,6 @@
     .in-club-list {
         row-gap: 15px;
     }
-
     .map__title {
         font-size: 25px;
         line-height: 30px;
@@ -2880,7 +2400,6 @@
         bottom: 2px;
         margin: auto 0;
     }
-
     .check-wrap__name:before {
         top: 2px;
         bottom: 2px;
@@ -2913,7 +2432,6 @@
     .inshop-list__img {
         background-size: contain;
     }
-
     .holder-gray .like-container {
         justify-content: flex-end;
     }
@@ -2921,25 +2439,20 @@
     input.wifi-modal__inpuf-control {
         color: #000;
     }
-
     .form-modal__calend.filter-panel__control.control-filter.mobile-calendar {
         width: 100% !important;
     }
-
     .calend-reservation__item {
         margin: 10px 0;
     }
-
     .card-time__count {
         padding-top: 12px;
     }
 }
-
 @media (max-width: 450px) {
     .submenu__link {
         margin: 0 10px 0 0;
     }
-
     .table-reserv-item__heading {
         width: 34px;
     }
@@ -2951,251 +2464,198 @@
     .table-reserv-item__heading {
         padding: 30px 0 0 0;
     }
-
     .post-catalog__item {
         width: 100%;
     }
-
     .card-post__name {
         height: auto;
         min-height: 36px;
     }
-
     .card-post__img {
         padding: 52% 0 0 0;
     }
-
     .card-post__img img {
         object-fit: contain;
     }
-
     .post-catalog--gray .card-post__content {
         padding: 10px 15px;
     }
-
     .post-catalog--gray .card-post__name {
         min-height: initial;
     }
-
     .post-catalog--gray .card-post__img {
         padding: 68% 0 0 0;
     }
-
     .post-catalog--two_column,
     .post-catalog--filter {
         margin: 0 -5px;
     }
-
     .post-catalog--two_column .post-catalog__item,
     .post-catalog--filter .post-catalog__item.visible {
         width: 50%;
         padding: 0 5px 10px;
     }
-
     .comment-post__form {
         margin: 0 0 30px;
     }
-
     .comment-post__submit {
         margin: 0 auto;
     }
-
     .post-one__text {
         font-size: 15px;
         padding: 0 0 5px;
     }
-
     .card-comment-post__text {
         font-size: 13px;
         padding: 0 30px 0 0;
     }
-
     .card-comment-post--answer {
         margin: 10px 0 0 20px;
     }
-
     .card-comment-post__name {
         font-size: 14px;
     }
-
     .comment-post__count {
         margin: 0 0 15px;
     }
-
     .comment-post__textarea {
         min-height: 100px;
     }
-
     .b-box-vacancy .vacancy-group-head-item {
         flex-basis: 100%;
         text-align: center;
     }
-
     .vacancy-info-post-group-item {
         flex-basis: 100%;
     }
-
     .datap-ofise .datap-ofise-item:first-child .month-calendar__title {
         text-align: right;
         margin-right: -6px;
     }
-
     .search-list__item-avatar {
         width: 34px;
         height: 34px;
     }
-
     .search-list__item-name {
         font-size: 12px;
         line-height: 17px;
     }
-
     .department-buttons--active {
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
     }
-
     .department-buttons--active .department-buttons__plus {
         margin-bottom: 30px;
     }
-
     .meeting-booking-header {
         flex-wrap: wrap;
         align-items: flex-start;
     }
 }
-
 @media (max-width: 420px) {
     .profile-header__item:not(:last-child) {
         margin: 0 0 0 5px;
     }
-
     .coin-header {
         left: 53px;
         right: 29px;
     }
-
     .coin-header__item {
         padding: 0 0 0 5px;
     }
-
     .wifi-modal__title {
         font-size: 20px;
         margin: 0 0 30px;
     }
-
     .wifi-modal__name {
         font-size: 15px;
     }
-
     .wifi-modal__qkod {
         display: none;
     }
-
     .wifi-modal__caption {
         margin: 0 0 10px;
     }
-
     .modal--container .modal-content {
         padding: 30px 20px;
     }
-
     .form-modal__calend {
         max-width: 100%;
     }
-
     .view-panel {
         margin: 0 -5px;
     }
-
     .view-panel__item {
         padding: 0 5px;
     }
-
     .line-card__icon-monitor {
         display: none;
     }
-
     .line-card {
         height: 54px;
     }
-
     .modal__reservation-caption {
         display: block;
     }
-
     .modal__reservation-caption .modal-content__title {
         margin: 0 0 10px;
     }
-
     .modal--reservation .form-modal__submit-wrap {
         flex-direction: column;
     }
-
     .modal--reservation .form-modal__submit-wrap .form-modal__submit {
         max-width: 100%;
     }
-
-    .modal--reservation .form-modal__submit-wrap .form-modal__submit:not(:last-child) {
+    .modal--reservation
+        .form-modal__submit-wrap
+        .form-modal__submit:not(:last-child) {
         margin: 0 0 10px;
     }
-
     .modal--nominate-employee .form-modal__submit-wrap {
         flex-direction: column;
     }
-
     .modal--nominate-employee .form-modal__submit-wrap .form-modal__submit {
         max-width: 100%;
     }
-
-    .modal--nominate-employee .form-modal__submit-wrap .form-modal__submit:not(:last-child) {
+    .modal--nominate-employee
+        .form-modal__submit-wrap
+        .form-modal__submit:not(:last-child) {
         margin: 0 0 10px;
     }
-
     .modal--delete .form-modal__submit-wrap .form-modal__submit {
         max-width: 110px;
     }
-
     .post-filter__item {
         font-size: 14px;
         margin: 0 10px 10px 0;
     }
-
     .form-modal__submit-wrap--s_between {
         flex-direction: column;
         padding: 0;
     }
-
     .form-modal__submit-wrap--s_between .form-modal__submit {
         max-width: initial;
     }
-
     .form-modal__submit-wrap--s_between .form-modal__submit:not(:first-child) {
         margin: 10px 0 0 0;
     }
-
     .vacancy-post-item {
         flex-basis: 100%;
     }
-
     .datap-ofise .name-h {
         width: 130px;
     }
-
     .nominee-filter {
         gap: 0 10px;
     }
 }
-
 @media (max-width: 360px) {
-
     .post-catalog--two_column .card-post__content,
     .post-catalog--filter .card-post__content {
         padding: 5px 8px;
         min-height: 52px;
     }
-
     .post-catalog--two_column .card-post__name,
     .post-catalog--filter .card-post__name {
         font-size: 13px;
@@ -3205,11 +2665,10 @@
         width: calc(100% - 14px);
     }
 }
-
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
 
 @media (min-width: 769px) {
-
     .disk-files-action_only_menu,
     .disk-files-actions-toggle,
     .disk-files-action:after,
@@ -3248,7 +2707,6 @@
     .disk-files-action {
         padding: 12px;
     }
-
     .disk-files-list_view-list .disk-files-action__icon:hover:before {
         color: var(--bs-maincolor);
     }
@@ -3256,15 +2714,12 @@
     .disk-files-action__icon:before {
         margin-right: 0;
     }
-
     .disk-files-list_view-list .disk-files__header .disk-files__column_title {
         padding-left: 45px;
     }
-
     .disk-files-group__actions {
         flex-direction: row;
     }
-
     .disk-files-group__action:last-child {
         flex-grow: 1;
         padding-right: 0;
