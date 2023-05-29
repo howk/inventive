@@ -1,31 +1,31 @@
 /*-----------------media-------------------*/
 @media (max-width: 1000px) {
-    .ds-wrap-struct-head {
+    .ds-wrap-struct-block .ds-wrap-struct-head {
         display: none;
     }
 
-    .ds-tr-main {
+    .ds-wrap-struct-block .ds-tr-main {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
         gap: 20px 10px;
     }
 
-    .ds-struct-fio {
+    .ds-tr-main .ds-struct-fio {
         width: 100%;
     }
 
-    .ds-struct-phone,
-    .ds-struct-dob,
-    .ds-struct-email {
+    .ds-tr-main .ds-struct-phone,
+    .ds-tr-main .ds-struct-dob,
+    .ds-tr-main .ds-struct-email {
         width: auto;
     }
 
-    .ds-heading-mob {
+    .ds-tr-main .ds-heading-mob {
         display: block;
     }
 
-    .table-data--pep-access .table-data__row--heading {
+    .ds-tr-main .table-data--pep-access .table-data__row--heading {
         display: none;
     }
 
