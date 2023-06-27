@@ -12016,6 +12016,7 @@ figure.image_resized img {
     /*height: -webkit-fill-available;*/
     min-height: 45px;
     display: block;
+    height: 100%;
 }
 
 .pep div.form-modal__input.form-modal__input--calendar:not(.data-widget) {
