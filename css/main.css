@@ -12027,9 +12027,10 @@ figure.image_resized img {
     display: block;
 }
 
-.card-profile__content.holder-gray .form-modal__submit {
+.card-profile__content.holder-gray .row .form-modal__submit {
     margin: 0 12px 0 auto;
 }
+
 .card-profile__content.holder-gray .row--align-center {
     align-items: center;
 }
