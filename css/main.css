@@ -12026,3 +12026,10 @@ figure.image_resized img {
 .score-item__info-block:hover .popup-hint.score-item__hint {
     display: block;
 }
+
+.card-profile__content.holder-gray .form-modal__submit {
+    margin: 0 12px 0 auto;
+}
+.card-profile__content.holder-gray .row--align-center {
+    align-items: center;
+}
