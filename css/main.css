@@ -12028,9 +12028,39 @@ figure.image_resized img {
 }
 
 .card-profile__content.holder-gray .row .form-modal__submit {
-    margin: 0 12px 0 auto;
+    width: 50%!important;
+    max-width: 50%;
+    margin: 0;
 }
 
 .card-profile__content.holder-gray .row--align-center {
     align-items: center;
+    margin: 0;
+    gap: 0 15px;
+    width: 100%;
+}
+
+.card-profile__content.holder-gray .row--align-center .ix-block-date {
+    width: 50%!important;
+    max-width: 50%!important;
+}
+
+.card-profile__content.holder-gray .row>* {
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 50%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+
+.card-profile__content.holder-gray .form-modal__submit-wrap.form-modal__submit-wrap--s_between {
+    gap: 15px 15px;
+}
+
+.card-profile__content.holder-gray .form-modal__submit-wrap.form-modal__submit-wrap--s_between .form-modal__submit {
+    margin: 0!important;
+    width: 100%;
 }
