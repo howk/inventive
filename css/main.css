@@ -4614,6 +4614,10 @@ input.control-filter__input {
 
 .clubsList__img img {
     object-fit: cover;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .clubsList__content {
@@ -4622,6 +4626,18 @@ input.control-filter__input {
 
 .clubsList__name {
     margin: 0 0 5px;
+}
+
+.history-in_coin {
+    height: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+}
+
+.history-in_coin .all-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .history-in_coin__item {
@@ -4650,11 +4666,17 @@ input.control-filter__input {
 
 .history-in_coin__content {
     flex-grow: 1;
+    width: calc(100% - 60px);
 }
 
 .history-in_coin__name {
     color: var(--bs-maincolor);
     text-decoration: none;
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .history-in_coin__name:hover {
@@ -4663,7 +4685,7 @@ input.control-filter__input {
 }
 
 .history-in_coin__detail {
-    padding: 10px 0 0 0;
+    /*padding: 10px 0 0 0;*/
     color: var(--bs-colorsociallink);
 }
 

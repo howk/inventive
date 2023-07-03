@@ -2032,8 +2032,12 @@
     }
     .history-in_coin {
         background-color: var(--bs-graycolor);
-        padding: 25px 15px;
+        padding: 25px 15px 35px 15px;
         border-radius: 15px;
+    }
+    .history-in_coin .all-link {
+        bottom: 15px;
+        left: 15px;
     }
     .holder-gray .lineWrapCareer__footer::after,
     .holder-gray .lineWrapCareer__heading::after {
