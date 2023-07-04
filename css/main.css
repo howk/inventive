@@ -12065,6 +12065,13 @@ figure.image_resized img {
 .card-profile__content.holder-gray .row--align-center .ix-block-date {
     width: 50%!important;
     max-width: 50%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-profile__content.holder-gray .row--align-center .ix-block-date span {
+    max-width: 80px;
 }
 
 .card-profile__content.holder-gray .row>* {
