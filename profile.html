@@ -614,6 +614,7 @@
 															</a>
 														</div>
 													</div>
+													<button class="btn-black h-nomination__btn" data-bs-toggle="modal" data-bs-target="#nominateEmployeeModal" type="button">Номинировать сотрудника</button>
 												</div>
 												<a data-bs-toggle="modal" data-bs-target="#nominationModal" class="all-link">
 													<span class="all-link__point"></span>
@@ -636,6 +637,20 @@
 															<a href="#" class="initiatives__more">Подробнее...</a>
 														</div>
 													</div>
+												</div>
+											</div>
+										</div>
+										<div class="ds-content-row__aside ds-content-row__aside--flex ds-content-row__aside--w33p ds-content-row__aside--w33p-m50 ix-forbs" style="margin: 0px 0px 40px;">
+											<div class="card-profile__title title">оценка эффективности и целеполагание <br> (Performance Evaluation &amp; Planning)</div>
+											<div class="card-profile__content holder-gray" style="position: revert;">
+												<div class="row row--align-center row--space-between gray-block ix-forbs-block" style="display: flex; flex-wrap: nowrap;">
+													<div class="ix-block-date" style="max-width: 43%;">
+														<div class="num-block">
+															<span></span>
+														</div>
+														<span>23.06.2023 - 22.08.2023</span>
+													</div>
+													<a target="_blank" href="/pep-form/14997/" class="form-modal__submit form-modal__submit--black custom-tooltip" style="text-decoration: none; background: rgb(0, 186, 198);" data-tooltip="Открыта">Открыта</a>
 												</div>
 											</div>
 										</div>
@@ -3115,6 +3130,57 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="modal modal--container fade modal--nominate-employee" id="nominateEmployeeModal" tabindex="-1" aria-labelledby="nominateEmployeeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<h2 id="nominateEmployeeModalLabel" class="modal-content__title">Номинировать сотрудника</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__items">
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Пользователь<span class="required-info">*</span></label>
+								<input class="form-modal__input" type="text" value="Владимир Васильев" readonly name="" required />
+							</div>						
+							<div class="form-modal__item">
+								<label class="form-modal__label">Ценность<span class="required-info">*</span></label>
+								<div class="radio-wrap worth-wrap">
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio1" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio1" class="radio-wrap__name worth-wrap__name">Честность</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio2" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio2" class="radio-wrap__name worth-wrap__name">Уважение + доверие</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio3" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio3" class="radio-wrap__name worth-wrap__name">Целесообразность</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio4" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio4" class="radio-wrap__name worth-wrap__name">Ответственность</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio5" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio5" class="radio-wrap__name worth-wrap__name">Рост</label>
+									</div>									
+								</div>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Обоснование<span class="required-info">*</span> (конкретный кейс, как именно была проявлена ценность у указанного человека)</label>
+								<textarea class="form-modal__input" name="" required></textarea>
+								<div class="form-modal__label form-modal__label--gray">Введите не менее 150 символов</div>
+							</div>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button class="form-modal__submit" data-bs-dismiss="modal" aria-label="Закрыть">Отменить</button>
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Номинировать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>		
 		<!-- /Modal -->
 
 	</div>

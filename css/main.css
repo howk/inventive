@@ -4445,7 +4445,7 @@ input.control-filter__input {
 }
 
 .h-nomination__list {
-    padding: 0 0 30px;
+    padding: 0 0 20px;
 }
 
 .h-nomination__item:not(:first-child) {
@@ -4460,6 +4460,11 @@ input.control-filter__input {
 .h-nomination__text {
     color: var(--bs-colorsociallink);
     padding: 15px 0;
+}
+
+.h-nomination__btn {
+    margin: 0 auto 20px auto;
+    display: flex;
 }
 
 .card-nomination {
