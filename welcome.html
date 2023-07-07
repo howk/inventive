@@ -1,0 +1,1088 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Welcome</title>
+	<!--favicon-->
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<link rel="icon" href="favicon.png" type="image/png">
+	<!--style-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/calendar.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/icomoon.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<!---Header-->
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo">
+						<a href="/" class="header__logo-link"><img src="img/logo.svg" alt="" /></a>
+					</div>
+					<div class="header__profile profile-header">
+						<div class="profile-header__item">
+							<a href="#" class="profile-header__link profile-header__link--user" data-bs-toggle="tooltip" data-bs-placement="bottom" title="бронь переговорных">
+								<img src="img/user-two-icon.svg" alt="" />
+								<svg width="19" height="25" viewBox="0 0 19 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5148 8.41728C11.5148 9.02704 11.3793 9.56904 11.1761 10.0433C11.5148 10.111 11.8536 10.1788 12.1924 10.1788C14.4959 10.1788 16.3929 8.28178 16.3929 5.97825C16.3929 3.67473 14.4959 1.77771 12.1924 1.77771C10.4308 1.77771 8.94032 2.86172 8.33057 4.35224C10.1598 4.82649 11.5148 6.45251 11.5148 8.41728Z" stroke="white" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+									<path d="M8.33039 4.35224C7.99164 4.28449 7.65288 4.21674 7.31413 4.21674C5.01061 4.21674 3.11359 6.11376 3.11359 8.41728C3.11359 10.7208 5.01061 12.6178 7.31413 12.6178C9.07565 12.6178 10.5662 11.5338 11.1759 10.0433C11.3792 9.56904 11.5147 8.95929 11.5147 8.41728C11.5147 6.45251 10.1597 4.82649 8.33039 4.35224Z" stroke="white" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+									<path d="M12.192 11.7371C10.2272 11.7371 8.53347 12.6856 7.51721 14.1761C10.566 14.2439 13.0728 16.8184 13.0728 19.935V21.561H17.9508V17.4959C17.9508 14.3116 15.3763 11.7371 12.192 11.7371Z" stroke="white" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+									<path class="user-line-anim" d="M7.51748 14.1761C7.44973 14.1761 7.38198 14.1761 7.31423 14.1761C4.12995 14.1761 1.55542 16.7507 1.55542 19.935V24H13.0053V21.561V19.935C13.073 16.8184 10.5663 14.3116 7.51748 14.1761Z" stroke="#00BAC6" stroke-width="2" stroke-miterlimit="8" stroke-linecap="square" />
+								</svg>
+							</a>
+						</div>
+						<div class="profile-header__item">
+							<a href="#" data-bs-toggle="modal" data-bs-target="#wifiModal" class="profile-header__link profile-header__link--wifi">
+								<svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path class="line-three" d="M1 5.8C4.06074 2.83601 8.30682 1 13 1C17.6932 1 21.9393 2.83601 25 5.8" stroke="black" stroke-width="2" />
+									<path class="line-two" d="M4.59961 9.40078C6.74213 7.17779 9.71438 5.80078 12.9996 5.80078C16.2848 5.80078 19.2571 7.17779 21.3996 9.40078" stroke="black" stroke-width="2" />
+									<path class="line-first" d="M8 13C9.27531 11.765 11.0445 11 13 11C14.9555 11 16.7247 11.765 18 13" stroke="black" stroke-width="2" />
+									<circle class="circle" cx="12.9998" cy="16.2" r="1.2" fill="black" />
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="header__audioplayer audioplayer-widget header__audioplayer--active">
+						<div class="audioplayer-widget__controls">
+							<button class="audioplayer-widget__btn-control audioplayer-widget__btn-control--prev">
+								<span class="icon-player-prev"></span>
+							</button>
+							<button class="audioplayer-widget__btn-control audioplayer-widget__btn-control--play">
+								<span class="icon-player-play"></span>
+							</button>
+							<button class="audioplayer-widget__btn-control audioplayer-widget__btn-control--next">
+								<span class="icon-player-next"></span>
+							</button>
+						</div>
+						<div class="audioplayer-widget__track-wrapper">
+							<div class="audioplayer-widget__track">Chill mix - музыкальный трек с длинным названием</div>
+						</div>
+					</div>
+					<div class="header__search search-header">
+						<form class="search-header__content">
+							<input class="search-header__input" type="text" name="" />
+							<button class="search-header__submit"></button>
+							<div class="search-dropdown">
+								<div class="search-list">
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>		
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>	
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>
+									<a href="#" class="search-list__item">
+										<div class="user-avatar search-list__item-avatar">
+											<img src="img/birthday-img2.jpg" alt="">
+										</div>
+										<div class="search-list__item-name">Алексей Макаров</div>
+									</a>																																																					
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="header__coin coin-header">
+						<div class="coin-header__item">
+							<div class="coin-header__card card-coin card-coin--info">
+								<a href="#" class="card-coin__label" data-bs-toggle="tooltip" data-bs-placement="bottom" title="командные in.COIN">2000 in.COIN</a>
+								<a href="#" class="card-coin__icon">
+									<img src="img/cup.svg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="coin-header__item">
+							<div class="coin-header__card card-coin card-coin--user">
+								<a href="#" class="card-coin__label">9999 in.COIN</a>
+								<div class="card-coin__icon--popup_open">
+									<a href="#" class="card-coin__icon">
+										<img src="img/avatar.svg" alt="" />
+									</a>
+									<button class="card-coin__icon_btn">
+										<img src="img/avatar.svg" alt="" />
+									</button>
+									<div class="card-coin__popup-bg"></div>
+									<div class="card-coin__popup popup-card-coin">
+										<div class="popup-card-coin__content">
+											<a href="#" class="popup-card-coin__link">Моя страница</a>
+											<a href="#" class="popup-card-coin__link">Рабочий стол руководителя</a>
+											<a href="#" class="popup-card-coin__link">PEP</a>
+											<a href="#" class="popup-card-coin__link">Выйти</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="header__btn btn-nav-mobile btn-nav-mobile-js">
+						<span class="btn-nav-mobile__label"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<!---/Header-->
+		<!---Main-->
+		<main class="main">
+			<div class="container club panel-main">
+				<div class="club__container club__container--navigation">
+					<nav class="main__nav nav-main club__navigation">
+						<a href="#" class="nav-main__link club__navigation-item">Что нового</a>
+						<a href="#" class="nav-main__link club__navigation-item nav-main__link--active">Сервисы</a>
+						<a href="#" class="nav-main__link club__navigation-item">Компания</a>
+					</nav>
+					<div class="club__back-link">
+						<a href="#" class="back-link">Назад</a>
+					</div>
+				</div>
+
+				<div class="club__container club__container--heading">
+					<h1 class="panel-main__title club__main-title">Welcome</h1>
+				</div>
+				
+				<div class="main__container">
+					<div class="main__content content-main">
+
+						<div class="welcome-intro">
+							<div class="welcome-intro__inner">
+								<div class="welcome-intro__left">
+									<img class="welcome-intro__person" src="img/welcome-photo.jpg" alt="">
+								</div>
+								<div class="welcome-intro__right">
+									<div class="welcome-intro__bubble">
+										<div class="audioplayer">
+											<div class="audioplayer__inner">
+												<div class="audioplayer__track">Добро пожаловать в Inventive!</div>
+												<div class="audioplayer__progress">
+													<span class="audioplayer__progress-bar" style="width: 30%;"></span>
+												</div>
+												<div class="audioplayer__track-info">
+													<span class="audioplayer__timer">00:03</span>
+													<span class="audioplayer__duration">00:25</span>
+												</div>
+												<div class="audioplayer__controls">
+													<button class="audioplayer__btn-control audioplayer__btn-control--prev">
+														<span class="icon-player-prev"></span>
+													</button>
+													<button class="audioplayer__btn-control audioplayer__btn-control--play">
+														<span class="icon-player-play"></span>
+													</button>
+													<button class="audioplayer__btn-control audioplayer__btn-control--next">
+														<span class="icon-player-next"></span>
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="welcome-intro__label">
+										Псс! Послушай приветствие от Тихона Смыкова, президента компании
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<section class="welcome-block1">
+							<div class="welcome-rounded1">
+								<div class="welcome-text">
+									<h2 class="welcome-heading">Inventive — это не только работа</h2>
+									<p>Для того, чтобы прочувствовать вайб Inventive, смотри видео с нашего последнего корпоратива 🎉 #inventivelife</p>
+								</div>
+							</div>
+							<div class="welcome-inner">
+								<div data-container="loadYoutube" class="welcome-video welcome-block1__video">
+									<iframe
+										class="welcome-video__embed"
+										width="560"
+										height="315"
+										data-src="https://www.youtube.com/embed/cWL87WR9_fA?rel=0&showinfo=0&autoplay=1"
+										src="about:blank"
+										title="Inventive — это не только работа"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+									</iframe>
+									<img class="welcome-video__cover" src="https://i3.ytimg.com/vi/cWL87WR9_fA/maxresdefault.jpg" alt="">
+									<button data-action="loadYoutube" type="button" class="welcome-video__play welcome-btn-play"></button>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="welcome-block2">
+							<div class="welcome-inner">
+								<div class="welcome-rounded1">
+									<div class="welcome-text">
+										<h2 class="welcome-heading">Для полного погружения</h2>
+										<p>Здесь представлены все наши каналы коммуникаций. Выбирай формат, который удобен именно <strong>тебе</strong>!</p>
+									</div>
+									<div class="welcome-features-list1 welcome-features">
+										<div class="welcome-features-list1__item welcome-feature1">
+											<div class="welcome-feature1__left">
+												<img src="img/welcome-feature1_1.png" alt="">
+											</div>
+											<div class="welcome-feature1__right">
+												<h3 class="welcome-features__heading">Дайджест новостей и коммуникация четверга</h3>
+												<div class="welcome-text">
+													<p>Следи за нашими еженедельными рассылками, в которых мы делимся самыми горячими новостями и полезными инсайтами.</p>
+													<p>Рассылки приходят всем сотрудникам на корпоративную почту:</p>
+													<ul>
+														<li>дайджест новостей — по вторникам;</li>
+														<li>коммуникация от топ-менеджмента — по четвергам.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="welcome-features-list1__item welcome-feature1">
+											<div class="welcome-feature1__left welcome-feature1__left_1">
+												<img src="img/welcome-feature1_2.png" alt="">
+											</div>
+											<div class="welcome-feature1__right">
+												<h3 class="welcome-features__heading">
+													<a target="_blank" href="https://www.youtube.com/@InventiveLife">YouTube</a>
+												</h3>
+												<div class="welcome-text">
+													<p>Любишь видосики? Тогда ты точно зависнешь на нашем YouTube:</p>
+													<ul>
+														<li>присоединись к путешествию по магазинам наших брендов и узнай о них что-то новое с плейлистом «Как карта ляжет»;</li>
+														<li>прикоснись к магии добра нашего благотворительного проекта #inventiveпомогает;</li>
+														<li>прочувствуй ритм инвентив, просматривая видеоотчеты событий нашего таймлайна.</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="welcome-features-list1__item welcome-feature1">
+											<div class="welcome-feature1__left">
+												<img src="img/welcome-feature1_3.png" alt="">
+											</div>
+											<div class="welcome-feature1__right">
+												<h3 class="welcome-features__heading">
+													<a target="_blank" href="https://t.me/inventivelife">@inventivelife</a>
+												</h3>
+												<div class="welcome-text">
+													<p>Следи за жизнью в Inventive в нашем Телеграм-канале: здесь ты найдешь вдохновение, интересные статьи, новости из жизни компании, а так же опросы, конкурсы и не только. Присоединяйся!</p>
+												</div>
+											</div>
+										</div>
+										<div class="welcome-features-list1__item welcome-feature1">
+											<div class="welcome-feature1__left">
+												<img src="img/welcome-feature1_4.png" alt="">
+											</div>
+											<div class="welcome-feature1__right">
+												<h3 class="welcome-features__heading">
+													<a target="_blank" href="https://t.me/jobinventive">@jobinventive</a>
+												</h3>
+												<div class="welcome-text">
+													<p>Карьерные советы, новости о вакансиях и интервью с сотрудниками — но без скукоты и с мемами? Это про нас! Скорей беги ставить лайки и делиться нашими постами с друзьями 🌚</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="welcome-text">
+										<h2 class="welcome-heading">А также...</h2>
+									</div>
+									<div class="welcome-features-list2">
+										<div class="welcome-features-list2__item welcome-feature2">
+											<img class="welcome-feature2__picture" src="img/welcome-feature2_1.jpg" alt="">
+											<h3 class="welcome-feature2__name welcome-features__heading">#inventiveпомогает</h3>
+											<div class="welcome-feature2__descr welcome-text">Помогай животным, планете и детям, чтобы сделать мир чуточку лучше.</div>
+											<a href="#" class="btn-black welcome-feature2__btn">Подробнее</a>
+										</div>
+										<div class="welcome-features-list2__item welcome-feature2">
+											<img class="welcome-feature2__picture" src="img/welcome-feature2_2.jpg" alt="">
+											<h3 class="welcome-feature2__name welcome-features__heading">#inventivebook</h3>
+											<div class="welcome-feature2__descr welcome-text">Клуб для тех, кто любит литературу: подборки книг и обсуждения каждый день.</div>
+											<a href="#" class="btn-black welcome-feature2__btn">Подробнее</a>
+										</div>
+										<div class="welcome-features-list2__item welcome-feature2">
+											<img class="welcome-feature2__picture" src="img/welcome-feature2_3.jpg" alt="">
+											<h3 class="welcome-feature2__name welcome-features__heading">#inventiveдети</h3>
+											<div class="welcome-feature2__descr welcome-text">Для детей у нас есть и конкурсы, и мероприятия, и всё для пребывания с мамой/папой в офисе.</div>
+											<a href="#" class="btn-black welcome-feature2__btn">Подробнее</a>
+										</div>
+										<div class="welcome-features-list2__item welcome-feature2">
+											<img class="welcome-feature2__picture" src="img/welcome-feature2_4.jpg" alt="">
+											<h3 class="welcome-feature2__name welcome-features__heading">#inventivesport</h3>
+											<div class="welcome-feature2__descr welcome-text">У нас несколько спортивных клубов — выбирай тот, который подходит именно тебе!</div>
+											<a href="#" class="btn-black welcome-feature2__btn">Подробнее</a>
+										</div>
+										<div class="welcome-features-list2__item welcome-feature2">
+											<img class="welcome-feature2__picture" src="img/welcome-feature2_5.jpg" alt="">
+											<h3 class="welcome-feature2__name welcome-features__heading">Aмбассадоры Inventive</h3>
+											<div class="welcome-feature2__descr welcome-text">Любишь компанию и хочешь делиться радостью работы в ней? Стань амбассадором!</div>
+											<a href="#" class="btn-black welcome-feature2__btn">Подробнее</a>
+										</div>
+										<div class="welcome-features-list2__item welcome-feature2">
+											<img class="welcome-feature2__picture" src="img/welcome-feature2_6.jpg" alt="">
+											<h3 class="welcome-feature2__name welcome-features__heading">in.CLUB</h3>
+											<div class="welcome-feature2__descr welcome-text">Зарабатывай in.COINS и трать их на корпоративный мерч или благотворительность!</div>
+											<a href="#" class="btn-black welcome-feature2__btn">Подробнее</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</section>
+
+						<section class="welcome-block3">
+							<div class="welcome-inner">
+								<div class="welcome-rounded1">
+									<div class="welcome-text">
+										<h2 class="welcome-heading">Приятные бонусы</h2>
+										<p>Мы не можем отпустить тебя без подарков: здесь ты найдешь подборку скидок от наших партнёров, классные заставки на твой смартфон и рабочий стол компьютера, а так же стикеры в Telegram</p>
+									</div>
+
+									<div class="welcome-block3__inner1">
+										<div class="welcome-block3__inner">
+											<div class="welcome-rounded2">
+												<h2 class="welcome-heading">Партнёрские скидки</h2>
+												<div class="welcome-bonuses">
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner1.png" srcset="img/welcome-partner1.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner2.png" srcset="img/welcome-partner2.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner3.png" srcset="img/welcome-partner3.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner4.png" srcset="img/welcome-partner4.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner5.png" srcset="img/welcome-partner5.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner6.png" srcset="img/welcome-partner6.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner7.png" srcset="img/welcome-partner7.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner8.png" srcset="img/welcome-partner8.png 2x" alt="">
+														</a>
+													</div>
+													<div class="welcome-bonuses__item">
+														<a href="#">
+															<img src="img/welcome-partner9.png" srcset="img/welcome-partner9.png 2x" alt="">
+														</a>
+													</div>
+												</div>
+												<a href="#" class="all-link">
+													<span class="all-link__point"></span>
+													<span class="all-link__name">Все скидки</span>
+												</a>
+											</div>
+											<div class="welcome-rounded2">
+												<h2 class="welcome-heading">Заставки в подарок</h2>
+												<div class="welcome-wallpapers">
+													<div class="welcome-wallpapers__text welcome-text">Сделали для тебя заставки на смартфон и на рабочий стол компьютера. Качай и устанавливай!</div>
+													<img class="welcome-wallpapers__pic" src="img/welcome-wallpapers.png" alt="">
+												</div>
+												
+												<a href="#">Скачать заставки</a>
+											</div>
+											<div class="welcome-rounded2">
+												<h2 class="welcome-heading">Стикеры в Telegram</h2>
+												<div class="welcome-stickers">
+													<div class="welcome-stickers__item welcome-stickers__item_1">
+														<a href="#">
+															<img src="img/welcome-sticker1.png" alt="">
+														</a>
+													</div>
+													<div class="welcome-stickers__item welcome-stickers__item_2">
+														<a href="#">
+															<img src="img/welcome-sticker2.png" alt="">
+														</a>
+													</div>
+													<div class="welcome-stickers__item welcome-stickers__item_3">
+														<a href="#">
+															<img src="img/welcome-sticker3.png" alt="">
+														</a>
+													</div>
+													<div class="welcome-stickers__item welcome-stickers__item_4">
+														<a href="#">
+															<img src="img/welcome-sticker4.png" alt="">
+														</a>
+													</div>
+													<div class="welcome-stickers__item welcome-stickers__item_5">
+														<a href="#">
+															<img src="img/welcome-sticker5.png" alt="">
+														</a>
+													</div>
+													<div class="welcome-stickers__item welcome-stickers__item_6">
+														<a href="#">
+															<img src="img/welcome-sticker6.png" alt="">
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="welcome-text">
+										<h2 class="welcome-heading">А у тебя день рождения не сегодня?</h2>
+										<p>Если у тебя сегодня день рождения, не забудь воспользоваться Birthday Pack, который мы заботливо подготовили для наших именинников, чтобы день рождения точно был радостным</p>
+									</div>
+									<img class="welcome-giftcard" src="img/welcome-giftcard.jpg" srcset="img/welcome-giftcard_2x.jpg" alt="">
+								</div>
+							</div>
+						</section>
+
+						<div class="welcome-block4 welcome-inner">
+							<div class="welcome-rounded1 welcome-block4__cols">
+								<img class="welcome-block4__icon" src="img/welcome-support.svg" alt="">
+								<div class="welcome-block4__text">Если у тебя появились/остались вопросы, смело обращайся в HR, ребята точно подскажут</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="main__sidebar sidebar-main sidebar-main--js">
+						<div class="sidebar-main__item">
+							<div class="line-info">
+								<div class="line-info__item">
+									<div class="line-info__card">
+										<span class="line-info__bg" style="width: 25%;"></span>
+										<span class="line-info__bg-anim"></span>
+										<span class="line-info__label">10 дней до зарплаты</span>
+									</div>
+								</div>
+								<div class="line-info__item">
+									<div class="line-info__card">
+										<span class="line-info__bg" style="width: 35%;"></span>
+										<span class="line-info__bg-anim"></span>
+										<span class="line-info__label">136 дней до отпуска</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-main__item">
+							<div class="nav nav-tabs" id="nav-tab" role="tablist">
+								<button class="nav-link active" id="nav-today-tab" data-bs-toggle="tab" data-bs-target="#nav-today"
+									type="button" role="tab" aria-controls="nav-today" aria-selected="true">Сегодня</button>
+								<button class="nav-link" id="nav-tomorrow-tab" data-bs-toggle="tab" data-bs-target="#nav-tomorrow"
+									type="button" role="tab" aria-controls="nav-tomorrow" aria-selected="false">Завтра</button>
+							</div>
+							<div class="tab-content" id="nav-tabContent">
+								<div class="tab-pane fade show active" id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab">
+									<div class="reserv-wrap">
+										<div class="sidebar-main__title">Мои бронирования</div>
+										<div class="post-items">
+											<div class="post-item">
+												<div class="post-item__caption">Санкт-Петербург</div>
+												<div class="post-item__content">Итоги месяца</div>
+											</div>
+											<div class="post-item">
+												<div class="post-item__caption">Казань</div>
+												<div class="post-item__content">Собрание отдела</div>
+											</div>
+										</div>
+										<a href="#" class="all-link">
+											<span class="all-link__point"></span>
+											<span class="all-link__name">Все бронирования</span>
+										</a>
+									</div>
+									<div class="birthday-wrap">
+										<div class="sidebar-main__title">Дни рождения</div>
+										<div class="birthday-items">
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Алина Печкина</span>
+												</a>
+											</div>
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Зина Кузнецова</span>
+												</a>
+											</div>
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Денис Попов</span>
+												</a>
+											</div>
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Василий Пупкин</span>
+												</a>
+											</div>
+										</div>
+										<a href="#" class="all-link">
+											<span class="all-link__point"></span>
+											<span class="all-link__name">Все дни рождения</span>
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="nav-tomorrow" role="tabpanel" aria-labelledby="nav-tomorrow-tab">
+									<div class="reserv-wrap">
+										<div class="sidebar-main__title">Мои бронирования</div>
+										<div class="post-items">
+											<div class="post-item">
+												<div class="post-item__caption">Санкт-Петербург</div>
+												<div class="post-item__content">Итоги месяца</div>
+											</div>
+											<div class="post-item">
+												<div class="post-item__caption">Казань</div>
+												<div class="post-item__content">Собрание отдела</div>
+											</div>
+										</div>
+										<a href="#" class="all-link">
+											<span class="all-link__point"></span>
+											<span class="all-link__name">Все бронирования</span>
+										</a>
+									</div>
+									<div class="birthday-wrap">
+										<div class="sidebar-main__title">Дни рождения</div>
+										<div class="birthday-items">
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Алина Печкина</span>
+												</a>
+											</div>
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Зина Кузнецова</span>
+												</a>
+											</div>
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Денис Попов</span>
+												</a>
+											</div>
+											<div class="birthday-item">
+												<a href="#" class="birthday-items__card card-birthday">
+													<span class="card-birthday__img">
+														<img src="img/avatar.svg" alt="" />
+													</span>
+													<span class="card-birthday__name">Василий Пупкин</span>
+												</a>
+											</div>
+										</div>
+										<a href="#" class="all-link">
+											<span class="all-link__point"></span>
+											<span class="all-link__name">Все дни рождения</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-main__item">
+							<div class="sidebar-main__title">Календарь</div>
+							<div class="calend">
+								<div class="calend__caption"><span class="calend__date">28.06</span> - Старт опроса
+									вовлечённости
+								</div>
+								<div class="calend__content">
+									<div id="calendar" class="calendar-sec"></div>
+								</div>
+								<a href="#" class="all-link">
+									<span class="all-link__point"></span>
+									<span class="all-link__name">Все события</span>
+								</a>
+								<div class="calend__btn">
+									<button class="btn-white" data-bs-toggle="modal" data-bs-target="#eventModal">Добавить
+										событие</button>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-main__item">
+							<div class="insta-wrap">
+								<div class="sidebar-main__title">Instagram</div>
+								<div class="insta-wrap__name">@inventivelife</div>
+								<div class="insta-wrap__img">
+									<img src="img/inst-img.png" alt="" />
+								</div>
+								<div class="insta-wrap__detail">
+									<span class="like-wrap">
+										<span class="like-wrap__icon icon-like"></span>
+										<span class="like-wrap__number">44</span>
+									</span>
+									<span class="insta-wrap__tag">#inventivelife</span>
+								</div>
+								<div class="insta-wrap__btn">
+									<a href="#" class="btn-white">Перейти в Instagram</a>
+								</div>
+							</div>
+						</div>
+						<div class="sidebar-main__item">
+							<div class="sidebar-main__title">Новости</div>
+							<div class="news-sidebar">
+								<div class="news-sidebar__item">
+									<a href="#" class="news-sidebar__card card-news-sidebar">
+										<span class="card-news-sidebar__img">
+											<img src="img/birthday-img1.jpg" alt="" />
+										</span>
+										<span class="card-news-sidebar__name">Ежегодный корпоратив| 22 июля</span>
+									</a>
+								</div>
+								<div class="news-sidebar__item">
+									<a href="#" class="news-sidebar__card card-news-sidebar">
+										<span class="card-news-sidebar__img">
+											<img src="img/birthday-img2.jpg" alt="" />
+										</span>
+										<span class="card-news-sidebar__name">Видеобращение Тихона Смыкова к
+											сотрудникам</span>
+									</a>
+								</div>
+								<div class="news-sidebar__item">
+									<a href="#" class="news-sidebar__card card-news-sidebar">
+										<span class="card-news-sidebar__img">
+											<img src="img/birthday-img3.jpg" alt="" />
+										</span>
+										<span class="card-news-sidebar__name">Дайджест новостей от 22.06.2021</span>
+									</a>
+								</div>
+								<div class="news-sidebar__item">
+									<a href="#" class="news-sidebar__card card-news-sidebar">
+										<span class="card-news-sidebar__img">
+											<img src="img/birthday-img4.jpg" alt="" />
+										</span>
+										<span class="card-news-sidebar__name">Помощь сотруднику магазина UNOde50 г.
+											Москва</span>
+									</a>
+								</div>
+								<div class="news-sidebar__item">
+									<a href="#" class="news-sidebar__card card-news-sidebar">
+										<span class="card-news-sidebar__img">
+											<img src="img/birthday-img5.jpg" alt="" />
+										</span>
+										<span class="card-news-sidebar__name">Зарплатный проект
+											Сбер + Inventive</span>
+									</a>
+								</div>
+							</div>
+							<a href="#" class="all-link">
+								<span class="all-link__point"></span>
+								<span class="all-link__name">Все новости</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!---/Main-->
+		<!---Footer-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__logo-company logo-company">
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/reStore.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/samsung.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/mi.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/nike.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/sb.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/sbkids.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/tnf.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/lego.svg" alt="" /></a>
+					</div>
+					<div class="logo-company__item">
+						<a href="#" class="logo-company__card"><img src="img/uno.svg" alt="" /></a>
+					</div>
+				</div>
+				<div class="footer__info">
+					<div class="footer__social social">
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-vk"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-insta"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-facebook"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-youtube"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-telegramm"></a>
+						</div>
+						<div class="social__item">
+							<a href="#" target="_blank" class="social__link icon-in"></a>
+						</div>
+					</div>
+					<div class="footer__logo">
+						<img src="img/inventive-logo.svg" alt="" />
+					</div>
+					<div class="footer__contacts-info">
+						<div class="footer__contacts">
+							<a href="tel:+74956516288" class="phone-link">+7 (495) 651 62 88</a>
+							<a href="mailto:helpspace@inventive.ru" class="email-link">helpspace@inventive.ru</a>
+						</div>
+						<div class="footer__adress">г. Москва, Причальный проезд, 2,<br> м. Шелепиха</div>
+					</div>
+				</div>
+				<div class="footer__about about-footer">
+					<div class="about-footer__logo">
+						<img src="img/inventive-logo.svg" alt="" />
+					</div>
+					<div class="about-footer__content">
+						<p>Inventive Digital Space (inventivespace.ru) — внутренний сервис Inventive Retail Group.
+							Информация предназначена только для действующих сотрудников, её нельзя распространять вне
+							Компании.
+						</p>
+						<p><span class="green-item">Сентябрь 2021.</span> Обновление основано на обратной связи
+							сотрудников.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!---/Footer-->
+
+		<!-- Modal 1-->
+		<div class="modal modal--container fade" id="wifiModal" tabindex="-1" aria-labelledby="wifiModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<div class="modal-content__wifi wifi-modal">
+						<h2 class="wifi-modal__title">ГОСТЕВОЙ wi-fi</h2>
+						<div class="wifi-modal__items">
+							<div class="wifi-modal__item">
+								<h3 class="wifi-modal__name">БЦ Якорь/Кузнецкий мост</h3>
+								<div class="wifi-modal__content">
+									<div class="wifi-modal__input-wrap">
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Cеть</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="Inventive_Guest" />
+										</div>
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Пароль</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="pdqyu924s7" />
+										</div>
+									</div>
+									<div class="wifi-modal__qkod">
+										<div class="wifi-modal__caption">Для iOS</div>
+										<img class="wifi-modal__qr" src="img/qr.svg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="wifi-modal__item">
+								<h3 class="wifi-modal__name">Спартаковская</h3>
+								<div class="wifi-modal__content">
+									<div class="wifi-modal__input-wrap">
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Cеть</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="IRG-Guests:)" />
+										</div>
+										<div class="wifi-modal__input-item">
+											<div class="wifi-modal__caption">Пароль</div>
+											<input type="text" class="wifi-modal__inpuf-control" name="" value="ke5pkd12" />
+										</div>
+									</div>
+									<div class="wifi-modal__qkod">
+										<div class="wifi-modal__caption">Для iOS</div>
+										<img class="wifi-modal__qr" src="img/qr.svg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 3-->
+		<div class="modal modal--container fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h2 class="modal-content__title">Добавить событие</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__category">Для подчинённых подразделений</div>
+						<div class="form-modal__items">
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Название<span class="required-info">*</span></label>
+								<input class="form-modal__input" type="text" name="" required />
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Срок (укажи дату запуска)<span
+										class="required-info">*</span></label>
+								<div class="form-modal__calend">
+									<input class="form-modal__input" type="text" name="" placeholder="Выбери дату" required />
+									<button class="form-modal__btn"></button>
+								</div>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Анонс событий<span class="required-info">*</span></label>
+								<textarea class="form-modal__input" name="" required></textarea>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Описание события<span class="required-info">*</span></label>
+								<textarea class="form-modal__input" name="" required></textarea>
+							</div>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Добавить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal--container fade modal--nominate-employee" id="nominateEmployeeModal" tabindex="-1" aria-labelledby="nominateEmployeeModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<h2 id="nominateEmployeeModalLabel" class="modal-content__title">Номинировать сотрудника</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__items">
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Пользователь<span class="required-info">*</span></label>
+								<div class="select">
+									<div class="select__label"></div>
+									<div class="select__option-box">
+										<ul class="select__list">
+											<li class="select__item">Пользователь 1</li>
+											<li class="select__item">Пользователь 2</li>
+											<li class="select__item">Пользователь 3</li>
+										</ul>
+									</div>
+								</div>
+							</div>							
+							<div class="form-modal__item">
+								<label class="form-modal__label">Ценность<span class="required-info">*</span></label>
+								<div class="radio-wrap worth-wrap">
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio1" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio1" class="radio-wrap__name worth-wrap__name">Честность</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio2" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio2" class="radio-wrap__name worth-wrap__name">Уважение + доверие</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio3" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio3" class="radio-wrap__name worth-wrap__name">Целесообразность</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio4" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio4" class="radio-wrap__name worth-wrap__name">Ответственность</label>
+									</div>
+									<div class="radio-wrap__item worth-wrap__item">
+										<input id="radio5" class="radio-wrap__input worth-wrap__input" type="radio" name="radio" />
+										<label for="radio5" class="radio-wrap__name worth-wrap__name">Рост</label>
+									</div>									
+								</div>
+							</div>
+							<div class="form-modal__item">
+								<label for="" class="form-modal__label">Обоснование<span class="required-info">*</span> (конкретный кейс, как именно была проявлена ценность у указанного человека)</label>
+								<textarea class="form-modal__input" name="" required></textarea>
+								<div class="form-modal__label form-modal__label--gray">Введите не менее 150 символов</div>
+							</div>
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button class="form-modal__submit" data-bs-dismiss="modal" aria-label="Закрыть">Отменить</button>
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Номинировать</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>		
+
+		<div class="modal modal--container fade modal--choose-department" id="chooseDepartmentModal" tabindex="-1" aria-labelledby="chooseDepartmentModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+					<h2 id="chooseDepartmentModalLabel" class="modal-content__title">Выбор подразделения</h2>
+					<form class="modal-content__form form-modal">
+						<div class="form-modal__items">
+							<div class="form-modal__item">
+								<div class="search-header__content">
+									<input class="search-header__input" type="text" name="">
+									<button type="button" class="search-header__submit"></button>
+								</div>
+							</div>							
+							<div class="form-modal__item">
+								<h2 class="modal-content__title">Выбранные</h2>
+								<ul class="choose-list">
+									<li class="choose-list__item">Дивизион детских товаров и ювелирных украшений</li>
+									<li class="choose-list__item">Дивизион спортивных товаров</li>
+									<li class="choose-list__item">Все офисные подразделения</li>
+								</ul>
+							</div>
+
+						</div>
+						<div class="form-modal__submit-wrap">
+							<button type="submit" class="form-modal__submit form-modal__submit--black">Сохранить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>			
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/mask.js"></script>
+
+	<script>
+		const calendarEventsElem = document.querySelectorAll('.calendar-events');
+		if (calendarEventsElem.length > 0) {
+			calendarEventsElem.forEach(calendarElemItem => {
+				const today = new Date();
+				const calendar = new Calendar(calendarElemItem, {
+					minDate: new Date(
+						today.getFullYear(),
+						today.getMonth(),
+						today.getDate()
+					),
+					maxDate: new Date(
+						today.getFullYear() + 1,
+						today.getMonth(),
+						today.getDate()
+					),
+					eventsList: [
+						{
+							date: new Date(today.getFullYear(), today.getMonth(), today.getDate()),
+							type: 'event--purple'
+						},
+						{
+							date: new Date(today.getFullYear(), today.getMonth(), today.getDate()+1),
+							type: 'event--blueberry'
+						},
+						{
+							date: new Date(today.getFullYear(), today.getMonth(), today.getDate()+2),
+							type: 'event--turquoise1'
+						}															
+					]
+				});
+			});
+		}										
+	</script>	
+</body>
+
+</html>

@@ -338,6 +338,10 @@
     .meeting-booking .form-modal__input {
         min-width: 165px;
     }
+
+    .welcome-block3__inner1 {
+        margin-left: -100px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -379,6 +383,20 @@
     .main-news__item .card-news__img-2 {
         padding: 54% 0 0 0;
     }
+
+    .welcome-intro__left {
+        width: 38%;
+    }
+
+    .welcome-intro__right {
+        width: 62%;
+    }
+
+    .welcome-block3__inner {
+        width: 100vw;
+        overflow-x: scroll;
+        padding: 0 20px 20px 20px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -398,6 +416,26 @@
     }
     .meeting-booking .form-modal__input {
         min-width: 140px;
+    }
+
+    .welcome-intro__inner {
+        padding-right: 30px;
+    }
+
+    .welcome-intro__left {
+        width: 30%;
+    }
+
+    .welcome-intro__right {
+        width: 70%;
+    }
+
+    .welcome-intro__person {
+        margin: -60px 0 0 0;
+    }
+
+    .welcome-features-list2 {
+        gap: 35px 35px;
     }
 }
 @media (max-width: 850px) {
@@ -441,6 +479,13 @@
         min-width: 125px;
     }
 }
+
+@media (max-width: 800px) {
+    .welcome-features-list2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 @media (max-width: 768px) {
     .ds-tr-main {
         justify-content: flex-start;
@@ -1210,6 +1255,47 @@
         width: 100%;
         margin: 10px 0;
     }
+
+    .welcome-intro,
+    .welcome-block1,
+    .welcome-block2,
+    .welcome-block3,
+    .welcome-block4 {
+        margin: 0 0 35px 0;
+    }
+
+    .welcome-intro__label {
+        width: 220px;
+    }
+
+    .welcome-intro__bubble {
+        border-radius: 25px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        height: 160px;
+    }
+
+    .welcome-intro__bubble::after {
+        left: -34px;
+        bottom: -9px;
+    }
+
+    .welcome-video__play {
+        width: 12%;
+        height: auto;
+        aspect-ratio: 104 / 118;
+    }
+
+    .welcome-block2 .welcome-inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .welcome-block4.welcome-inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media (max-width: 700px) {
     .filter-panel__item {
@@ -1416,6 +1502,123 @@
     .footer__info {
         position: relative;
         margin: 0 0 115px 0;
+    }
+
+    .welcome-intro,
+    .welcome-block1,
+    .welcome-block2,
+    .welcome-block3,
+    .welcome-block4 {
+        margin: 0 0 25px 0;
+    }
+
+    .welcome-intro__left {
+        position: absolute;
+        left: 40px;
+        bottom: 10px;
+        width: 122px;
+    }
+
+    .welcome-intro__inner {
+        border-radius: 0;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 35px;
+        position: relative;
+    }
+
+    .welcome-intro {
+        margin-left: -40px;
+        width: calc(100% + 80px);
+    }
+
+    .welcome-intro__bubble::after {
+        width: 19px;
+        height: 34px;
+        left: -2px;
+        bottom: -22px;
+        background-image: url("data:image/svg+xml,%3Csvg width='19' height='34' viewBox='0 0 19 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.4099 11.889C16.4357 11.8736 16.4607 11.8588 16.4852 11.8444L7.30771 3.20905C7.20927 3.33494 7.0911 3.49063 6.9569 3.67576C6.53429 4.25874 5.95297 5.1333 5.32777 6.28885C4.07741 8.59985 2.6523 12.0332 1.96868 16.5061C1.2837 20.9877 1.48532 24.8825 1.85788 27.655C2.01093 28.7941 2.19272 29.7428 2.35332 30.4638C2.64219 29.6669 3.04585 28.6203 3.56171 27.4396C4.71269 24.8052 6.43358 21.4764 8.70088 18.7653C10.9516 16.0741 13.0418 14.2639 14.5759 13.1235C15.3428 12.5533 15.9707 12.1506 16.4099 11.889Z' fill='white' stroke='black'/%3E%3Cpath d='M14.8822 12.2912L17.5694 10.4367L8.78585 1.97463L7.00566 4.45631L14.8822 12.2912Z' fill='white'/%3E%3C/svg%3E%0A");
+    }
+
+    .welcome-intro__label {
+        font-size: 15px;
+        text-align: right;
+        width: 150px;
+    }
+
+    .welcome-intro__label::after {
+        width: 30px;
+        height: 27px;
+        background-size: cover;
+        left: 15px;
+        top: -18px;
+    }
+
+    .welcome-block1 .welcome-text {
+        margin-bottom: 15px;
+    }
+
+    .welcome-block1 .welcome-rounded1 {
+        background: none;
+        padding: 0;
+    }
+
+    .welcome-block1 .welcome-inner {
+        padding: 0;
+    }
+
+    .welcome-block1__video {
+        margin-top: 0;
+    }
+
+    .welcome-heading {
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+
+    .welcome-block2 {
+        margin-left: -40px;
+        width: calc(100% + 80px);
+    }
+
+    .welcome-block2 .welcome-rounded1 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .welcome-features-list1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .welcome-feature1 {
+        flex-direction: column;
+    }
+
+    .welcome-feature1__left {
+        order: 2;
+        width: 100%;
+    }
+
+    .welcome-feature1__left_1 {
+        padding-right: 0;
+    }
+
+    .welcome-feature1__left img {
+        max-width: 350px;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .welcome-feature1__right {
+        order: 1;
+        width: 100%;
+    }
+
+    .welcome-block4.welcome-inner {
+        margin-left: -40px;
+        width: calc(100% + 80px);
     }
 }
 @media (max-width: 576px) {
@@ -2453,6 +2656,17 @@
     .card-time__count {
         padding-top: 12px;
     }
+
+    .welcome-block4__cols {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px 0;
+    }
+
+    .welcome-block4__text {
+        text-align: center;
+    }
 }
 @media (max-width: 450px) {
     .submenu__link {
@@ -2556,6 +2770,10 @@
     .meeting-booking-header {
         flex-wrap: wrap;
         align-items: flex-start;
+    }
+
+    .welcome-features-list2 {
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 420px) {

@@ -1,4 +1,22 @@
 window.onload = function () {
+    const welcomeScroll = document.querySelector('.welcome-block3__inner');
+    if (welcomeScroll) {
+        const scrollValue = (994 - welcomeScroll.offsetWidth) / 2;
+        if (scrollValue > 0) {
+            welcomeScroll.scroll(scrollValue, 0);
+        }
+    }
+    document.querySelectorAll('[data-container="loadYoutube"]').forEach((el) => {
+        const playButton = el.querySelector('[data-action="loadYoutube"]');
+        const iframe = el.querySelector('iframe');
+        if (playButton && iframe) {
+            playButton.addEventListener('click', () => {
+                const src = iframe.dataset.src;
+                if (src) iframe.src = src;
+                el.dataset.status = 'loaded';
+            });
+        }
+    });
 
     const sidebarMenuSticky = document.querySelector('.pep-sidebar__container');
     if (sidebarMenuSticky && sidebarMenuSticky.offsetParent) {
